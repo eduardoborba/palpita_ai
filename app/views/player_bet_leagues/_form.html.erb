@@ -1,0 +1,32 @@
+<%= form_with(model: player_bet_league, local: true) do |form| %>
+  <% if player_bet_league.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(player_bet_league.errors.count, "error") %> prohibited this player_bet_league from being saved:</h2>
+
+      <ul>
+        <% player_bet_league.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :player_id %>
+    <%= form.number_field :player_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bet_league_id %>
+    <%= form.number_field :bet_league_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player_accumulated_score %>
+    <%= form.number_field :player_accumulated_score %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

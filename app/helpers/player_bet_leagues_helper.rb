@@ -1,0 +1,2 @@
+module PlayerBetLeaguesHelper
+end

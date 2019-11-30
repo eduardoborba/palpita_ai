@@ -1,0 +1,2 @@
+class PlayerBetLeague < ApplicationRecord
+end

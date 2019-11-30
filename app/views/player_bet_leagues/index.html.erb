@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Player Bet Leagues</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Bet league</th>
+      <th>Player accumulated score</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @player_bet_leagues.each do |player_bet_league| %>
+      <tr>
+        <td><%= player_bet_league.player_id %></td>
+        <td><%= player_bet_league.bet_league_id %></td>
+        <td><%= player_bet_league.player_accumulated_score %></td>
+        <td><%= link_to 'Show', player_bet_league %></td>
+        <td><%= link_to 'Edit', edit_player_bet_league_path(player_bet_league) %></td>
+        <td><%= link_to 'Destroy', player_bet_league, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Player Bet League', new_player_bet_league_path %>

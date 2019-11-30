@@ -1,0 +1,2 @@
+class BetLeague < ApplicationRecord
+end

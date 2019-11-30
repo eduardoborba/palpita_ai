@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bet league:</strong>
+  <%= @round.bet_league_id %>
+</p>
+
+<p>
+  <strong>Number of games:</strong>
+  <%= @round.number_of_games %>
+</p>
+
+<p>
+  <strong>Blocked after:</strong>
+  <%= @round.blocked_after %>
+</p>
+
+<p>
+  <strong>Round number:</strong>
+  <%= @round.round_number %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @round.status_id %>
+</p>
+
+<%= link_to 'Edit', edit_round_path(@round) %> |
+<%= link_to 'Back', rounds_path %>

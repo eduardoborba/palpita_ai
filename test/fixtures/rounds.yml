@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bet_league_id: MyText
+  number_of_games: 1
+  blocked_after: 2019-11-30 18:10:41
+  round_number: 1
+  status_id: 1
+
+two:
+  bet_league_id: MyText
+  number_of_games: 1
+  blocked_after: 2019-11-30 18:10:41
+  round_number: 1
+  status_id: 1
