@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :bet_leagues
   resources :player_bet_leagues
   resources :games
+  resources :home, only: :index
   devise_for :players
 
   root to: 'bet_leagues#index'

@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Home</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Owner</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bet_leagues.each do |bet_league| %>
+      <tr>
+        <td><%= bet_league.name %></td>
+        <td><%= bet_league.owner.name %></td>
+        <td><%= link_to 'Show', bet_league %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
