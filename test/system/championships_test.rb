@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class ChampionshipsTest < ApplicationSystemTestCase
   setup do
-    @championship = championships(:one)
+    @championship = championships(:brasileirao)
   end
 
   test "visiting the index" do

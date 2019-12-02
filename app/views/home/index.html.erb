@@ -15,7 +15,7 @@
     <% @bet_leagues.each do |bet_league| %>
       <tr>
         <td><%= bet_league.name %></td>
-        <td><%= bet_league.owner.name %></td>
+        <td><%= bet_league.owner&.name %></td>
         <td><%= link_to 'Show', bet_league %></td>
       </tr>
     <% end %>

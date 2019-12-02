@@ -70,6 +70,6 @@ class BetLeaguesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def bet_league_params
-      params.require(:bet_league).permit(:name)
+      params.require(:bet_league).permit(:name, :owner_id)
     end
 end

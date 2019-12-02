@@ -1,7 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
+brasileirao:
+  id: 1
+  name: Brasileirão
 
-two:
-  name: MyString
+libertadores:
+  id: 2
+  name: Libertadores

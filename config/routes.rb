@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   resources :home, only: :index
   devise_for :players
 
-  root to: 'bet_leagues#index'
+  root to: 'home#index'
 end

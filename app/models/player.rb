@@ -5,6 +5,6 @@ class Player < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :registerable
 
-  has_many :player_bet_leagues
+  has_many :player_bet_leagues, dependent: :destroy
   has_many :bet_leagues, through: :player_bet_leagues
 end

@@ -3,6 +3,7 @@ require 'test_helper'
 class BetsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @bet = bets(:one)
+    sign_in(players(:obina))
   end
 
   test "should get index" do

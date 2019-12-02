@@ -3,6 +3,7 @@ require 'test_helper'
 class PlayerBetLeaguesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @player_bet_league = player_bet_leagues(:one)
+    sign_in(players(:obina))
   end
 
   test "should get index" do

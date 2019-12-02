@@ -3,6 +3,7 @@ require 'test_helper'
 class TeamsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @team = teams(:one)
+    sign_in(players(:obina))
   end
 
   test "should get index" do

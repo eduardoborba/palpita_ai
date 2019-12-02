@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class BetLeaguesTest < ApplicationSystemTestCase
   setup do
-    @bet_league = bet_leagues(:one)
+    @bet_league = bet_leagues(:camp_do_obina)
   end
 
   test "visiting the index" do

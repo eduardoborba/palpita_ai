@@ -2,7 +2,8 @@ require 'test_helper'
 
 class ChampionshipsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @championship = championships(:one)
+    @championship = championships(:brasileirao)
+    sign_in(players(:obina))
   end
 
   test "should get index" do

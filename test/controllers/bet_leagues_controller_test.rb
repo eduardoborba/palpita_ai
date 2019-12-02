@@ -2,7 +2,8 @@ require 'test_helper'
 
 class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @bet_league = bet_leagues(:one)
+    @bet_league = bet_leagues(:camp_do_obina)
+    sign_in(players(:obina))
   end
 
   test "should get index" do
@@ -17,7 +18,13 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create bet_league" do
     assert_difference('BetLeague.count') do
-      post bet_leagues_url, params: { bet_league: { name: @bet_league.name } }
+      post bet_leagues_url,
+        params: {
+          bet_league: {
+            name: @bet_league.name,
+            owner_id: @bet_league.owner_id
+          }
+        }
     end
 
     assert_redirected_to bet_league_url(BetLeague.last)
