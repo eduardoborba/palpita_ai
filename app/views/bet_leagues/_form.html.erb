@@ -1,27 +1,12 @@
 <%= form_with(model: bet_league, local: true) do |form| %>
-  <% if bet_league.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(bet_league.errors.count, "error") %> prohibited this bet_league from being saved:</h2>
+  <div class="form-group">
+    <%= form.label :name, 'Nome:' %>
 
-      <ul>
-        <% bet_league.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "form-control", placeholder: 'Nome da Liga' %>
   </div>
 
-  <div class="field">
-    <%= form.label :owner_id %>
-    <%= form.number_field :owner_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions text-right">
+    <%= link_to 'Back', bet_leagues_path, class: 'btn btn-light' %>
+    <%= form.submit('Criar', class: 'btn btn-primary') %>
   </div>
 <% end %>
