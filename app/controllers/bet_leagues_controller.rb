@@ -26,10 +26,12 @@ class BetLeaguesController < ApplicationController
   # POST /bet_leagues.json
   def create
     @bet_league = BetLeague.new(bet_league_params)
+    @bet_league.owner_id = current_player.id
+    @bet_league.status = 'active'
 
     respond_to do |format|
       if @bet_league.save
-        format.html { redirect_to @bet_league, notice: 'Bet league was successfully created.' }
+        format.html { redirect_to new_player_bet_league_path(bet_league_id: @bet_league.id), notice: 'Liga foi criada com sucesso, agora convide pessoas para participar da sua liga.' }
         format.json { render :show, status: :created, location: @bet_league }
       else
         format.html { render :new }
