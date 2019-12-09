@@ -1,5 +1,15 @@
-<h1>New Player Bet League</h1>
+<% if @player_bet_league.errors.any? %>
+  <div id="error_explanation">
+    <h2>Algo de errado não está certo:</h2>
+
+    <ul>
+      <% @player_bet_league.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<h1>Convidar novos participantes</h1>
 
 <%= render 'form', player_bet_league: @player_bet_league %>
-
-<%= link_to 'Back', player_bet_leagues_path %>
