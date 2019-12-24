@@ -79,10 +79,9 @@ jobs:
           name: Database setup
           command: bundle exec rails db:schema:load --trace
       - run:
-          command: RAILS_ENV=test bundle exec rails webpacker:compile
+          command: bundle exec rails webpacker:compile
       - run:
           command: bundle exec rake test
-          when: always
       - store_test_results:
           path: test/reports
       - store_artifacts:
