@@ -78,7 +78,8 @@ jobs:
       - run:
           name: Database setup
           command: bundle exec rails db:schema:load --trace
-      # Run rspec in parallel
+      - run:
+          command: NODE_ENV=test bundle exec rails webpacker:compile
       - run:
           command: bundle exec rake test
           when: always
