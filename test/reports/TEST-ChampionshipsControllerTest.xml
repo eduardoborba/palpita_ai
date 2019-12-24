@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time='0.399821' skipped='0' failures='0' errors='0' name="ChampionshipsControllerTest" assertions='9' tests='7' timestamp="2019-12-24T14:55:47-03:00">
+  <testcase time='0.039592' file="test/controllers/championships_controller_test.rb" name="test_should_update_championship" assertions='1'>
+  </testcase>
+  <testcase time='0.074261' file="test/controllers/championships_controller_test.rb" name="test_should_get_new" assertions='1'>
+  </testcase>
+  <testcase time='0.077496' file="test/controllers/championships_controller_test.rb" name="test_should_get_edit" assertions='1'>
+  </testcase>
+  <testcase time='0.042999' file="test/controllers/championships_controller_test.rb" name="test_should_create_championship" assertions='2'>
+  </testcase>
+  <testcase time='0.041180' file="test/controllers/championships_controller_test.rb" name="test_should_destroy_championship" assertions='2'>
+  </testcase>
+  <testcase time='0.057061' file="test/controllers/championships_controller_test.rb" name="test_should_show_championship" assertions='1'>
+  </testcase>
+  <testcase time='0.067232' file="test/controllers/championships_controller_test.rb" name="test_should_get_index" assertions='1'>
+  </testcase>
+</testsuite>

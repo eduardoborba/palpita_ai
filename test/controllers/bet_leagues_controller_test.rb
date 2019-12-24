@@ -21,13 +21,14 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
       post bet_leagues_url,
         params: {
           bet_league: {
-            name: @bet_league.name,
-            owner_id: @bet_league.owner_id
+            name: 'New insane league',
+            owner_id: players(:obina).id
           }
         }
     end
 
-    assert_redirected_to bet_league_url(BetLeague.last)
+    assert_redirected_to new_player_bet_league_path(bet_league_id: BetLeague.last.id)
+    assert_equal 'Liga foi criada com sucesso, agora convide pessoas para participar da sua liga.', flash[:notice]
   end
 
   test "should show bet_league" do
