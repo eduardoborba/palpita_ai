@@ -8,19 +8,13 @@ references:
       BUNDLE_RETRY: 3
       BUNDLE_PATH: vendor/bundle
       PGHOST: 127.0.0.1
-      PGUSER: circleci-demo-ruby
+      PGUSER: root
       PGPASSWORD: ""
       RAILS_ENV: test
       NODE_ENV: test
-  postgres: &postgres
-    image: circleci/postgres:9.5-alpine
-    environment:
-      POSTGRES_USER: circleci-demo-ruby
-      POSTGRES_DB: palpita_ai_test
-      POSTGRES_PASSWORD: ""
 
 jobs:
-  build:
+  test:
     docker:
       - *default_docker_ruby_executor
     steps:
@@ -43,6 +37,9 @@ jobs:
           paths:
             - vendor/bundle
       # Only necessary if app uses webpacker or yarn in some other way
+      - run:
+          name: webpacker
+          command: bundle exec rake webpacker:compile
       - restore_cache:
           keys:
             - palpita-ai-yarn-{{ checksum "yarn.lock" }}
@@ -50,37 +47,23 @@ jobs:
       - run:
           name: Yarn Install
           command: yarn install --cache-folder ~/.cache/yarn
-      - run: bundle exec rake webpacker:compile
+
       - save_cache:
           key: palpita-ai-yarn-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-  test:
-    parallelism: 3
-    docker:
-      - *default_docker_ruby_executor
-      - *postgres
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - palpita-ai-bundle-v2-{{ checksum "Gemfile.lock" }}
-            - palpita-ai-bundle-v2-
-      - run:
-          name: Bundle Install
-          command: bundle check || bundle install
-      - restore_cache:
-          keys:
-            - palpita-ai-yarn-{{ checksum "yarn.lock" }}
-            - palpita-ai-yarn-
       - run:
           name: Wait for DB
           command: dockerize -wait tcp://localhost:5432 -timeout 1m
       - run:
           name: Database setup
-          command: bundle exec rails db:schema:load --trace
+          command: |
+            bundle exec rake db:create
+            bundle exec rails db:schema:load --trace
       - run:
-          command: bundle exec rake test
+          command: |
+            mkdir test/reports
+            bundle exec rake test
       - store_test_results:
           path: test/reports
       - store_artifacts:
@@ -91,7 +74,4 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - build
       - test:
-          requires:
-            - build
