@@ -50,7 +50,7 @@ jobs:
       - run:
           name: Yarn Install
           command: yarn install --cache-folder ~/.cache/yarn
-      # Store yarn / webpacker cache
+      - run: bundle exec rake webpacker:compile
       - save_cache:
           key: palpita-ai-yarn-{{ checksum "yarn.lock" }}
           paths:
@@ -79,8 +79,6 @@ jobs:
       - run:
           name: Database setup
           command: bundle exec rails db:schema:load --trace
-      - run:
-          command: bundle exec rails webpacker:compile
       - run:
           command: bundle exec rake test
       - store_test_results:
