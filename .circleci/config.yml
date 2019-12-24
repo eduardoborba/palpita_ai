@@ -19,11 +19,9 @@ jobs:
       - *default_docker_ruby_executor
     steps:
       - checkout
-      # Which version of bundler?
       - run:
           name: Which bundler?
           command: bundle -v
-      # bundle cache
       - restore_cache:
           keys:
             - palpita-ai-bundle-v2-{{ checksum "Gemfile.lock" }}
@@ -31,15 +29,10 @@ jobs:
       - run:
           name: Bundle Install
           command: bundle check || bundle install
-      # Store bundle cache
       - save_cache:
           key: palpita-ai-bundle-v2-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      # Only necessary if app uses webpacker or yarn in some other way
-      - run:
-          name: webpacker
-          command: bundle exec rake webpacker:compile
       - restore_cache:
           keys:
             - palpita-ai-yarn-{{ checksum "yarn.lock" }}
@@ -47,7 +40,9 @@ jobs:
       - run:
           name: Yarn Install
           command: yarn install --cache-folder ~/.cache/yarn
-
+      - run:
+          name: webpacker
+          command: bundle exec rake webpacker:compile
       - save_cache:
           key: palpita-ai-yarn-{{ checksum "yarn.lock" }}
           paths:
