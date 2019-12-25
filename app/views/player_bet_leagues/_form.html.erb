@@ -2,8 +2,8 @@
   <%= form.hidden_field :bet_league_id, value: params[:bet_league_id] %>
 
   <div class="form-group">
-    <%= form.select :player_id, Player.all.collect { |p| [p.name, p.id] }, { include_blank: true },
-      class: 'form-control' %>
+    <%= form.select :player_id, Player.all.collect { |p| [p.name, p.id] }, {},
+      class: 'form-control selectpicker', multiple: 'multiple' %>
   </div>
 
   <div class="actions">
