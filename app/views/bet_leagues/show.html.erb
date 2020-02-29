@@ -1,9 +1,51 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @bet_league.name %></h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @bet_league.name %>
-</p>
+<% if @bet_league.owner == current_player %>
+  <div class="mb-3">
+    <a href="<%= new_player_bet_league_path(bet_league_id: @bet_league.id) %>" class="btn btn-primary btn-lg btn-block">
+      <%= fa_icon 'plus' %> Convidar participantes
+    </a>
+  </div>
+<% end %>
 
-<%= link_to 'Edit', edit_bet_league_path(@bet_league) %> |
-<%= link_to 'Back', bet_leagues_path %>
+<div class="list-group">
+  <% @bet_league.player_bet_leagues.eager_load(:player).each do |player_bet_league| %>
+    <div class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">
+          <%= player_bet_league.player.name %>
+        </h5>
+        <small>
+          <%= pluralize(player_bet_league.player_accumulated_score, 'pt') %>
+        </small>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<% if @bet_league.owner == current_player %>
+  <div class="mt-3 mb-3">
+    <a href="<%= new_round_path(bet_league_id: @bet_league.id) %>" class="btn btn-primary btn-lg btn-block">
+      <%= fa_icon 'plus' %> Nova Rodada
+    </a>
+  </div>
+<% end %>
+
+<div class="list-group">
+  <% @bet_league.rounds.each do |round| %>
+    <div class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">
+          Rodada #<%= round.round_number  %>
+        </h5>
+        <small>
+          <%= pluralize(round.number_of_games, 'jogos') %>
+        </small>
+      </div>
+
+      <small>
+        <%= round.status.name %>
+      </small>
+    </div>
+  <% end %>
+</div>

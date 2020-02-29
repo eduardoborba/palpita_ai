@@ -1,5 +1,4 @@
 class PlayerBetLeaguesController < ApplicationController
-  before_action :set_player_bet_league, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_player!
 
   # GET /player_bet_leagues
@@ -15,7 +14,7 @@ class PlayerBetLeaguesController < ApplicationController
 
   # GET /player_bet_leagues/new
   def new
-    @player_bet_league = PlayerBetLeague.new
+    @player_bet_league_form = PlayerBetLeagueForm.new(bet_league_id: params[:bet_league_id])
   end
 
   # GET /player_bet_leagues/1/edit
@@ -25,15 +24,15 @@ class PlayerBetLeaguesController < ApplicationController
   # POST /player_bet_leagues
   # POST /player_bet_leagues.json
   def create
-    @player_bet_league = PlayerBetLeague.new(player_bet_league_params)
+    @player_bet_league_form = PlayerBetLeagueForm.new(player_bet_league_params)
 
     respond_to do |format|
-      if @player_bet_league.save
-        format.html { redirect_to @player_bet_league, notice: 'Player bet league was successfully created.' }
-        format.json { render :show, status: :created, location: @player_bet_league }
+      if @player_bet_league_form.submit
+        format.html { redirect_to @player_bet_league_form.bet_league, notice: 'Participantes convidados com sucesso.' }
+        format.json { render :show, status: :created, location: @player_bet_league_form.bet_league }
       else
         format.html { render :new }
-        format.json { render json: @player_bet_league.errors, status: :unprocessable_entity }
+        format.json { render json: @player_bet_league_form.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -43,7 +42,7 @@ class PlayerBetLeaguesController < ApplicationController
   def update
     respond_to do |format|
       if @player_bet_league.update(player_bet_league_params)
-        format.html { redirect_to @player_bet_league, notice: 'Player bet league was successfully updated.' }
+        format.html { redirect_to @player_bet_league, notice: 'Participantes convidados com sucesso.' }
         format.json { render :show, status: :ok, location: @player_bet_league }
       else
         format.html { render :edit }
@@ -63,13 +62,8 @@ class PlayerBetLeaguesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_player_bet_league
-      @player_bet_league = PlayerBetLeague.find(params[:id])
-    end
-
     # Never trust parameters from the scary internet, only allow the white list through.
     def player_bet_league_params
-      params.require(:player_bet_league).permit(:player_id, :bet_league_id, :player_accumulated_score)
+      params.require(:player_bet_league_form).permit(:bet_league_id, :player_accumulated_score, player_ids: [])
     end
 end

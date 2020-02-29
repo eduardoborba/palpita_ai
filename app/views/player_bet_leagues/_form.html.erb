@@ -1,12 +1,12 @@
-<%= form_with(model: player_bet_league, local: true) do |form| %>
+<%= form_for(@player_bet_league_form, url: player_bet_leagues_path) do |form| %>
   <%= form.hidden_field :bet_league_id, value: params[:bet_league_id] %>
 
   <div class="form-group">
-    <%= form.select :player_id, Player.order(name: :asc).collect { |p| [p.name, p.id] }, {},
-      class: 'form-control selectpicker', multiple: 'multiple' %>
+    <%= form.select :player_ids, Player.order(name: :asc).collect { |p| [p.name, p.id] },
+      {}, class: 'form-control selectpicker', multiple: 'multiple', 'data-live-search'=>"true" %>
   </div>
 
-  <div class="actions">
+  <div class="actions text-right">
     <%= link_to 'Back', home_index_path, class: 'btn btn-light' %>
     <%= form.submit('Convidar', class: 'btn btn-primary') %>
   </div>

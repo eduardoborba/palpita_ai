@@ -1,9 +1,9 @@
-<% if @player_bet_league.errors.any? %>
-  <div id="error_explanation">
+<% if @player_bet_league_form.errors.any? %>
+  <div id="alert alert-danger mt-2">
     <h2>Algo de errado não está certo:</h2>
 
     <ul>
-      <% @player_bet_league.errors.full_messages.each do |message| %>
+      <% @player_bet_league_form.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
     </ul>
