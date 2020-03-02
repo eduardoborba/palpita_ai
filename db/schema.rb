@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_07_222647) do
+ActiveRecord::Schema.define(version: 2020_03_02_031822) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -80,7 +80,7 @@ ActiveRecord::Schema.define(version: 2019_12_07_222647) do
     t.integer "number_of_games"
     t.datetime "blocked_after"
     t.integer "round_number"
-    t.integer "status_id"
+    t.integer "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   resources :championships
   resources :bets
   resources :bet_leagues
-  resources :player_bet_leagues
-  resources :games
+  resources :player_bet_leagues, only: [:new, :create]
   resources :home, only: [:index]
   devise_for :players
 

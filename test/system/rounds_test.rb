@@ -18,7 +18,7 @@ class RoundsTest < ApplicationSystemTestCase
     fill_in "Blocked after", with: @round.blocked_after
     fill_in "Number of games", with: @round.number_of_games
     fill_in "Round number", with: @round.round_number
-    fill_in "Status", with: @round.status_id
+    fill_in "Status", with: @round.status
     click_on "Create Round"
 
     assert_text "Round was successfully created"
@@ -33,7 +33,7 @@ class RoundsTest < ApplicationSystemTestCase
     fill_in "Blocked after", with: @round.blocked_after
     fill_in "Number of games", with: @round.number_of_games
     fill_in "Round number", with: @round.round_number
-    fill_in "Status", with: @round.status_id
+    fill_in "Status", with: @round.status
     click_on "Update Round"
 
     assert_text "Round was successfully updated"

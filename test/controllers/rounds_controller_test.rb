@@ -18,7 +18,7 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create round" do
     assert_difference('Round.count') do
-      post rounds_url, params: { round: { bet_league_id: @round.bet_league_id, blocked_after: @round.blocked_after, number_of_games: @round.number_of_games, round_number: @round.round_number, status_id: @round.status_id } }
+      post rounds_url, params: { round: { bet_league_id: @round.bet_league_id, blocked_after: @round.blocked_after, number_of_games: @round.number_of_games, round_number: @round.round_number, status: @round.status } }
     end
 
     assert_redirected_to round_url(Round.last)
@@ -35,7 +35,7 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update round" do
-    patch round_url(@round), params: { round: { bet_league_id: @round.bet_league_id, blocked_after: @round.blocked_after, number_of_games: @round.number_of_games, round_number: @round.round_number, status_id: @round.status_id } }
+    patch round_url(@round), params: { round: { bet_league_id: @round.bet_league_id, blocked_after: @round.blocked_after, number_of_games: @round.number_of_games, round_number: @round.round_number, status: @round.status } }
     assert_redirected_to round_url(@round)
   end
 

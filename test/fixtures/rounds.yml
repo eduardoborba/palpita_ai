@@ -6,7 +6,7 @@ one:
   number_of_games: 1
   blocked_after: 2019-11-30 18:10:41
   round_number: 1
-  status_id: 1
+  status: 1
 
 two:
   id: 2
@@ -14,4 +14,4 @@ two:
   number_of_games: 1
   blocked_after: 2019-11-30 18:10:41
   round_number: 1
-  status_id: 1
+  status: 1

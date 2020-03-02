@@ -10,12 +10,15 @@ class PlayerBetLeagueForm
   end
 
   def submit
-    @players = Player.where(id: @params[:player_ids])
+    PlayerBetLeague.transaction do
+      @players = Player.where(id: @params[:player_ids])
+      @bet_league.player_bet_leagues.where.not(player_id: @params[:player_ids]).destroy_all
 
-    @players.each do |player|
-      next if @player_ids.include?(player.id)
+      @players.each do |player|
+        next if @player_ids.include?(player.id)
 
-      @bet_league.player_bet_leagues.create!(player_id: player.id)
+        @bet_league.player_bet_leagues.create!(player_id: player.id, player_accumulated_score: 0)
+      end
     end
 
     true

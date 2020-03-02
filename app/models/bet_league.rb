@@ -6,5 +6,5 @@ class BetLeague < ApplicationRecord
 
   validates :name, uniqueness: true, presence: true
 
-  enum status: [:active, :finished]
+  enum status: [:unstarted, :started, :finished]
 end

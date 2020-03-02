@@ -27,7 +27,7 @@ class BetLeaguesController < ApplicationController
   def create
     @bet_league = BetLeague.new(bet_league_params)
     @bet_league.owner_id = current_player.id
-    @bet_league.status = 'active'
+    @bet_league.status = 'unstarted'
 
     respond_to do |format|
       if @bet_league.save
