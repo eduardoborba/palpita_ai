@@ -7,7 +7,7 @@ ruby '2.6.5'
 gem 'rails', '~> 6.0.1'
 gem 'postgresql'
 # Use Puma as the app server
-gem 'puma', '~> 4.3'
+gem "puma", ">= 4.3.3"
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'font_awesome5_rails'
 
 gem 'sidekiq'
+
+gem "nokogiri", ">= 1.10.8"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
