@@ -8,5 +8,8 @@ Rails.application.routes.draw do
   resources :home, only: [:index]
   devise_for :players
 
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
+
   root to: 'home#index'
 end
