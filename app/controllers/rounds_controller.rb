@@ -15,7 +15,7 @@ class RoundsController < ApplicationController
 
   # GET /rounds/new
   def new
-    @round = Round.new
+    @round = RoundForm.new(round: Round.new(bet_league_id: params[:bet_league_id]))
   end
 
   # GET /rounds/1/edit
@@ -25,15 +25,15 @@ class RoundsController < ApplicationController
   # POST /rounds
   # POST /rounds.json
   def create
-    @round = Round.new(round_params)
+    @round_form = RoundForm.new(round: Round.new(bet_league_id: params[:bet_league_id]))
 
     respond_to do |format|
-      if @round.save
-        format.html { redirect_to @round, notice: 'Round was successfully created.' }
-        format.json { render :show, status: :created, location: @round }
+      if @round_form.save
+        format.html { redirect_to @round_form.round, notice: 'Rodada foi criada com sucesso.' }
+        format.json { render :show, status: :created, location: @round_form.round }
       else
         format.html { render :new }
-        format.json { render json: @round.errors, status: :unprocessable_entity }
+        format.json { render json: @round_form.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -70,6 +70,6 @@ class RoundsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def round_params
-      params.require(:round).permit(:bet_league_id, :number_of_games, :blocked_after, :round_number, :status_id)
+      params.require(:round_form).permit(:bet_league_id, :number_of_games, :blocked_after, :round_number, :status_id)
     end
 end

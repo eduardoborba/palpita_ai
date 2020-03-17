@@ -1,42 +1,13 @@
-<%= form_with(model: round, local: true) do |form| %>
-  <% if round.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(round.errors.count, "error") %> prohibited this round from being saved:</h2>
+<%= form_for(@player_bet_league_form, url: player_bet_leagues_path) do |form| %>
+  <%= form.hidden_field :bet_league_id, value: params[:bet_league_id] %>
 
-      <ul>
-        <% round.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :bet_league_id %>
-    <%= form.text_area :bet_league_id %>
+  <div class="form-group">
+    <%= form.select :player_ids, Player.order(name: :asc).collect { |p| [p.name, p.id] },
+      {}, class: 'form-control selectpicker', multiple: 'multiple', 'data-live-search'=>"true" %>
   </div>
 
-  <div class="field">
-    <%= form.label :number_of_games %>
-    <%= form.number_field :number_of_games %>
-  </div>
-
-  <div class="field">
-    <%= form.label :blocked_after %>
-    <%= form.datetime_select :blocked_after %>
-  </div>
-
-  <div class="field">
-    <%= form.label :round_number %>
-    <%= form.number_field :round_number %>
-  </div>
-
-  <div class="field">
-    <%= form.label :status_id %>
-    <%= form.number_field :status_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions text-right">
+    <%= link_to 'Back', home_index_path, class: 'btn btn-light' %>
+    <%= form.submit('Convidar', class: 'btn btn-primary') %>
   </div>
 <% end %>

@@ -1,5 +1,15 @@
-<h1>New Round</h1>
+<% if @round_form.errors.any? %>
+  <div id="alert alert-danger mt-2">
+    <h2>Algo de errado não está certo:</h2>
 
-<%= render 'form', round: @round %>
+    <ul>
+      <% @round_form.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
 
-<%= link_to 'Back', rounds_path %>
+<h1>Criar nova rodada</h1>
+
+<%= render 'form' %>
