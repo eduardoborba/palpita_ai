@@ -18,5 +18,4 @@ require("channels")
 import './src/application.scss'
 import 'bootstrap'
 import 'bootstrap-select'
-import 'bootstrap-datepicker'
 import "controllers"
