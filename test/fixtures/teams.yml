@@ -2,12 +2,16 @@
 
 flamengo:
   name: Flamengo
+  logo_url: https://cdn.soccerwiki.org/images/logos/clubs/294.png
 
 vasco:
   name: Vasco da Gama
+  logo_url: https://cdn.soccerwiki.org/images/logos/clubs/307.png
 
 corinthians:
   name: Corinthians
+  logo_url: https://cdn.soccerwiki.org/images/logos/clubs/290.png
 
 sao_paulo:
-  name: São Paulo
+  name: SC São Paulo
+  logo_url: https://cdn.soccerwiki.org/images/logos/clubs/3488.png

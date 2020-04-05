@@ -1,5 +1,5 @@
 <%= form_for(@player_bet_league_form, url: player_bet_leagues_path) do |form| %>
-  <%= form.hidden_field :bet_league_id, value: params[:bet_league_id] %>
+  <%= form.hidden_field :bet_league_id, value: @player_bet_league_form.bet_league_id %>
 
   <div class="form-group">
     <%= form.select :player_ids, Player.order(name: :asc).collect { |p| [p.name, p.id] },

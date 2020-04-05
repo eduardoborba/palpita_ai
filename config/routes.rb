@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :rounds
-  resources :teams
+  resources :rounds, except: [:index, :edit, :update]
   resources :championships
   resources :bets
   resources :bet_leagues

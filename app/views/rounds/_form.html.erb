@@ -1,13 +1,46 @@
-<%= form_for(@player_bet_league_form, url: player_bet_leagues_path) do |form| %>
-  <%= form.hidden_field :bet_league_id, value: params[:bet_league_id] %>
+<%= form_for(@round_form, url: rounds_path) do |form| %>
+  <%= form.hidden_field :bet_league_id, value: @round_form.bet_league_id %>
 
-  <div class="form-group">
-    <%= form.select :player_ids, Player.order(name: :asc).collect { |p| [p.name, p.id] },
-      {}, class: 'form-control selectpicker', multiple: 'multiple', 'data-live-search'=>"true" %>
+  <%= form.fields_for :games do |game_form| %>
+    <div data-target="fields-for.fields">
+      <div class="row mb-3">
+        <div class="col-5">
+          <%= game_form.label(:home_id, 'Time da Casa:') %>
+          <%= game_form.select :home_id,
+            options_for_select(@round_form.teams.map { |team| [team.name, team.id, { 'data-content' => team_option_content(team) }] }),
+            {}, prompt: '- Select -', class: 'form-control selectpicker', 'data-live-search'=>"true" %>
+        </div>
+
+        <div class="col-2">
+          <%= fa_icon('times') %>
+        </div>
+
+        <div class="col-5">
+          <%= game_form.label(:home_id, 'Time Visitante:') %>
+          <%= game_form.select :visitor_id,
+            options_for_select(@round_form.teams.map { |team| [team.name, team.id, { 'data-content' => team_option_content(team) }] }),
+            {}, prompt: '- Select -', class: 'form-control selectpicker', 'data-live-search'=>"true" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="row mb-3">
+    <div class="col">
+      <a href="#self" class="btn btn-primary">
+        <%= fa_icon 'plus' %>
+      </a>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col">
+      <%= form.date_field(:blocked_after, class: 'datepicker', 'data-date-format': 'mm/dd/yyyy') %>
+    </div>
   </div>
 
   <div class="actions text-right">
-    <%= link_to 'Back', home_index_path, class: 'btn btn-light' %>
-    <%= form.submit('Convidar', class: 'btn btn-primary') %>
+    <%= link_to 'Voltar', bet_league_path(@round_form.bet_league_id), class: 'btn btn-light' %>
+    <%= form.submit('Criar', class: 'btn btn-primary') %>
   </div>
 <% end %>
