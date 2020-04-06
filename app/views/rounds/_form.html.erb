@@ -1,37 +1,26 @@
-<%= form_for(@round_form, url: rounds_path) do |form| %>
-  <%= form.hidden_field :bet_league_id, value: @round_form.bet_league_id %>
+<%= form_for(@round, url: rounds_path) do |form| %>
+  <%= form.hidden_field :bet_league_id, value: @bet_league.id %>
 
-  <%= form.fields_for :games do |game_form| %>
-    <div data-target="fields-for.fields">
-      <div class="row mb-3">
-        <div class="col-5">
-          <%= game_form.label(:home_id, 'Time da Casa:') %>
-          <%= game_form.select :home_id,
-            options_for_select(@round_form.teams.map { |team| [team.name, team.id, { 'data-content' => team_option_content(team) }] }),
-            {}, prompt: '- Select -', class: 'form-control selectpicker', 'data-live-search'=>"true" %>
-        </div>
+  <div data-controller="fields-for">
+    <%= form.fields_for :games do |game_form| %>
+      <%= render "games/fields", game_form: game_form %>
+    <% end %>
 
-        <div class="col-2">
-          <%= fa_icon('times') %>
-        </div>
-
-        <div class="col-5">
-          <%= game_form.label(:home_id, 'Time Visitante:') %>
-          <%= game_form.select :visitor_id,
-            options_for_select(@round_form.teams.map { |team| [team.name, team.id, { 'data-content' => team_option_content(team) }] }),
-            {}, prompt: '- Select -', class: 'form-control selectpicker', 'data-live-search'=>"true" %>
-        </div>
+    <div class="row mb-3">
+      <div class="col">
+        <%= link_to("#{fa_icon('plus')} Adicionar Jogo".html_safe, '#self', {
+          class: 'btn btn-primary',
+          data: {
+            action: "fields-for#add",
+            fields: form.fields_for(:games, Game.new, child_index: "new_field") do |game_form|
+              render("games/fields", game_form: game_form)
+            end
+          }
+        }) %>
       </div>
     </div>
-  <% end %>
-
-  <div class="row mb-3">
-    <div class="col">
-      <a href="#self" class="btn btn-primary">
-        <%= fa_icon 'plus' %>
-      </a>
-    </div>
   </div>
+
 
   <div class="row mb-3">
     <div class="col">
@@ -40,7 +29,7 @@
   </div>
 
   <div class="actions text-right">
-    <%= link_to 'Voltar', bet_league_path(@round_form.bet_league_id), class: 'btn btn-light' %>
+    <%= link_to 'Voltar', bet_league_path(@bet_league.id), class: 'btn btn-light' %>
     <%= form.submit('Criar', class: 'btn btn-primary') %>
   </div>
 <% end %>

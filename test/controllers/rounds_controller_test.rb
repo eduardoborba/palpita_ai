@@ -19,19 +19,19 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
   test "should create round" do
     assert_difference('Round.count') do
       post rounds_url, params: {
-        round_form: {
+        round: {
           bet_league_id: @bet_league.id,
           blocked_after: '2020-03-29 00:00:00+00',
-          games: [
-            {
+          games_attributes: {
+            0 => {
               home_id: @flamengo.id,
               visitor_id: @vasco.id
             },
-            {
+            1 => {
               home_id: @corinthians.id,
               visitor_id: @sao_paulo.id
             }
-          ]
+          }
         }
       }
     end

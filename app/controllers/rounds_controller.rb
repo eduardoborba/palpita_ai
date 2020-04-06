@@ -8,7 +8,9 @@ class RoundsController < ApplicationController
 
   # GET /rounds/new
   def new
-    @round_form = RoundForm.new(bet_league_id: params[:bet_league_id])
+    @bet_league = BetLeague.find(params[:bet_league_id])
+    @round = @bet_league.rounds.build
+    1.times { @round.games.build }
   end
 
   # # GET /rounds/1/edit
@@ -18,23 +20,25 @@ class RoundsController < ApplicationController
   # POST /rounds
   # POST /rounds.json
   def create
-    @round_form = RoundForm.new(round_params)
+    @bet_league = BetLeague.find(round_params[:bet_league_id])
+    @round = @bet_league.rounds.build
+    @round.attributes = round_params
 
     respond_to do |format|
-      if @round_form.submit
+      if @round.save
         format.html do
-          redirect_to @round_form.round,
+          redirect_to @round,
                       notice: 'Rodada foi criada com sucesso.'
         end
         format.json do
           render :show,
                  status: :created,
-                 location: @round_form.round
+                 location: @round
         end
       else
         format.html { render :new }
         format.json do
-          render json: @round_form.errors,
+          render json: @round.errors,
                  status: :unprocessable_entity
         end
       end
@@ -75,9 +79,10 @@ class RoundsController < ApplicationController
   end
 
   def round_params
-    params.require(:round_form).permit(
-      :bet_league_id, :number_of_games, :blocked_after,
-      games: %i[home_id visitor_id]
+    params.require(:round).permit(
+      :bet_league_id,
+      :blocked_after,
+      games_attributes: %i[home_id visitor_id]
     )
   end
 end
