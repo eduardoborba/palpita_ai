@@ -1,10 +1,10 @@
-<div data-target="fields-for.fields">
+<div data-target="fields-for.fiekds">
   <div class="row mb-3">
     <div class="col-5">
       <%= game_form.label(:home_id, 'Time da Casa:') %>
       <%= game_form.select :home_id,
         team_options_for_select,
-        {}, prompt: '- Select -', class: 'form-control selectpicker', 'data-live-search'=>"true" %>
+        {}, prompt: '- Select -', class: 'form-control', 'data-behavior' => 'selectpicker', 'data-live-search'=>"true" %>
     </div>
 
     <div class="col-1">
@@ -15,7 +15,7 @@
       <%= game_form.label(:home_id, 'Time Visitante:') %>
       <%= game_form.select :visitor_id,
         team_options_for_select,
-        {}, prompt: '- Select -', class: 'form-control selectpicker', 'data-live-search'=>"true" %>
+        {}, prompt: '- Select -', class: 'form-control', 'data-behavior' => 'selectpicker', 'data-live-search'=>"true" %>
     </div>
 
     <div class="col-1">

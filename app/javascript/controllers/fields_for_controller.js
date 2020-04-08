@@ -1,4 +1,5 @@
 import {Controller} from "stimulus"
+
 export default class extends Controller {
   static targets = ["fields"]
 
@@ -8,7 +9,10 @@ export default class extends Controller {
   }
 
   add(e) {
+    let html = e.target.dataset.fields.replace(/new_field/g, new Date().getTime());
+
     e.preventDefault();
-    e.target.insertAdjacentHTML('beforebegin', e.target.dataset.fields.replace(/new_field/g, new Date().getTime()));
+    e.target.insertAdjacentHTML('beforebegin', html);
+    $('[data-behavior="selectpicker"]').selectpicker();
   }
 }

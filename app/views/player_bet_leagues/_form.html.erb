@@ -3,7 +3,7 @@
 
   <div class="form-group">
     <%= form.select :player_ids, Player.order(name: :asc).collect { |p| [p.name, p.id] },
-      {}, class: 'form-control selectpicker', multiple: 'multiple', 'data-live-search'=>"true" %>
+      {}, class: 'form-control', multiple: 'multiple', 'data-behavior': 'selectpicker', 'data-live-search'=>"true" %>
   </div>
 
   <div class="actions text-right">

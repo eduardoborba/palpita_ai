@@ -24,7 +24,10 @@
 
   <div class="row mb-3">
     <div class="col">
-      <%= form.date_field(:blocked_after, class: 'datepicker', 'data-date-format': 'mm/dd/yyyy') %>
+      Bloquear palpites em:
+    </div>
+    <div class="col">
+      <%= form.text_field(:blocked_after, class: 'form-control', 'data-behavior': 'datepicker', 'data-date-format': 'dd/mm/yyyy') %>
     </div>
   </div>
 

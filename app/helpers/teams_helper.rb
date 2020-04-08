@@ -1,7 +1,7 @@
 module TeamsHelper
   def team_options_for_select
     options = Team.all.map do |team|
-      [team.name, team.id, { 'data-content' => team_option_content(team) }]
+      [team.name, team.id]
     end
 
     options_for_select(options)
