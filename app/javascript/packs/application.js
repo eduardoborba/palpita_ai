@@ -26,4 +26,4 @@ import "controllers"
 document.addEventListener('turbolinks:load', () => {
   $('[data-behavior="selectpicker"]').selectpicker();
   $('[data-behavior="datepicker"]').datepicker();
-})
+});
