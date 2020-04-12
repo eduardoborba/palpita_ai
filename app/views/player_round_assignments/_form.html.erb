@@ -1,0 +1,32 @@
+<%= form_with(model: player_round_assignment, local: true) do |form| %>
+  <% if player_round_assignment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(player_round_assignment.errors.count, "error") %> prohibited this player_round_assignment from being saved:</h2>
+
+      <ul>
+        <% player_round_assignment.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :bet_league_id %>
+    <%= form.number_field :bet_league_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player_id %>
+    <%= form.number_field :player_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :round_id %>
+    <%= form.number_field :round_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

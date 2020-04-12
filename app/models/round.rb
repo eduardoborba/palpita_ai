@@ -1,6 +1,8 @@
 class Round < ApplicationRecord
   has_many :games
   belongs_to :bet_league
+  has_many :player_round_assignments
+
   accepts_nested_attributes_for :games, allow_destroy: true
 
   enum status: %i[unstarted started finished]
