@@ -1,12 +1,27 @@
 <%= form_with(model: bet_league, local: true) do |form| %>
-  <div class="form-group">
-    <%= form.label :name, 'Nome:' %>
-
-    <%= form.text_field :name, class: "form-control", placeholder: 'Nome da Liga' %>
+  <div class="row mb-3">
+    <div class="col">
+      <%= form.label :name, 'Nome:' %>
+      <%= form.text_field :name, class: "form-control", placeholder: 'Nome da Liga' %>
+    </div>
   </div>
 
-  <div class="actions text-right">
-    <%= link_to 'Back', bet_leagues_path, class: 'btn btn-light' %>
-    <%= form.submit('Criar', class: 'btn btn-primary') %>
+  <div class="row mb-3">
+    <div class="col">
+      <%= form.label :description, 'Descrição:' %>
+      <%= form.text_area :description, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col">
+      <%= form.submit(bet_league.persisted? ? 'Atualizar' : 'Criar', class: 'btn btn-primary btn-large btn-block') %>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col">
+      <%= link_to 'Cancelar', home_index_path, class: 'btn btn-light btn-large btn-block' %>
+    </div>
   </div>
 <% end %>

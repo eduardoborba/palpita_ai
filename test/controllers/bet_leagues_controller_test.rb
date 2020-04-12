@@ -17,18 +17,21 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create bet_league" do
-    assert_difference('BetLeague.count') do
-      post bet_leagues_url,
-        params: {
-          bet_league: {
-            name: 'New insane league',
-            owner_id: players(:obina).id
-          }
+    assert_difference('BetLeague.count', +1) do
+      post bet_leagues_url, params: {
+        bet_league: {
+          name: 'Nova liga daora',
+          description: "Essa nova liga possui um prize pool de 150 reais, e vamos ter no total 20 rodadas, duas por semana.\nBoa sorte!"
         }
+      }
     end
 
-    assert_redirected_to new_player_bet_league_path(bet_league_id: BetLeague.last.id)
+    @bet_league = BetLeague.last
+    assert_redirected_to new_player_bet_league_path(bet_league_id: @bet_league.id)
     assert_equal 'Liga foi criada com sucesso, agora convide pessoas para participar da sua liga.', flash[:notice]
+
+    assert_equal 'Nova liga daora', @bet_league.name
+    assert_equal "Essa nova liga possui um prize pool de 150 reais, e vamos ter no total 20 rodadas, duas por semana.\nBoa sorte!", @bet_league.description
   end
 
   test "should show bet_league" do
@@ -42,8 +45,20 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update bet_league" do
-    patch bet_league_url(@bet_league), params: { bet_league: { name: @bet_league.name } }
+    assert_no_difference('BetLeague.count') do
+      patch bet_league_url(@bet_league), params: {
+        bet_league: {
+          name: 'Nova liga daora',
+          description: "Essa nova liga possui um prize pool de 150 reais, e vamos ter no total 20 rodadas, duas por semana.\nBoa sorte!"
+        }
+      }
+    end
+
     assert_redirected_to bet_league_url(@bet_league)
+
+    @bet_league.reload
+    assert_equal 'Nova liga daora', @bet_league.name
+    assert_equal "Essa nova liga possui um prize pool de 150 reais, e vamos ter no total 20 rodadas, duas por semana.\nBoa sorte!", @bet_league.description
   end
 
   test "should destroy bet_league" do
