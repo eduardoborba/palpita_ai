@@ -27,7 +27,7 @@ class RoundsController < ApplicationController
     respond_to do |format|
       if @round.save
         format.html do
-          redirect_to @round,
+          redirect_to @bet_league,
                       notice: 'Rodada foi criada com sucesso.'
         end
         format.json do

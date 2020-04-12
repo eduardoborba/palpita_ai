@@ -1,0 +1,7 @@
+---
+pt-BR:
+  activerecord:
+    attributes:
+      round:
+        games: 'Jogos'
+        blocked_after: 'Data de bloqueio'

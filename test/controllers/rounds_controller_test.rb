@@ -17,26 +17,34 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create round" do
-    assert_difference('Round.count') do
-      post rounds_url, params: {
-        round: {
-          bet_league_id: @bet_league.id,
-          blocked_after: '2020-03-29 00:00:00+00',
-          games_attributes: {
-            0 => {
-              home_id: @flamengo.id,
-              visitor_id: @vasco.id
-            },
-            1 => {
-              home_id: @corinthians.id,
-              visitor_id: @sao_paulo.id
+    assert_difference('Round.count', +1) do
+      assert_difference('Game.count', +2) do
+        post rounds_url, params: {
+          round: {
+            bet_league_id: @bet_league.id,
+            blocked_after: '2020-03-29 00:00:00+00',
+            games_attributes: {
+              0 => {
+                home_id: @flamengo.id,
+                visitor_id: @vasco.id
+              },
+              1 => {
+                home_id: @corinthians.id,
+                visitor_id: @sao_paulo.id
+              }
             }
           }
         }
-      }
+      end
     end
 
-    assert_redirected_to round_url(Round.last)
+    assert_response :redirect
+    assert_redirected_to bet_league_url(@bet_league)
+
+    round = Round.order(created_at: :desc).take
+    assert_equal '2020-03-29 00:00:00 UTC', round.blocked_after.to_s
+    assert_equal 2, round.number_of_games
+    assert_equal 3, round.round_number
   end
 
   test "should show round" do

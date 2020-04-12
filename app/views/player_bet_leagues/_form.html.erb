@@ -1,13 +1,21 @@
 <%= form_for(@player_bet_league_form, url: player_bet_leagues_path) do |form| %>
   <%= form.hidden_field :bet_league_id, value: @player_bet_league_form.bet_league_id %>
 
-  <div class="form-group">
-    <%= form.select :player_ids, Player.order(name: :asc).collect { |p| [p.name, p.id] },
-      {}, class: 'form-control', multiple: 'multiple', 'data-behavior': 'selectpicker', 'data-live-search'=>"true" %>
+  <div class="row mb-3">
+    <div class="col">
+      <%= form.select :player_ids, Player.order(name: :asc).collect { |p| [p.name, p.id] },
+        {}, class: 'form-control', multiple: 'multiple', 'data-behavior': 'selectpicker', 'data-live-search'=>"true" %>
+    </div>
   </div>
 
-  <div class="actions text-right">
-    <%= link_to 'Back', home_index_path, class: 'btn btn-light' %>
-    <%= form.submit('Convidar', class: 'btn btn-primary') %>
+  <div class="row mb-3">
+    <div class="col">
+      <%= form.submit('Salvar', class: 'btn btn-primary btn-large btn-block') %>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col">
+      <%= link_to 'Cancelar', bet_league_path(@player_bet_league_form.bet_league), class: 'btn btn-light btn-large btn-block' %>
+    </div>
   </div>
 <% end %>

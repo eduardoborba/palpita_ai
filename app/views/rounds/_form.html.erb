@@ -9,7 +9,7 @@
     <div class="row mb-3">
       <div class="col">
         <%= link_to("#{fa_icon('plus')} Adicionar Jogo".html_safe, '#self', {
-          class: 'btn btn-primary',
+          class: 'btn btn-primary btn-lg btn-block',
           data: {
             action: "fields-for#add",
             fields: form.fields_for(:games, Game.new, child_index: "new_field") do |game_form|
@@ -21,18 +21,32 @@
     </div>
   </div>
 
-
-  <div class="row mb-3">
-    <div class="col">
+  <div class="row align-items-center mb-3">
+    <div class="col-6">
       Bloquear palpites em:
     </div>
-    <div class="col">
-      <%= form.text_field(:blocked_after, class: 'form-control', 'data-behavior': 'datepicker', 'data-date-format': 'dd/mm/yyyy') %>
+    <div class="col-6">
+      <%=
+        form.text_field(:blocked_after, class: 'form-control',
+          data: {
+            behavior: 'datepicker',
+            'date-format': 'dd/mm/yyyy',
+            'date-start-date': Time.zone.now.strftime('%d/%m/%Y')
+          }
+        )
+      %>
     </div>
   </div>
 
-  <div class="actions text-right">
-    <%= link_to 'Voltar', bet_league_path(@bet_league.id), class: 'btn btn-light' %>
-    <%= form.submit('Criar', class: 'btn btn-primary') %>
+  <div class="row mb-3">
+    <div class="col">
+      <%= form.submit('Criar', class: 'btn btn-primary btn-lg btn-block') %>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col">
+      <%= link_to 'Cancelar', bet_league_path(@bet_league.id), class: 'btn btn-light btn-lg btn-block' %>
+    </div>
   </div>
 <% end %>

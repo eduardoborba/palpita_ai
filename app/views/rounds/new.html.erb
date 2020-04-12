@@ -1,6 +1,6 @@
 <% if @round.errors.any? %>
-  <div id="alert alert-danger mt-2">
-    <h2>Algo de errado não está certo:</h2>
+  <div class="alert alert-danger mt-2">
+    <h4 class="alert-heading">Erro:</h4>
 
     <ul>
       <% @round.errors.full_messages.each do |message| %>
@@ -10,6 +10,10 @@
   </div>
 <% end %>
 
-<h1>Criar nova rodada</h1>
+<div class="row mb-3">
+  <div class="col">
+    <h1>Rodada</h1>
+  </div>
+</div>
 
 <%= render 'form' %>

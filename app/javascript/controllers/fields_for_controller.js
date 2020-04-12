@@ -5,7 +5,7 @@ export default class extends Controller {
 
   hide(e) {
     e.preventDefault();
-    e.target.closest("[data-target='fields-for.fields']").style = "display: none;"
+    e.target.closest("[data-target='fields-for.fields']").remove();
   }
 
   add(e) {
