@@ -65,13 +65,14 @@ class BetLeaguesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_bet_league
-      @bet_league = BetLeague.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def bet_league_params
-      params.require(:bet_league).permit(:name, :owner_id)
-    end
+  def set_bet_league
+    @bet_league = BetLeague.includes(rounds: :games)
+                           .find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def bet_league_params
+    params.require(:bet_league).permit(:name, :owner_id)
+  end
 end

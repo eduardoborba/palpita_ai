@@ -33,19 +33,19 @@
 
 <div class="list-group">
   <% @bet_league.rounds.each do |round| %>
-    <div class="list-group-item list-group-item-action">
+    <%= link_to edit_round_path(round),class: 'list-group-item list-group-item-action' do %>
       <div class="d-flex w-100 justify-content-between">
         <h5 class="mb-1">
           Rodada #<%= round.round_number  %>
         </h5>
         <small>
-          <%= pluralize(round.number_of_games, 'jogos') %>
+          <%= pluralize(round.games.size, 'jogos') %>
         </small>
       </div>
 
       <small>
         <%= round.status %>
       </small>
-    </div>
+    <% end %>
   <% end %>
 </div>

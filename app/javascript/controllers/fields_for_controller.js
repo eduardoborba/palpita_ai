@@ -1,11 +1,14 @@
 import {Controller} from "stimulus"
 
 export default class extends Controller {
-  static targets = ["fields"]
+  static targets = ["fields", "destroy"]
 
   hide(e) {
+    let fields = e.target.closest("[data-target='fields-for.fields']");
     e.preventDefault();
-    e.target.closest("[data-target='fields-for.fields']").style = "display: none;"
+
+    fields.children[0].value = '1';
+    fields.style = 'display: none;';
   }
 
   add(e) {
