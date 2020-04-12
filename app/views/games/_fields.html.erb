@@ -1,8 +1,10 @@
 <div data-target="fields-for.fields">
+  <%= game_form.hidden_field :_destroy, value: '0', 'data-target': 'fields-for.destroy' %>
+  <%= game_form.hidden_field :id %>
+
   <div class="row align-items-center mb-3">
     <div class="col-5">
-      <%= game_form.select :home_id,
-        team_options_for_select,
+      <%= game_form.select :home_id, Team.order(name: :asc).collect { |p| [p.name, p.id] },
         {}, prompt: '- Select -', class: 'form-control', 'data-behavior' => 'selectpicker', 'data-live-search'=>"true" %>
     </div>
 
@@ -11,8 +13,7 @@
     </div>
 
     <div class="col-5">
-      <%= game_form.select :visitor_id,
-        team_options_for_select,
+      <%= game_form.select :visitor_id, Team.order(name: :asc).collect { |p| [p.name, p.id] },
         {}, prompt: '- Select -', class: 'form-control', 'data-behavior' => 'selectpicker', 'data-live-search'=>"true" %>
     </div>
 

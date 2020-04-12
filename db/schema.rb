@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_17_010936) do
+ActiveRecord::Schema.define(version: 2020_04_12_184508) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 2020_03_17_010936) do
     t.integer "round_id"
     t.integer "bet_league_id"
     t.integer "position"
+    t.index ["round_id"], name: "index_games_on_round_id"
   end
 
   create_table "player_bet_leagues", force: :cascade do |t|
@@ -77,7 +78,6 @@ ActiveRecord::Schema.define(version: 2020_03_17_010936) do
 
   create_table "rounds", force: :cascade do |t|
     t.integer "bet_league_id"
-    t.integer "number_of_games"
     t.datetime "blocked_after"
     t.integer "round_number"
     t.integer "status"
@@ -91,6 +91,7 @@ ActiveRecord::Schema.define(version: 2020_03_17_010936) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "logo_url"
+    t.index ["name"], name: "index_teams_on_name"
   end
 
 end

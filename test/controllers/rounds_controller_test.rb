@@ -43,7 +43,6 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
 
     round = Round.order(created_at: :desc).take
     assert_equal '2020-03-29 00:00:00 UTC', round.blocked_after.to_s
-    assert_equal 2, round.number_of_games
     assert_equal 3, round.round_number
   end
 
@@ -52,24 +51,39 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  # test "should get edit" do
-  #   get edit_round_url(@round)
-  #   assert_response :success
-  # end
+  test "should get edit" do
+    get edit_round_url(@round)
+    assert_response :success
+  end
 
-  # test "should update round" do
-  #   patch round_url(@round), params: {
-  #     round_form: {
-  #       bet_league_id: @round.bet_league_id,
-  #       blocked_after: @round.blocked_after,
-  #       number_of_games: @round.number_of_games,
-  #       round_number: @round.round_number,
-  #       status: @round.status
-  #     }
-  #   }
+  test "should update round" do
+    assert_no_difference('Round.count') do
+      assert_difference('Game.count', -1) do
+        patch round_url(@round), params: {
+          round: {
+            blocked_after: '2020-03-29 00:00:00+00',
+            status: @round.status,
+            games_attributes: {
+              0 => {
+                id: @round.games.first.id,
+                home_id: @round.games.first.home_id,
+                visitor_id: @round.games.first.visitor_id,
+                _destroy: '0'
+              },
+              1 => {
+                id: @round.games.second.id,
+                home_id: @round.games.second.home_id,
+                visitor_id: @round.games.second.visitor_id,
+                _destroy: '1'
+              }
+            }
+          }
+        }
+      end
+    end
 
-  #   assert_redirected_to round_url(@round)
-  # end
+    assert_redirected_to bet_league_url(@bet_league)
+  end
 
   test "should destroy round" do
     assert_difference('Round.count', -1) do

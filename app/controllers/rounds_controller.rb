@@ -14,8 +14,10 @@ class RoundsController < ApplicationController
   end
 
   # # GET /rounds/1/edit
-  # def edit
-  # end
+  def edit
+    @round = Round.find(params[:id])
+    @bet_league = @round.bet_league
+  end
 
   # POST /rounds
   # POST /rounds.json
@@ -47,17 +49,21 @@ class RoundsController < ApplicationController
 
   # # PATCH/PUT /rounds/1
   # # PATCH/PUT /rounds/1.json
-  # def update
-  #   respond_to do |format|
-  #     if @round.update(round_params)
-  #       format.html { redirect_to @round, notice: 'Round was successfully updated.' }
-  #       format.json { render :show, status: :ok, location: @round }
-  #     else
-  #       format.html { render :edit }
-  #       format.json { render json: @round.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
+  def update
+    @round = Round.find(params[:id])
+    @bet_league = @round.bet_league
+    @round.attributes = round_params
+
+    respond_to do |format|
+      if @round.save
+        format.html { redirect_to @bet_league, notice: 'Rodada foi editada com sucesso.' }
+        format.json { render :show, status: :ok, location: @round }
+      else
+        format.html { render :edit }
+        format.json { render json: @round.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
   # DELETE /rounds/1
   # DELETE /rounds/1.json
@@ -82,7 +88,7 @@ class RoundsController < ApplicationController
     params.require(:round).permit(
       :bet_league_id,
       :blocked_after,
-      games_attributes: %i[home_id visitor_id]
+      games_attributes: %i[id home_id visitor_id _destroy]
     )
   end
 end

@@ -1,5 +1,5 @@
 <% if @player_bet_league_form.errors.any? %>
-  <div id="alert alert-danger mt-2">
+  <div class="alert alert-danger mt-2">
     <h2>Algo de errado não está certo:</h2>
 
     <ul>
@@ -10,6 +10,11 @@
   </div>
 <% end %>
 
-<h1>Participantes</h1>
+<div class="row mb-3">
+  <div class="col">
+    <h1>Participantes</h1>
+  </div>
+</div>
+
 
 <%= render 'form' %>

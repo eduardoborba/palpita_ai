@@ -1,4 +1,4 @@
-<%= form_for(@round, url: rounds_path) do |form| %>
+<%= form_for(@round) do |form| %>
   <%= form.hidden_field :bet_league_id, value: @bet_league.id %>
 
   <div data-controller="fields-for">
@@ -27,7 +27,7 @@
     </div>
     <div class="col-6">
       <%=
-        form.text_field(:blocked_after, class: 'form-control',
+        form.text_field(:blocked_after, value: @round.blocked_after.presence&.strftime('%d/%m/%Y'), class: 'form-control',
           data: {
             behavior: 'datepicker',
             'date-format': 'dd/mm/yyyy',
@@ -40,7 +40,7 @@
 
   <div class="row mb-3">
     <div class="col">
-      <%= form.submit('Criar', class: 'btn btn-primary btn-lg btn-block') %>
+      <%= form.submit(@round.persisted? ? 'Atualizar' : 'Criar', class: 'btn btn-primary btn-lg btn-block') %>
     </div>
   </div>
 

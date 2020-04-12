@@ -9,26 +9,6 @@ class RoundTest < ActiveSupport::TestCase
   #   assert true
   # end
 
-  test '#update_number_of_games' do
-    @round = @bet_league.rounds.build
-    @round.attributes = {
-      'games_attributes' => {
-        '0' => {
-          'home_id' => teams(:flamengo).id,
-          'visitor_id' => teams(:vasco).id
-        },
-        '1' => {
-          'home_id' => teams(:corinthians).id,
-          'visitor_id' => teams(:sao_paulo).id
-        }
-      },
-      'blocked_after' => '2020-04-01 9:00:00+00'
-    }
-    @round.save!
-
-    assert_equal 2, @round.number_of_games
-  end
-
   test '#fill_round_number' do
     assert_equal 2, @bet_league.rounds.maximum(:round_number)
 
