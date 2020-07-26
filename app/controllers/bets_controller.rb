@@ -63,13 +63,15 @@ class BetsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_bet
-      @bet = Bet.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def bet_params
-      params.require(:bet).permit(:game_id, :player_id, :player_score, :bet_league_id, :home_bet, :visitor_bet)
-    end
+  def set_bet
+    @bet = Bet.find(params[:id])
+  end
+
+  def bet_params
+    params.require(:bet).permit(
+      :game_id, :player_id, :player_score, :bet_league_id, :home_bet,
+      :visitor_bet, :player_round_assignment_id
+    )
+  end
 end
