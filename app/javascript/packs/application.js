@@ -20,10 +20,4 @@ require("expose-loader?$!jquery");
 import './src/application.scss'
 import 'bootstrap'
 import 'bootstrap-select'
-import 'bootstrap-datepicker'
 import "controllers"
-
-document.addEventListener('turbolinks:load', () => {
-  $('[data-behavior="selectpicker"]').selectpicker();
-  $('[data-behavior="datepicker"]').datepicker();
-});
