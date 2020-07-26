@@ -22,7 +22,8 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
         post rounds_url, params: {
           round: {
             bet_league_id: @bet_league.id,
-            blocked_after: '2020-03-29 00:00:00+00',
+            accept_bets_after: Time.zone.now,
+            accept_bets_until: 2.days.from_now,
             games_attributes: {
               0 => {
                 home_id: @flamengo.id,
@@ -42,7 +43,7 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to bet_league_url(@bet_league)
 
     round = Round.order(created_at: :desc).take
-    assert_equal '2020-03-29 00:00:00 UTC', round.blocked_after.to_s
+    assert_not_nil round.accept_bets_until.to_s
     assert_equal 3, round.round_number
   end
 
@@ -61,7 +62,8 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
       assert_difference('Game.count', -1) do
         patch round_url(@round), params: {
           round: {
-            blocked_after: '2020-03-29 00:00:00+00',
+            accept_bets_after: Time.zone.now,
+            accept_bets_until: 2.days.from_now,
             status: @round.status,
             games_attributes: {
               0 => {

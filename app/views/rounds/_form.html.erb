@@ -23,17 +23,20 @@
 
   <div class="row align-items-center mb-3">
     <div class="col-6">
-      Bloquear palpites em:
+      <%= form.label :accept_bets_after %>:
     </div>
     <div class="col-6">
-      <%=
-        form.text_field(:blocked_after, value: @round.blocked_after.presence&.strftime('%d/%m/%Y'), class: 'form-control',
-          data: {
-            behavior: 'datepicker',
-            'date-format': 'dd/mm/yyyy',
-            'date-start-date': Time.zone.now.strftime('%d/%m/%Y')
-          }
-        )
+      <%= form.datetime_field(:accept_bets_after, class: 'form-control')
+      %>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-3">
+    <div class="col-6">
+      <%= form.label :accept_bets_until %>:
+    </div>
+    <div class="col-6">
+      <%= form.datetime_field(:accept_bets_until, class: 'form-control')
       %>
     </div>
   </div>

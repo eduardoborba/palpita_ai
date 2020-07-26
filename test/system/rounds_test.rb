@@ -15,7 +15,8 @@ class RoundsTest < ApplicationSystemTestCase
     click_on "New Round"
 
     fill_in "Bet league", with: @round.bet_league_id
-    fill_in "Blocked after", with: @round.blocked_after
+    fill_in "Accept bets after", with: @round.accept_bets_after
+    fill_in "Accept bets until", with: @round.accept_bets_until
     fill_in "Round number", with: @round.round_number
     fill_in "Status", with: @round.status
     click_on "Create Round"
@@ -29,7 +30,8 @@ class RoundsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Bet league", with: @round.bet_league_id
-    fill_in "Blocked after", with: @round.blocked_after
+    fill_in "Accept bets after", with: @round.accept_bets_after
+    fill_in "Accept bets until", with: @round.accept_bets_until
     fill_in "Round number", with: @round.round_number
     fill_in "Status", with: @round.status
     click_on "Update Round"

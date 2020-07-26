@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_12_192636) do
+ActiveRecord::Schema.define(version: 2020_07_26_181245) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -88,11 +88,12 @@ ActiveRecord::Schema.define(version: 2020_04_12_192636) do
 
   create_table "rounds", force: :cascade do |t|
     t.integer "bet_league_id"
-    t.datetime "blocked_after"
     t.integer "round_number"
     t.integer "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.datetime "accept_bets_after"
+    t.datetime "accept_bets_until"
   end
 
   create_table "teams", force: :cascade do |t|

@@ -9,8 +9,7 @@ class Round < ApplicationRecord
 
   before_create :fill_round_number
 
-  validates :games, presence: true
-  validates :blocked_after, presence: true
+  validates :games, :accept_bets_after, :accept_bets_until, presence: true
 
   def fill_round_number
     self.round_number = (self.bet_league.rounds.maximum(:round_number) || 0) + 1

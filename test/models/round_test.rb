@@ -24,7 +24,8 @@ class RoundTest < ActiveSupport::TestCase
           'visitor_id' => teams(:sao_paulo).id
         }
       },
-      'blocked_after' => '2020-04-01 9:00:00+00'
+      'accept_bets_after' => Time.zone.now,
+      'accept_bets_until' => 2.days.from_now
     }
     @round.save!
 

@@ -9,7 +9,7 @@ class RoundsController < ApplicationController
   # GET /rounds/new
   def new
     @bet_league = BetLeague.find(params[:bet_league_id])
-    @round = @bet_league.rounds.build
+    @round = @bet_league.rounds.build(accept_bets_after: Time.zone.now, accept_bets_until: 1.week.from_now)
     1.times { @round.games.build }
   end
 
@@ -87,7 +87,8 @@ class RoundsController < ApplicationController
   def round_params
     params.require(:round).permit(
       :bet_league_id,
-      :blocked_after,
+      :accept_bets_after,
+      :accept_bets_until,
       games_attributes: %i[id home_id visitor_id _destroy]
     )
   end
