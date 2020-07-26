@@ -1,11 +1,14 @@
 class Round < ApplicationRecord
+  include TranslateEnum
+
   has_many :games
   belongs_to :bet_league
   has_many :player_round_assignments
 
   accepts_nested_attributes_for :games, allow_destroy: true
 
-  enum status: %i[unstarted started finished]
+  enum status: { unstarted: 0, started: 1, finished: 2 }
+  translate_enum :status
 
   before_create :fill_round_number
 

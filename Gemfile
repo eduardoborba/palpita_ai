@@ -31,6 +31,8 @@ gem 'sidekiq'
 
 gem "nokogiri", ">= 1.10.8"
 
+gem 'translate_enum'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug', require: false

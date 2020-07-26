@@ -57,9 +57,20 @@
 
 <div class="row mb-3">
   <div class="col">
-    <div class="list-group">
+    <div class="list-group" data-controller="rounds-list">
       <% @bet_league.rounds.order(round_number: :asc).each do |round| %>
-        <%= link_to edit_round_path(round),class: 'list-group-item list-group-item-action' do %>
+        <%
+          if round.unstarted?
+            href = '#self'
+            action = @bet_league.owner == current_player ? 'rounds-list#openBets' : 'rounds-list#waitOwnerOpenBets'
+          elsif round.started?
+            href = new_player_round_assignment_path(round: round.id)
+            action = nil
+          end
+
+        %>
+
+        <%= link_to href, class: 'list-group-item list-group-item-action', data: { action: action } do %>
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">
               Rodada #<%= round.round_number  %>
@@ -70,7 +81,7 @@
           </div>
 
           <small>
-            <%= round.status %>
+            <%= round.translated_status %>
           </small>
         <% end %>
       <% end %>

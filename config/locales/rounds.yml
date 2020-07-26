@@ -6,3 +6,7 @@ pt-BR:
         games: 'Jogos'
         accept_bets_after: 'Aceitar Apostas após'
         accept_bets_until: 'Aceitar Apostas até'
+        status_list:
+          unstarted: 'Não iniciado'
+          started: 'Iniciado'
+          finished: 'Finalizado'
