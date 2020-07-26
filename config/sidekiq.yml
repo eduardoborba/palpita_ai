@@ -1,0 +1,8 @@
+:schedule:
+  open_jobs:
+    cron: '0 0 * * * *'   # Runs every hour
+    class: OpenJobsWorker
+
+  close_jobs:
+    cron: '0 0 * * * *'   # Runs every hour
+    class: CloseJobsWorker
