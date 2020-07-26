@@ -7,11 +7,13 @@ one:
   bet_league_id: 1
   home_bet: 1
   visitor_bet: 1
+  player_round_assignment_id: 1
 
 two:
-  game_id: 1
+  game_id: 2
   player_id: 1
   player_score: 1
   bet_league_id: 1
   home_bet: 1
   visitor_bet: 1
+  player_round_assignment_id: 1

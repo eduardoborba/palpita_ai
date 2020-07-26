@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  bet_league_id: 1
+  player_id: 1
+  round_id: 1
+
+two:
+  id: 2
+  bet_league_id: 1
+  player_id: 1
+  round_id: 1
