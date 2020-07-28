@@ -1,32 +1,47 @@
-<%= form_with(model: player_round_assignment, local: true) do |form| %>
-  <% if player_round_assignment.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(player_round_assignment.errors.count, "error") %> prohibited this player_round_assignment from being saved:</h2>
+<%= form_for(player_round_assignment) do |form| %>
+  <%= form.hidden_field :bet_league_id %>
+  <%= form.hidden_field :round_id %>
+  <%= form.hidden_field :player_id %>
 
-      <ul>
-        <% player_round_assignment.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+  <%= form.fields_for :bets do |bet_form| %>
+    <div class="row align-items-center mb-3">
+      <%= bet_form.hidden_field(:id, class: 'form-control') %>
+      <%= bet_form.hidden_field(:game_id, class: 'form-control') %>
+      <%= bet_form.hidden_field(:player_id, class: 'form-control') %>
+      <%= bet_form.hidden_field(:bet_league_id, class: 'form-control') %>
+
+      <div class="col-2">
+        <%= bet_form.object.game.home.name %>
+      </div>
+
+      <div class="col-3">
+        <%= bet_form.number_field(:home_bet, class: 'form-control') %>
+      </div>
+
+      <div class="col-2 d-flex justify-content-center">
+        <%= fa_icon('times') %>
+      </div>
+
+
+      <div class="col-3">
+        <%= bet_form.number_field(:visitor_bet, class: 'form-control') %>
+      </div>
+
+      <div class="col-2">
+        <%= bet_form.object.game.visitor.name %>
+      </div>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :bet_league_id %>
-    <%= form.number_field :bet_league_id %>
+  <div class="row mb-3">
+    <div class="col">
+      <%= form.submit('Salvar', class: 'btn btn-primary btn-lg btn-block') %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :player_id %>
-    <%= form.number_field :player_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :round_id %>
-    <%= form.number_field :round_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="row mb-3">
+    <div class="col">
+      <%= link_to 'Cancelar', bet_league_path(@bet_league.id), class: 'btn btn-light btn-lg btn-block' %>
+    </div>
   </div>
 <% end %>

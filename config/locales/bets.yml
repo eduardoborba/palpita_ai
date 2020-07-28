@@ -1,0 +1,7 @@
+---
+pt-BR:
+  activerecord:
+    attributes:
+      bet:
+        home_bet: Palpite da casa
+        visitor_bet: Palpite do visitante
