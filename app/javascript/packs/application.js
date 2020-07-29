@@ -21,3 +21,8 @@ import './src/application.scss'
 import 'bootstrap'
 import 'bootstrap-select'
 import "controllers"
+
+document.addEventListener('turbolinks:load', () => {
+  $('[data-behavior="selectpicker"]').selectpicker();
+});
+
