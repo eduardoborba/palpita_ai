@@ -8,12 +8,12 @@ class PlayerBetLeaguesControllerTest < ActionDispatch::IntegrationTest
     sign_in(players(:obina))
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_player_bet_league_url, params: { bet_league_id: @bet_league.id }
     assert_response :success
   end
 
-  test "should create player_bet_league" do
+  test 'should create player_bet_league' do
     assert_difference('PlayerBetLeague.count') do
       post player_bet_leagues_url, params: {
         player_bet_league_form: {

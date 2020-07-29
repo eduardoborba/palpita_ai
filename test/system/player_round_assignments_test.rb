@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class PlayerRoundAssignmentsTest < ApplicationSystemTestCase
   setup do
-    @player_round_assignment = player_round_assignments(:one)
+    @player_round_assignment = player_round_assignments(:obina_bet_to_round_1)
   end
 
   test "visiting the index" do

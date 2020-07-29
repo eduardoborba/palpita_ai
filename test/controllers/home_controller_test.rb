@@ -5,7 +5,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     sign_in(players(:obina))
   end
 
-  test "should get index" do
+  test 'should get index' do
     get home_index_path
     assert_response :success
   end

@@ -2,47 +2,84 @@ require 'test_helper'
 
 class PlayerRoundAssignmentsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @player_round_assignment = player_round_assignments(:one)
+    @player_round_assignment = player_round_assignments(:obina_bet_to_round_1)
+    @round1 = rounds(:round_1)
+    @round2 = rounds(:round_2)
+    @game = @round2.games.take
+    @bet_league = @round1.bet_league
+    @player = players(:obina)
+
+    PlayerRoundAssignment.where(player: @player, round: @round2).destroy_all
+    sign_in(@player)
   end
 
-  test "should get index" do
-    get player_round_assignments_url
+  test 'should get new' do
+    get new_player_round_assignment_url(round_id: @round1.id)
     assert_response :success
   end
 
-  test "should get new" do
-    get new_player_round_assignment_url
-    assert_response :success
-  end
-
-  test "should create player_round_assignment" do
-    assert_difference('PlayerRoundAssignment.count') do
-      post player_round_assignments_url, params: { player_round_assignment: { bet_league_id: @player_round_assignment.bet_league_id, player_id: @player_round_assignment.player_id, round_id: @player_round_assignment.round_id } }
+  test 'should create player_round_assignment' do
+    assert_difference('PlayerRoundAssignment.count', +1) do
+      assert_difference('Bet.count', +1) do
+        post player_round_assignments_url, params: {
+          player_round_assignment: {
+            bet_league_id: @bet_league.id,
+            player_id: @player.id,
+            round_id: @round2.id,
+            bets_attributes: [{
+              game_id: @game.id,
+              player_id: @player.id,
+              bet_league_id: @bet_league.id,
+              home_bet: 1,
+              visitor_bet: 0
+            }]
+          }
+        }
+      end
     end
 
-    assert_redirected_to player_round_assignment_url(PlayerRoundAssignment.last)
+    assert_redirected_to bet_league_url(@bet_league)
   end
 
-  test "should show player_round_assignment" do
+  test 'should show player_round_assignment' do
     get player_round_assignment_url(@player_round_assignment)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_player_round_assignment_url(@player_round_assignment)
     assert_response :success
   end
 
-  test "should update player_round_assignment" do
-    patch player_round_assignment_url(@player_round_assignment), params: { player_round_assignment: { bet_league_id: @player_round_assignment.bet_league_id, player_id: @player_round_assignment.player_id, round_id: @player_round_assignment.round_id } }
-    assert_redirected_to player_round_assignment_url(@player_round_assignment)
-  end
+  test 'should update player_round_assignment' do
+    @bet1 = @player_round_assignment.bets.first
+    @bet2 = @player_round_assignment.bets.second
 
-  test "should destroy player_round_assignment" do
-    assert_difference('PlayerRoundAssignment.count', -1) do
-      delete player_round_assignment_url(@player_round_assignment)
-    end
+    patch player_round_assignment_url(@player_round_assignment), params: {
+      player_round_assignment: {
+        bet_league_id: @player_round_assignment.bet_league_id,
+        player_id: @player_round_assignment.player_id,
+        round_id: @player_round_assignment.round_id,
+        bets_attributes: [{
+          id: @bet1.id,
+          game_id: @bet1.game_id,
+          player_id: @player.id,
+          player_round_assignment: @player_round_assignment.id,
+          bet_league_id: @bet_league.id,
+          home_bet: 3,
+          visitor_bet: 0
+        }, {
+          id: @bet2.id,
+          game_id: @bet2.game_id,
+          player_id: @player.id,
+          player_round_assignment: @player_round_assignment.id,
+          bet_league_id: @bet_league.id,
+          home_bet: 0,
+          visitor_bet: 1
+        }]
+      }
+    }
 
-    assert_redirected_to player_round_assignments_url
+    assert_redirected_to bet_league_url(@bet_league)
   end
 end

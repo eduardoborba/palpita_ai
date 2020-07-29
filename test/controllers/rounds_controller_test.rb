@@ -2,7 +2,7 @@ require 'test_helper'
 
 class RoundsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @round = rounds(:one)
+    @round = rounds(:round_1)
     @bet_league = bet_leagues(:camp_do_obina)
     @flamengo = teams(:flamengo)
     @vasco = teams(:vasco)
@@ -11,12 +11,12 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
     sign_in(players(:obina))
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_round_url, params: { bet_league_id: @round.bet_league_id }
     assert_response :success
   end
 
-  test "should create round" do
+  test 'should create round' do
     assert_difference('Round.count', +1) do
       assert_difference('Game.count', +2) do
         post rounds_url, params: {
@@ -47,17 +47,12 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
     assert_equal 3, round.round_number
   end
 
-  test "should show round" do
-    get round_url(@round)
-    assert_response :success
-  end
-
-  test "should get edit" do
+  test 'should get edit' do
     get edit_round_url(@round)
     assert_response :success
   end
 
-  test "should update round" do
+  test 'should update round' do
     assert_no_difference('Round.count') do
       assert_difference('Game.count', -1) do
         patch round_url(@round), params: {
@@ -87,7 +82,7 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to bet_league_url(@bet_league)
   end
 
-  test "should destroy round" do
+  test 'should destroy round' do
     assert_difference('Round.count', -1) do
       delete round_url(@round)
     end
