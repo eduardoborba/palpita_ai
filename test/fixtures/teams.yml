@@ -1,17 +1,21 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 flamengo:
+  id: 1
   name: Flamengo
   logo_url: https://cdn.soccerwiki.org/images/logos/clubs/294.png
 
 vasco:
+  id: 2
   name: Vasco da Gama
   logo_url: https://cdn.soccerwiki.org/images/logos/clubs/307.png
 
 corinthians:
+  id: 3
   name: Corinthians
   logo_url: https://cdn.soccerwiki.org/images/logos/clubs/290.png
 
 sao_paulo:
+  id: 4
   name: SC São Paulo
   logo_url: https://cdn.soccerwiki.org/images/logos/clubs/3488.png

@@ -1,5 +1,19 @@
-<h1>New Player Round Assignment</h1>
+<% if @player_round_assignment.errors.any? %>
+  <div class="alert alert-danger mt-2">
+    <h4 class="alert-heading">Erro:</h4>
+
+    <ul>
+      <% @player_round_assignment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="row mb-3">
+  <div class="col">
+    <h1>Palpitar</h1>
+  </div>
+</div>
 
 <%= render 'form', player_round_assignment: @player_round_assignment %>
-
-<%= link_to 'Back', player_round_assignments_path %>

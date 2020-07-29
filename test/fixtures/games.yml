@@ -1,21 +1,26 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+round_1_game_1:
   id: 1
   home_id: 1
   visitor_id: 2
   home_score: 1
   visitor_score: 1
   date_time: 2019-11-30 18:10:08
-  championship_id: 1
   round_id: 1
 
-two:
+round_1_game_2:
   id: 2
   home_id: 3
   visitor_id: 4
   home_score: 1
   visitor_score: 1
   date_time: 2019-11-30 18:10:08
-  championship_id: 1
   round_id: 1
+
+round_2_game_1:
+  id: 3
+  home_id: 1
+  visitor_id: 2
+  date_time: 2019-11-30 18:10:08
+  round_id: 2

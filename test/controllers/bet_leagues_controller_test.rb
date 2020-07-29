@@ -6,17 +6,17 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
     sign_in(players(:obina))
   end
 
-  test "should get index" do
+  test 'should get index' do
     get bet_leagues_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_bet_league_url
     assert_response :success
   end
 
-  test "should create bet_league" do
+  test 'should create bet_league' do
     assert_difference('BetLeague.count', +1) do
       post bet_leagues_url, params: {
         bet_league: {
@@ -34,17 +34,17 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
     assert_equal "Essa nova liga possui um prize pool de 150 reais, e vamos ter no total 20 rodadas, duas por semana.\nBoa sorte!", @bet_league.description
   end
 
-  test "should show bet_league" do
+  test 'should show bet_league' do
     get bet_league_url(@bet_league)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_bet_league_url(@bet_league)
     assert_response :success
   end
 
-  test "should update bet_league" do
+  test 'should update bet_league' do
     assert_no_difference('BetLeague.count') do
       patch bet_league_url(@bet_league), params: {
         bet_league: {
@@ -61,7 +61,7 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
     assert_equal "Essa nova liga possui um prize pool de 150 reais, e vamos ter no total 20 rodadas, duas por semana.\nBoa sorte!", @bet_league.description
   end
 
-  test "should destroy bet_league" do
+  test 'should destroy bet_league' do
     assert_difference('BetLeague.count', -1) do
       delete bet_league_url(@bet_league)
     end

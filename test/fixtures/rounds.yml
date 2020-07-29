@@ -1,6 +1,6 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+round_1:
   id: 1
   bet_league_id: 1
   accept_bets_after: <%= Time.zone.now %>
@@ -8,7 +8,7 @@ one:
   round_number: 1
   status: 1
 
-two:
+round_2:
   id: 2
   bet_league_id: 1
   accept_bets_after: <%= Time.zone.now %>

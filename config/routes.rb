@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
-  resources :player_round_assignments
-  resources :rounds, except: :index
-  resources :championships
-  resources :bets
+  resources :player_round_assignments, only: [:new, :edit, :create, :update, :show]
+  resources :rounds, only: [:new, :edit, :create, :update, :destroy]
   resources :bet_leagues
   resources :player_bet_leagues, only: [:new, :create]
   resources :home, only: [:index]

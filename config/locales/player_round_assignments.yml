@@ -1,0 +1,7 @@
+---
+pt-BR:
+  activerecord:
+    attributes:
+      player_round_assignment:
+        bets: 'Palpites'
+        round: 'Rodada'
