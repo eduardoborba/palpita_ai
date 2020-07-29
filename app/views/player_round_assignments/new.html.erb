@@ -12,7 +12,16 @@
 
 <div class="row mb-3">
   <div class="col">
-    <h1>Palpitar</h1>
+    <h1>
+      Palpitar
+
+      <% if @bet_league.owner == current_player %>
+        <a href="<%= edit_round_url(@round) %>">
+            <%= fa_icon 'edit' %>
+        </a>
+      <% end %>
+    </h1>
+
   </div>
 </div>
 
