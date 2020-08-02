@@ -21,7 +21,8 @@
 
   <div class="row mb-3">
     <div class="col">
-      <%= link_to 'Cancelar', home_index_path, class: 'btn btn-light btn-large btn-block' %>
+      <%= link_to 'Cancelar', bet_league.persisted? ? bet_league_path(bet_league) : home_index_path,
+        class: 'btn btn-light btn-large btn-block' %>
     </div>
   </div>
 <% end %>
