@@ -7,7 +7,7 @@ class Round < ApplicationRecord
 
   accepts_nested_attributes_for :games, allow_destroy: true
 
-  enum status: { unstarted: 0, started: 1, finished: 2 }
+  enum status: { unstarted: 0, open: 1, closed: 2, finished: 3 }
   translate_enum :status
 
   before_create :fill_round_number

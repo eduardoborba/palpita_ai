@@ -6,7 +6,11 @@ class RoundsController < ApplicationController
 
   def new
     @bet_league = BetLeague.find(params[:bet_league_id])
-    @round = @bet_league.rounds.build(accept_bets_after: Time.zone.now, accept_bets_until: 1.week.from_now)
+    @round = @bet_league.rounds.build(
+      accept_bets_after: Time.zone.now,
+      accept_bets_until: 1.week.from_now
+    )
+
     1.times { @round.games.build }
   end
 

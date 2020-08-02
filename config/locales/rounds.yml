@@ -8,5 +8,6 @@ pt-BR:
         accept_bets_until: 'Aceitar Apostas até'
         status_list:
           unstarted: 'Não iniciado'
-          started: 'Iniciado'
+          open: 'Apostas abertas'
+          closed: 'Apostas finalizadas'
           finished: 'Finalizado'

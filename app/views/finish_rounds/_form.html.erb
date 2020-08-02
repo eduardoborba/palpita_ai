@@ -1,0 +1,18 @@
+<%= form_for(@round) do |form| %>
+  <div data-controller="fields-for">
+    <%= form.fields_for :games do |game_form| %>
+
+    <% end %>
+
+  <div class="row mb-3">
+    <div class="col">
+      <%= form.submit('Salvar', class: 'btn btn-primary btn-lg btn-block') %>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col">
+      <%= link_to 'Cancelar', bet_league_path(@bet_league.id), class: 'btn btn-light btn-lg btn-block' %>
+    </div>
+  </div>
+<% end %>
