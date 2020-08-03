@@ -1,0 +1,7 @@
+---
+pt-BR:
+  activerecord:
+    attributes:
+      game:
+        home_score: 'Placar da casa'
+        visitor_score: 'Placar do visitante'

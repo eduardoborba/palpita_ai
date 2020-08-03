@@ -61,7 +61,7 @@ class RoundsController < ApplicationController
       :bet_league_id,
       :accept_bets_after,
       :accept_bets_until,
-      games_attributes: %i[id home_id visitor_id _destroy]
+      games_attributes: %i[id home_id visitor_id bet_league_id _destroy]
     )
   end
 end

@@ -12,7 +12,10 @@ class FinishRoundsController < ApplicationController
     @round.attributes = round_params
 
     if @round.save
-      redirect_to @bet_league, notice: 'Rodada foi editada com sucesso.'
+      FinishRoundWorker.perform_async(@round.id)
+      redirect_to @bet_league,
+        notice: 'Rodada foi finalizada com sucesso. As pontuações podem levar alguns minutos para serem atualizadas
+                 corretamente.'
     else
       render :edit
     end
@@ -22,7 +25,7 @@ class FinishRoundsController < ApplicationController
 
   def round_params
     params.require(:round).permit(
-      games_attributes: %i[id home_score visitor_score]
+      :status, games_attributes: %i[id home_score visitor_score]
     )
   end
 end

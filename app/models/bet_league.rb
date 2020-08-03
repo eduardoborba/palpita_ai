@@ -3,6 +3,7 @@ class BetLeague < ApplicationRecord
   has_many :player_bet_leagues, dependent: :destroy
   has_many :players, through: :player_bet_leagues
   has_many :rounds
+  has_many :games
 
   validates :name, uniqueness: true, presence: true
 
