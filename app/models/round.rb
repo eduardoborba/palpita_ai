@@ -13,6 +13,7 @@ class Round < ApplicationRecord
   before_create :fill_round_number
 
   validates :games, :accept_bets_after, :accept_bets_until, presence: true
+  validates_associated :games
 
   def fill_round_number
     self.round_number = (self.bet_league.rounds.maximum(:round_number) || 0) + 1

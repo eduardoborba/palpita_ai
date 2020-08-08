@@ -1,8 +1,29 @@
-<%= form_for(@round) do |form| %>
-  <div data-controller="fields-for">
-    <%= form.fields_for :games do |game_form| %>
+<%= form_for(@round, url: finish_round_path(@round.id), method: :put) do |form| %>
+  <%= form.hidden_field(:status, value: :finished) %>
 
-    <% end %>
+  <%= form.fields_for :games do |game_form| %>
+    <div class="row align-items-center mb-3">
+      <div class="col-3 text-right">
+        <%= game_form.object.home.name %>
+      </div>
+
+      <div class="col-2">
+        <%= game_form.number_field(:home_score, class: 'form-control') %>
+      </div>
+
+      <div class="col-2 d-flex justify-content-center">
+        <%= fa_icon('times') %>
+      </div>
+
+      <div class="col-2">
+        <%= game_form.number_field(:visitor_score, class: 'form-control') %>
+      </div>
+
+      <div class="col-3">
+        <%= game_form.object.visitor.name %>
+      </div>
+    </div>
+  <% end %>
 
   <div class="row mb-3">
     <div class="col">
