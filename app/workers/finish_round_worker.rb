@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
-require 'sidekiq-scheduler'
-
 class FinishRoundWorker
   include Sidekiq::Worker
 
   def perform(round_id)
     round = Round.find(round_id)
-    player_round_assignments = PlayerRoundAssignment.where(round: round.id)
+    player_round_assignments = round.player_round_assignments
 
     PlayerRoundAssignment.transaction do
       player_round_assignments.each do |player_round_assignment|
@@ -37,23 +35,19 @@ class FinishRoundWorker
     bet_winner_side = winner_side(bet.home_bet, bet.visitor_bet)
     game_winner_side = winner_side(game.home_score, game.visitor_score)
 
-    if bet_winner_side == game_winner_side
-      winner_bet = game_winner_side == :home ? bet.home_bet : bet.visitor_bet
-      loser_bet = game_winner_side == :home ? bet.visitor_bet : bet.home_bet
-      winner_score = game_winner_side == :home ? game.home_score : game.visitor_score
-      loser_score = game_winner_side == :home ? game.visitor_score : game.home_score
+    return 0 if bet_winner_side != game_winner_side
 
-      if winner_bet == winner_score
-        if loser_bet == loser_score
-          10
-        else
-          7
-        end
-      else
-        5
-      end
+    winner_bet = game_winner_side == :home ? bet.home_bet : bet.visitor_bet
+    loser_bet = game_winner_side == :home ? bet.visitor_bet : bet.home_bet
+    winner_score = game_winner_side == :home ? game.home_score : game.visitor_score
+    loser_score = game_winner_side == :home ? game.visitor_score : game.home_score
+
+    if winner_bet == winner_score && loser_bet == loser_score
+      10
+    elsif winner_bet == winner_score
+      7
     else
-      0
+      5
     end
   end
 
