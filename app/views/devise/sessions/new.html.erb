@@ -1,7 +1,6 @@
 <h2>Entrar</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
   <div class="row mb-3">
     <div class="col-6">
       <%= f.label :email, 'Email:' %>

@@ -1,16 +1,31 @@
-<h2>Forgot your password?</h2>
+<h2>Esqueceu sua senha?</h2>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+<% if false %>
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
+    <div class="actions">
+      <%= f.submit "Send me reset password instructions" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<div class="row mb-3">
+  <div class="col">
+    Infelizmente ainda não é possível recuperar sua senha automaticamente.
+    Entre em contato com eduardojoseborba@gmail.com para resetar sua senha.
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col">
+    <%= link_to 'Voltar', new_player_session_path, class: 'btn btn-light btn-lg btn-block' %>
+  </div>
+</div>
