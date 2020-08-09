@@ -3,9 +3,11 @@
     <h1>
       <%= @bet_league.name %>
 
-      <a href="<%= edit_bet_league_path(@bet_league) %>">
-        <%= fa_icon 'edit' %>
-      </a>
+      <% if @bet_league.owner == current_player %>
+        <a href="<%= edit_bet_league_path(@bet_league) %>">
+          <%= fa_icon 'edit' %>
+        </a>
+      <% end %>
     </h1>
   </div>
 </div>

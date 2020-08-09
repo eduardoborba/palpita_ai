@@ -26,7 +26,7 @@
       <%= form.label :accept_bets_after %>:
     </div>
     <div class="col-6">
-      <%= form.datetime_field(:accept_bets_after, class: 'form-control')
+      <%= form.datetime_field(:accept_bets_after, step: '1', class: 'form-control')
       %>
     </div>
   </div>
@@ -36,7 +36,7 @@
       <%= form.label :accept_bets_until %>:
     </div>
     <div class="col-6">
-      <%= form.datetime_field(:accept_bets_until, class: 'form-control')
+      <%= form.datetime_field(:accept_bets_until, step: '1', class: 'form-control')
       %>
     </div>
   </div>
