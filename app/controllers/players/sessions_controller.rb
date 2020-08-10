@@ -2,11 +2,6 @@
 
 class Players::SessionsController < Devise::SessionsController
   # before_action :configure_sign_in_params, only: [:create]
-  before_action :debug
-
-  def debug
-    binding.pry
-  end
   # GET /resource/sign_in
   # def new
   #   super

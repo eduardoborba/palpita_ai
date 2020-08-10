@@ -1,3 +1,15 @@
+<% if @bet_league.errors.any? %>
+  <div class="alert alert-danger mt-2">
+    <h2>Por favor, arrume os erros abaixo:</h2>
+
+    <ul>
+      <% @bet_league.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <h1>Editar Liga</h1>
 
 <%= render 'form', bet_league: @bet_league %>

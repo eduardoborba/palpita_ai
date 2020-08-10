@@ -4,39 +4,39 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="row mb-3">
-    <div class="col-6">
+    <div class="col-sm-6">
       <%= f.label :email, 'Email:' %>
     </div>
-    <div class="col-6">
+    <div class="col-sm-6">
       <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
     </div>
   </div>
 
   <div class="row mb-3">
-    <div class="col-6">
+    <div class="col-sm-6">
       <%= f.label :nome, 'Nome Completo:' %>
     </div>
-    <div class="col-6">
+    <div class="col-sm-6">
       <%= f.text_field :name, autofocus: true, class: 'form-control' %>
     </div>
   </div>
 
   <div class="row mb-3">
-    <div class="col-6">
+    <div class="col-sm-6">
       <%= f.label :password, 'Senha:' %>
     </div>
 
-    <div class="col-6">
+    <div class="col-sm-6">
       <%= f.password_field :password, autocomplete: "new-password", class: 'form-control' %>
     </div>
   </div>
 
   <div class="row mb-3">
-    <div class="col-6">
+    <div class="col-sm-6">
       <%= f.label :password_confirmation, 'Confirmar Senha:' %>
     </div>
 
-    <div class="col-6">
+    <div class="col-sm-6">
       <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control' %>
     </div>
   </div>
