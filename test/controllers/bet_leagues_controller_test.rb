@@ -6,11 +6,6 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
     sign_in(players(:obina))
   end
 
-  test 'should get index' do
-    get bet_leagues_url
-    assert_response :success
-  end
-
   test 'should get new' do
     get new_bet_league_url
     assert_response :success

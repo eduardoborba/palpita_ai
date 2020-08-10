@@ -1,10 +1,8 @@
 class BetLeaguesController < ApplicationController
   before_action :set_bet_league, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_player!
-
-  def index
-    @bet_leagues = BetLeague.all
-  end
+  before_action :block_not_owner, only: [:edit, :update, :destroy]
+  before_action :block_not_participant, only: [:show]
 
   def show; end
 
@@ -29,7 +27,7 @@ class BetLeaguesController < ApplicationController
 
   def update
     if @bet_league.update(bet_league_params)
-      redirect_to @bet_league, notice: 'Bet league was successfully updated.'
+      redirect_to @bet_league, notice: 'Liga foi atualizada com sucesso'
     else
       render :edit
     end
@@ -37,7 +35,7 @@ class BetLeaguesController < ApplicationController
 
   def destroy
     @bet_league.destroy
-    redirect_to bet_leagues_url, notice: 'Bet league was successfully destroyed.'
+    redirect_to bet_leagues_url, notice: 'Liga foi destruída com sucesso.'
   end
 
   private

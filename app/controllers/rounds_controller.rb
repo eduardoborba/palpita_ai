@@ -2,8 +2,6 @@ class RoundsController < ApplicationController
   before_action :set_round, only: %i[show destroy]
   before_action :authenticate_player!
 
-  def show; end
-
   def new
     @bet_league = BetLeague.find(params[:bet_league_id])
     @round = @bet_league.rounds.build(

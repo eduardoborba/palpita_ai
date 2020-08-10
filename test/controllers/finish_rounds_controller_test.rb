@@ -7,12 +7,23 @@ class FinishRoundsControllerTest < ActionDispatch::IntegrationTest
     sign_in(players(:obina))
   end
 
+  test 'should block if round is not closed' do
+    @round.open!
+
+    get edit_finish_round_url(@round)
+    assert_response :redirect
+    assert_redirected_to @bet_league
+  end
+
   test 'should get edit' do
+    @round.closed!
     get edit_finish_round_url(@round)
     assert_response :success
   end
 
   test 'should update round' do
+    @round.closed!
+
     patch finish_round_url(@round), params: {
       round: {
         status: 'finished',
@@ -32,6 +43,7 @@ class FinishRoundsControllerTest < ActionDispatch::IntegrationTest
     }
 
     assert_redirected_to bet_league_url(@bet_league)
+
     @round.reload
     assert_equal 'finished', @round.status
     assert_equal 2, @round.games.first.home_score

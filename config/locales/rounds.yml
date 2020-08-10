@@ -4,10 +4,10 @@ pt-BR:
     attributes:
       round:
         games: 'Jogos'
-        accept_bets_after: 'Aceitar Apostas após'
-        accept_bets_until: 'Aceitar Apostas até'
+        accept_bets_after: 'Aceitar Palpites após'
+        accept_bets_until: 'Aceitar Palpites até'
         status_list:
           unstarted: 'Não iniciado'
-          open: 'Apostas abertas'
-          closed: 'Apostas finalizadas'
+          open: 'Palpites abertos'
+          closed: 'Palpites finalizados'
           finished: 'Finalizado'

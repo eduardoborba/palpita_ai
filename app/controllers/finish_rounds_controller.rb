@@ -1,14 +1,12 @@
 class FinishRoundsController < ApplicationController
   before_action :authenticate_player!
+  before_action :set_bet_league
+  before_action :block_not_owner, only: [:edit, :update]
+  before_action :block_round_not_closed
 
-  def edit
-    @round = Round.find(params[:id])
-    @bet_league = @round.bet_league
-  end
+  def edit; end
 
   def update
-    @round = Round.find(params[:id])
-    @bet_league = @round.bet_league
     @round.attributes = round_params
 
     if @round.save
@@ -22,6 +20,19 @@ class FinishRoundsController < ApplicationController
   end
 
   private
+
+  def block_round_not_closed
+    if @round.unstarted?
+      redirect_to @bet_league, notice: 'Os palpites para essa rodada ainda não começaram.'
+    elsif @round.open?
+      redirect_to @bet_league, notice: 'Os palpites para essa rodada ainda estão abertos.'
+    end
+  end
+
+  def set_bet_league
+    @round = Round.find(params[:id])
+    @bet_league = @round.bet_league
+  end
 
   def round_params
     params.require(:round).permit(
