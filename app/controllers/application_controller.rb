@@ -13,6 +13,10 @@ class ApplicationController < ActionController::Base
     redirect_to home_index_url, notice: 'Você não tem permissão para ver essa liga.'
   end
 
+  def after_sign_out_path_for(resource_or_scope)
+    new_player_session_path
+  end
+
   protected
 
   def configure_permitted_parameters

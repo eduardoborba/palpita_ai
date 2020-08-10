@@ -1,30 +1,32 @@
-<h2>Entrar</h2>
+<div class="signin-form">
+  <h2>Entrar</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="row mb-3">
-    <div class="col-6">
-      <%= f.label :email, 'Email:' %>
-    </div>
-    <div class="col-6">
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
-    </div>
-  </div>
-
-  <div class="row mb-3">
-    <div class="col-6">
-      <%= f.label :password, 'Senha:' %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="row mb-3">
+      <div class="col-sm-3">
+        <%= f.label :email, 'Email:' %>
+      </div>
+      <div class="col-sm-9">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
+      </div>
     </div>
 
-    <div class="col-6">
-      <%= f.password_field :password, autocomplete: "current-password", class: 'form-control' %>
-    </div>
-  </div>
+    <div class="row mb-3">
+      <div class="col-sm-3">
+        <%= f.label :password, 'Senha:' %>
+      </div>
 
-  <div class="row mb-3">
-    <div class="col">
-      <%= f.submit 'Entrar', class: 'btn btn-primary btn-lg btn-block' %>
+      <div class="col-sm-9">
+        <%= f.password_field :password, autocomplete: "current-password", class: 'form-control' %>
+      </div>
     </div>
-  </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+    <div class="row mb-3">
+      <div class="col">
+        <%= f.submit 'Entrar', class: 'btn btn-primary btn-lg btn-block' %>
+      </div>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>
