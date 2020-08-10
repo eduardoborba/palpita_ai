@@ -36,3 +36,6 @@ yarn-debug.log*
 .yarn-integrity
 
 test/reports/*
+
+/public/.DS_Store
+/.DS_Store
