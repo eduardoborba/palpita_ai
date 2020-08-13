@@ -4,6 +4,7 @@
   <%= form.fields_for :games do |game_form| %>
     <div class="row align-items-center mb-3">
       <div class="col-3 text-right">
+        <%= image_tag(game_form.object.home.logo_url, width: '25px') %>
         <%= game_form.object.home.name %>
       </div>
 
@@ -21,6 +22,7 @@
 
       <div class="col-3">
         <%= game_form.object.visitor.name %>
+        <%= image_tag(game_form.object.visitor.logo_url, width: '25px') %>
       </div>
     </div>
   <% end %>

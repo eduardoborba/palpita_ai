@@ -11,6 +11,7 @@
       <%= bet_form.hidden_field(:bet_league_id, class: 'form-control') %>
 
       <div class="col-3 text-right">
+        <%= image_tag(bet_form.object.game.home.logo_url, width: '25px') %>
         <%= bet_form.object.game.home.name %>
       </div>
 
@@ -28,6 +29,7 @@
 
       <div class="col-3">
         <%= bet_form.object.game.visitor.name %>
+        <%= image_tag(bet_form.object.game.visitor.logo_url, width: '25px') %>
       </div>
     </div>
   <% end %>
