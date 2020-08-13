@@ -4,18 +4,21 @@
   <%= form.hidden_field :player_id %>
 
   <%= form.fields_for :bets do |bet_form| %>
-    <div class="row align-items-center mb-3">
+    <div class="row align-items-center mb-3 no-gutters">
       <%= bet_form.hidden_field(:id, class: 'form-control') %>
       <%= bet_form.hidden_field(:game_id, class: 'form-control') %>
       <%= bet_form.hidden_field(:player_id, class: 'form-control') %>
       <%= bet_form.hidden_field(:bet_league_id, class: 'form-control') %>
 
-      <div class="col-3 text-right">
-        <%= image_tag(bet_form.object.game.home.logo_url, width: '25px') %>
+      <div class="col-2 text-right text-truncate">
         <%= bet_form.object.game.home.name %>
       </div>
 
-      <div class="col-2 pl-0 pr-0">
+      <div class="col-1 text-center">
+        <%= image_tag(bet_form.object.game.home.logo_url, width: '25px') %>
+      </div>
+
+      <div class="col-2">
         <%= bet_form.number_field(:home_bet, class: 'form-control') %>
       </div>
 
@@ -23,13 +26,16 @@
         <%= fa_icon('times') %>
       </div>
 
-      <div class="col-2 pl-0 pr-0">
+      <div class="col-2">
         <%= bet_form.number_field(:visitor_bet, class: 'form-control') %>
       </div>
 
-      <div class="col-3">
-        <%= bet_form.object.game.visitor.name %>
+      <div class="col-1 text-center">
         <%= image_tag(bet_form.object.game.visitor.logo_url, width: '25px') %>
+      </div>
+
+      <div class="col-2 text-left text-truncate">
+        <%= bet_form.object.game.visitor.name %>
       </div>
     </div>
   <% end %>
