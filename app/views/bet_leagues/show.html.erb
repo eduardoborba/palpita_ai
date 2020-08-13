@@ -31,14 +31,20 @@
 <div class="row mb-3">
   <div class="col">
     <div class="list-group">
-      <% @bet_league.player_bet_leagues.eager_load(:player).each do |player_bet_league| %>
+      <%
+        @bet_league
+          .player_bet_leagues
+          .order('player_accumulated_score DESC, nailed_count DESC')
+          .eager_load(:player)
+          .each do |player_bet_league| %>
         <div class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">
               <%= player_bet_league.player.name %>
             </h5>
             <small>
-              <%= pluralize(player_bet_league.player_accumulated_score, 'pt') %>
+              <%= player_bet_league.player_accumulated_score %>
+              <%= player_bet_league.player_accumulated_score == 1 ? 'pt' : 'pts' %>
             </small>
           </div>
         </div>
@@ -67,7 +73,8 @@
               Rodada #<%= round.round_number  %>
             </h5>
             <small>
-              <%= pluralize(round.games.size, 'jogos') %>
+              <%= round.games.size %>
+              <%= round.games.size == 1 ? 'jogo' : 'jogos'%>
             </small>
           </div>
 

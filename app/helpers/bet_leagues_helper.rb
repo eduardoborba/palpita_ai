@@ -14,7 +14,7 @@ module BetLeaguesHelper
     when 'closed'
       league_owner? ? edit_finish_round_path(round) : '#self'
     when 'finished'
-      league_owner? ? edit_round_path(round) : '#self'
+      league_owner? ? edit_finish_round_path(round) : '#self'
     end
   end
 

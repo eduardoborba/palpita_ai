@@ -15,11 +15,13 @@
         </h5>
         <small>
           <% player_bet_league = bet_league.player_bet_leagues.find_by(player_id: current_player.id) %>
-          <%= pluralize(player_bet_league.player_accumulated_score, 'pt') %>
+          <%= player_bet_league.player_accumulated_score %>
+          <%= player_bet_league.player_accumulated_score == 1 ? 'pt' : 'pts' %>
         </small>
       </div>
       <small>
-        <%= pluralize(bet_league.player_bet_leagues.count, 'participante') %>
+        <%= bet_league.player_bet_leagues.count %>
+        <%= bet_league.player_bet_leagues.count == 1 ? 'participante' : 'participantes' %>
       </small>
     <% end %>
   <% end %>
