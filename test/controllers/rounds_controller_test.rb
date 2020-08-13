@@ -11,6 +11,11 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
     sign_in(players(:obina))
   end
 
+  test 'should get show' do
+    get round_url(@round)
+    assert_response :success
+  end
+
   test 'should get new' do
     get new_round_url, params: { bet_league_id: @round.bet_league_id }
     assert_response :success

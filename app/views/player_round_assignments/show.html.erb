@@ -6,15 +6,17 @@
   </div>
 </div>
 
-
 <% @player_round_assignment.bets.joins(:game).each do |bet| %>
-  <div class="row align-items-center mb-3">
-    <div class="col-3 text-right">
+  <div class="row align-items-center mb-3 no-gutters">
+    <div class="col-1">
       <%= image_tag(bet.game.home.logo_url, width: '25px') %>
+    </div>
+
+    <div class="col-3 text-right">
       <%= bet.game.home.name %>
     </div>
 
-    <div class="col-2 pl-0 pr-0 text-right">
+    <div class="col-1 text-right">
       <%= bet.home_bet %>
     </div>
 
@@ -22,12 +24,15 @@
       <%= fa_icon('times') %>
     </div>
 
-    <div class="col-2 pl-0 pr-0">
+    <div class="col-1">
       <%= bet.visitor_bet %>
     </div>
 
     <div class="col-3">
       <%= bet.game.visitor.name %>
+    </div>
+
+    <div class="col-1">
       <%= image_tag(bet.game.visitor.logo_url, width: '25px') %>
     </div>
   </div>

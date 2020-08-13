@@ -1,7 +1,7 @@
 class FinishRoundsController < ApplicationController
   before_action :authenticate_player!
   before_action :set_bet_league
-  before_action :block_not_owner, only: [:edit, :update]
+  before_action :block_not_owner, only: %i[edit update]
   before_action :block_round_not_closed
 
   def edit; end

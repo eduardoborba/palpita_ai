@@ -22,15 +22,7 @@ module BetLeaguesHelper
         '#'
       end
     when 'finished'
-      if league_owner?
-        edit_finish_round_path(round)
-      elsif current_player.player_round_assignments.exists?(round: round)
-        player_round_assignment_path(
-          current_player.player_round_assignments.find_by(round: round)
-        )
-      else
-        '#self'
-      end
+      round_path(round)
     end
   end
 

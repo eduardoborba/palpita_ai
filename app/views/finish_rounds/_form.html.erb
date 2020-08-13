@@ -2,13 +2,16 @@
   <%= form.hidden_field(:status, value: :finished) %>
 
   <%= form.fields_for :games do |game_form| %>
-    <div class="row align-items-center mb-3">
-      <div class="col-3 text-right">
+    <div class="row align-items-center mb-3 no-gutters">
+      <div class="col-1">
         <%= image_tag(game_form.object.home.logo_url, width: '25px') %>
+      </div>
+
+      <div class="col-2 text-center">
         <%= game_form.object.home.name %>
       </div>
 
-      <div class="col-2 pl-0 pr-0">
+      <div class="col-2">
         <%= game_form.number_field(:home_score, class: 'form-control') %>
       </div>
 
@@ -16,12 +19,14 @@
         <%= fa_icon('times') %>
       </div>
 
-      <div class="col-2 pl-0 pr-0">
+      <div class="col-2">
         <%= game_form.number_field(:visitor_score, class: 'form-control') %>
       </div>
 
-      <div class="col-3">
+      <div class="col-2 text-center">
         <%= game_form.object.visitor.name %>
+      </div>
+      <div class="col-1">
         <%= image_tag(game_form.object.visitor.logo_url, width: '25px') %>
       </div>
     </div>

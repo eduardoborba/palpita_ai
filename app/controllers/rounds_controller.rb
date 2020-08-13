@@ -1,9 +1,12 @@
 class RoundsController < ApplicationController
-  before_action :set_round, only: %i[show destroy]
+  before_action :set_round, only: %i[show edit update destroy]
+  before_action :set_bet_league, only: %i[new create]
   before_action :authenticate_player!
+  before_action :block_not_owner, only: %i[new edit create update destroy]
+
+  def show; end
 
   def new
-    @bet_league = BetLeague.find(params[:bet_league_id])
     @round = @bet_league.rounds.build(
       accept_bets_after: Time.zone.now,
       accept_bets_until: 1.week.from_now
@@ -12,13 +15,9 @@ class RoundsController < ApplicationController
     1.times { @round.games.build }
   end
 
-  def edit
-    @round = Round.find(params[:id])
-    @bet_league = @round.bet_league
-  end
+  def edit; end
 
   def create
-    @bet_league = BetLeague.find(round_params[:bet_league_id])
     @round = @bet_league.rounds.build
     @round.attributes = round_params
 
@@ -31,8 +30,6 @@ class RoundsController < ApplicationController
   end
 
   def update
-    @round = Round.find(params[:id])
-    @bet_league = @round.bet_league
     @round.attributes = round_params
 
     if @round.save
@@ -52,6 +49,12 @@ class RoundsController < ApplicationController
 
   def set_round
     @round = Round.find(params[:id])
+    @bet_league = @round.bet_league
+  end
+
+  def set_bet_league
+    bet_league_id = params[:bet_league_id] || round_params[:bet_league_id]
+    @bet_league = BetLeague.find(bet_league_id)
   end
 
   def round_params

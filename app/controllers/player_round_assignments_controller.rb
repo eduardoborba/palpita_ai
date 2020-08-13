@@ -1,8 +1,8 @@
 class PlayerRoundAssignmentsController < ApplicationController
-  before_action :set_player_round_assignment, only: [:show, :edit, :update]
-  before_action :set_round, only: [:new, :create]
+  before_action :set_player_round_assignment, only: %i[show edit update]
+  before_action :set_round, only: %i[new create]
   before_action :block_not_participant
-  before_action :block_round_not_open, only: [:new, :edit, :create, :update]
+  before_action :block_round_not_open, only: %i[new edit create update]
 
   def show; end
 

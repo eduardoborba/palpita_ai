@@ -1,8 +1,8 @@
 class BetLeaguesController < ApplicationController
-  before_action :set_bet_league, only: [:show, :edit, :update, :destroy]
+  before_action :set_bet_league, only: %i[show edit update destroy]
   before_action :authenticate_player!
-  before_action :block_not_owner, only: [:edit, :update, :destroy]
-  before_action :block_not_participant, only: [:show]
+  before_action :block_not_owner, only: %i[edit update destroy]
+  before_action :block_not_participant, only: %i[show]
 
   def show; end
 

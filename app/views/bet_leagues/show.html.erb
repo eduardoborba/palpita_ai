@@ -37,7 +37,7 @@
           .order('player_accumulated_score DESC, nailed_count DESC')
           .eager_load(:player)
           .each do |player_bet_league| %>
-        <div class="list-group-item list-group-item-action">
+        <div class="list-group-item">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">
               <%= player_bet_league.player.name %>

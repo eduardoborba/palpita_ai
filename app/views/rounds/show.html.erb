@@ -1,0 +1,82 @@
+<div class="row mb-3">
+  <div class="col">
+    <h1>
+      Rodada <%= @round.round_number %>
+
+      <% if @bet_league.owner == current_player %>
+        <a href="<%= edit_finish_round_path(@round) %>">
+            <%= fa_icon 'edit' %>
+        </a>
+      <% end %>
+    </h1>
+  </div>
+</div>
+
+
+<% @round.games.each do |game| %>
+  <div class="list-group mb-3">
+    <div class="list-group-item">
+      <div class="row align-items-center no-gutters">
+        <div class="col-1">
+          <%= image_tag(game.home.logo_url, width: '25px') %>
+        </div>
+
+        <div class="col-3 text-right">
+          <%= game.home.name %>
+        </div>
+
+        <div class="col-1 text-right">
+          <%= game.home_score %>
+        </div>
+
+        <div class="col-2 d-flex justify-content-center">
+          <%= fa_icon('times') %>
+        </div>
+
+        <div class="col-1">
+          <%= game.visitor_score %>
+        </div>
+
+        <div class="col-3">
+          <%= game.visitor.name %>
+        </div>
+
+        <div class="col-1">
+          <%= image_tag(game.visitor.logo_url, width: '25px') %>
+        </div>
+      </div>
+    </div>
+
+    <% game.bets.joins(:player).each do |bet| %>
+      <div class="list-group-item">
+        <div class="row align-items-center no-gutters">
+          <div class="col-4">
+            <%= bet.player.name %>:
+          </div>
+
+          <div class="col-1 text-right">
+            <%= bet.home_bet %>
+          </div>
+
+          <div class="col-2 d-flex justify-content-center">
+            <%= fa_icon('times') %>
+          </div>
+
+          <div class="col-1">
+            <%= bet.visitor_bet %>
+          </div>
+
+          <div class="col-4">
+            Pontos: <%= bet.bet_score %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+<div class="row mb-3">
+  <div class="col">
+    <%= link_to 'Voltar', bet_league_path(@bet_league.id), class: 'btn btn-light btn-lg btn-block' %>
+  </div>
+</div>
