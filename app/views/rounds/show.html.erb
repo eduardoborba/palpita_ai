@@ -1,7 +1,7 @@
 <div class="row mb-3">
   <div class="col">
     <h1>
-      Rodada <%= @round.round_number %>
+      Rodada #<%= @round.round_number %>
 
       <% if @bet_league.owner == current_player %>
         <a href="<%= edit_finish_round_path(@round) %>">
