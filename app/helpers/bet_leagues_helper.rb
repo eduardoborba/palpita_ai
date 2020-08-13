@@ -14,10 +14,12 @@ module BetLeaguesHelper
     when 'closed'
       if league_owner?
         edit_finish_round_path(round)
-      else
+      elsif current_player.player_round_assignments.exists?(round: round)
         player_round_assignment_path(
           current_player.player_round_assignments.find_by(round: round)
         )
+      else
+        '#'
       end
     when 'finished'
       league_owner? ? edit_finish_round_path(round) : '#self'
