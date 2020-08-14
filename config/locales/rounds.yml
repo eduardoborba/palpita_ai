@@ -7,7 +7,7 @@ pt-BR:
         accept_bets_after: 'Aceitar Palpites após'
         accept_bets_until: 'Aceitar Palpites até'
         status_list:
-          unstarted: 'Não iniciado'
+          unstarted: 'Não iniciada'
           open: 'Palpites abertos'
           closed: 'Palpites finalizados'
-          finished: 'Finalizado'
+          finished: 'Finalizada'

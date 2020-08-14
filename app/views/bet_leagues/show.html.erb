@@ -78,8 +78,27 @@
             </small>
           </div>
 
+          <div class="d-flex w-100 justify-content-between">
+            <small>
+              <%= round.translated_status %>
+            </small>
+            <% if round.finished? && round.player_round_assignments.exists?(player: current_player) %>
+              <small>
+                <% round_score = round.player_round_assignments.find_by(player: current_player).round_score %>
+                <%= round_score %>
+                <%= round_score == 1 ? 'pt' : 'pts' %>
+              </small>
+            <% end %>
+          </div>
+
           <small>
-            <%= round.translated_status %>
+            <% if round.unstarted? %>
+              Inicia em <%= round.accept_bets_after.strftime('%e/%m/%Y as %H:%M') %>
+            <% elsif round.open? %>
+              Fecha em <%= round.accept_bets_until.strftime('%e/%m/%Y as %H:%M') %>
+            <% elsif round.closed? %>
+              Aguardando o organizador
+            <% end %>
           </small>
         <% end %>
       <% end %>

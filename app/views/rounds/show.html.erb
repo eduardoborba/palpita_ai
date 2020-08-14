@@ -2,12 +2,6 @@
   <div class="col">
     <h1>
       Rodada #<%= @round.round_number %>
-
-      <% if @bet_league.owner == current_player %>
-        <a href="<%= edit_finish_round_path(@round) %>">
-            <%= fa_icon 'edit' %>
-        </a>
-      <% end %>
     </h1>
   </div>
 </div>
@@ -73,6 +67,14 @@
         </div>
       </div>
     <% end %>
+  </div>
+<% end %>
+
+<% if @bet_league.owner == current_player %>
+  <div class="row mb-3">
+    <div class="col">
+      <%= link_to 'Finalizar Rodada', edit_finish_round_path(@round), class: 'btn btn-primary btn-lg btn-block' %>
+    </div>
   </div>
 <% end %>
 
