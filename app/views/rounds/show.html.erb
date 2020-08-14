@@ -62,8 +62,10 @@
           </div>
 
           <div class="col-4">
-            <%= bet.bet_score %>
-            <%= bet.bet_score == 1 ? 'pt' : 'pts' %>
+            <% if bet.bet_score.present? %>
+              <%= bet.bet_score %>
+              <%= bet.bet_score == 1 ? 'pt' : 'pts' %>
+            <% end %>
           </div>
         </div>
       </div>
