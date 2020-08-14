@@ -45,7 +45,7 @@
     <% game.bets.joins(:player).each do |bet| %>
       <div class="list-group-item">
         <div class="row align-items-center no-gutters">
-          <div class="col-4 ">
+          <div class="col-4 text-truncate">
             <%= bet.player.name %>:
           </div>
 
@@ -62,7 +62,8 @@
           </div>
 
           <div class="col-4">
-            Pontos: <%= bet.bet_score %>
+            <%= bet.bet_score %>
+            <%= bet.bet_score == 1 ? 'pt' : 'pts' %>
           </div>
         </div>
       </div>
