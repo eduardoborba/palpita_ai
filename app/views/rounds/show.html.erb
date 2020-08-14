@@ -17,12 +17,12 @@
   <div class="list-group mb-3">
     <div class="list-group-item">
       <div class="row align-items-center no-gutters">
-        <div class="col-1">
-          <%= image_tag(game.home.logo_url, width: '25px') %>
+        <div class="col-3 text-right text-truncate">
+          <%= game.home.name %>
         </div>
 
-        <div class="col-3 text-right">
-          <%= game.home.name %>
+        <div class="col-1 text-center">
+          <%= image_tag(game.home.logo_url, width: '25px') %>
         </div>
 
         <div class="col-1 text-right">
@@ -37,20 +37,21 @@
           <%= game.visitor_score %>
         </div>
 
-        <div class="col-3">
+        <div class="col-1 text-center">
+          <%= image_tag(game.visitor.logo_url, width: '25px') %>
+        </div>
+
+        <div class="col-3 text-left text-truncate">
           <%= game.visitor.name %>
         </div>
 
-        <div class="col-1">
-          <%= image_tag(game.visitor.logo_url, width: '25px') %>
-        </div>
       </div>
     </div>
 
     <% game.bets.joins(:player).each do |bet| %>
       <div class="list-group-item">
         <div class="row align-items-center no-gutters">
-          <div class="col-4">
+          <div class="col-4 ">
             <%= bet.player.name %>:
           </div>
 

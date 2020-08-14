@@ -39,3 +39,5 @@ test/reports/*
 
 /public/.DS_Store
 /.DS_Store
+
+/config/application.yml
