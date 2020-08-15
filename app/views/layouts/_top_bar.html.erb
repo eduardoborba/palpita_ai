@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
+
+  <a class="navbar-brand" href="<%= player_signed_in? ? home_index_path : landing_page_index_path %>">
     <%= fa_icon 'futbol' %> Palpita aí
   </a>
   <% if player_signed_in? %>
@@ -9,18 +10,32 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="<%= home_index_path %>">Home <span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Minhas Ligas</a>
+          <a class="nav-link" href="<%= home_index_path %>">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Configurações</a>
+
+        <li class="nav-item <%= 'active' if controller_name == 'how_it_works' %>">
+          <a class="nav-link" href="<%= how_it_works_path %>">Como funciona</a>
         </li>
 
         <li class="nav-item">
           <%= link_to('Logout', destroy_player_session_path, method: :delete, class: "nav-link") %>
+        </li>
+      </ul>
+    </div>
+  <% else %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="<%= new_player_session_path %>">Entrar</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="<%= new_registration_path('player') %>">Registrar-se</a>
         </li>
       </ul>
     </div>
