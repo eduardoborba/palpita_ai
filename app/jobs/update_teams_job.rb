@@ -10,6 +10,7 @@ class UpdateTeamsJob < ApplicationJob
       next if team.blank?
 
       team.update!(
+        name: team_data['name'],
         country: team_data['country'],
         active: team_data['active'] == '1'
       )

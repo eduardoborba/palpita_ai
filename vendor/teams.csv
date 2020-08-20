@@ -78,15 +78,15 @@ id,name,country,created_at,updated_at,logo_url,active
 77,Swansea City,England,2020-03-16 03:12:22.629725,2020-03-16 03:12:22.629725,https://cdn.soccerwiki.org/images/logos/clubs/77.png,1
 78,Swindon Town,England,2020-03-16 03:12:22.632109,2020-03-16 03:12:22.632109,https://cdn.soccerwiki.org/images/logos/clubs/78.png,0
 79,Torquay United,England,2020-03-16 03:12:22.634295,2020-03-16 03:12:22.634295,https://cdn.soccerwiki.org/images/logos/clubs/79.png,0
-80,Tottenham Hotspur,England,2020-03-16 03:12:22.636725,2020-03-16 03:12:22.636725,https://cdn.soccerwiki.org/images/logos/clubs/80.png,1
+80,Tottenham,England,2020-03-16 03:12:22.636725,2020-03-16 03:12:22.636725,https://cdn.soccerwiki.org/images/logos/clubs/80.png,1
 81,Tranmere Rovers,England,2020-03-16 03:12:22.639345,2020-03-16 03:12:22.639345,https://cdn.soccerwiki.org/images/logos/clubs/81.png,0
 82,Walsall,England,2020-03-16 03:12:22.642175,2020-03-16 03:12:22.642175,https://cdn.soccerwiki.org/images/logos/clubs/82.png,0
 83,Watford,England,2020-03-16 03:12:22.644448,2020-03-16 03:12:22.644448,https://cdn.soccerwiki.org/images/logos/clubs/83.png,1
 84,West Bromwich Albion,England,2020-03-16 03:12:22.646757,2020-03-16 03:12:22.646757,https://cdn.soccerwiki.org/images/logos/clubs/84.png,0
-85,West Ham United,England,2020-03-16 03:12:22.658925,2020-03-16 03:12:22.658925,https://cdn.soccerwiki.org/images/logos/clubs/85.png,1
+85,West Ham,England,2020-03-16 03:12:22.658925,2020-03-16 03:12:22.658925,https://cdn.soccerwiki.org/images/logos/clubs/85.png,1
 86,Wigan Athletic,England,2020-03-16 03:12:22.686883,2020-03-16 03:12:22.686883,https://cdn.soccerwiki.org/images/logos/clubs/86.png,0
-87,Milton Keynes Dons,England,2020-03-16 03:12:22.689254,2020-03-16 03:12:22.689254,https://cdn.soccerwiki.org/images/logos/clubs/87.png,1
-88,Wolverhampton Wanderers,England,2020-03-16 03:12:22.691592,2020-03-16 03:12:22.691592,https://cdn.soccerwiki.org/images/logos/clubs/88.png,1
+87,M.K. Dons,England,2020-03-16 03:12:22.689254,2020-03-16 03:12:22.689254,https://cdn.soccerwiki.org/images/logos/clubs/87.png,1
+88,Wolverhampton,England,2020-03-16 03:12:22.691592,2020-03-16 03:12:22.691592,https://cdn.soccerwiki.org/images/logos/clubs/88.png,1
 89,Wrexham,England,2020-03-16 03:12:22.694249,2020-03-16 03:12:22.694249,https://cdn.soccerwiki.org/images/logos/clubs/89.png,0
 90,Wycombe Wanderers,England,2020-03-16 03:12:22.696587,2020-03-16 03:12:22.696587,https://cdn.soccerwiki.org/images/logos/clubs/90.png,0
 91,Yeovil Town,England,2020-03-16 03:12:22.698799,2020-03-16 03:12:22.698799,https://cdn.soccerwiki.org/images/logos/clubs/91.png,0
@@ -94,7 +94,7 @@ id,name,country,created_at,updated_at,logo_url,active
 93,UC AlbinoLeffe,Italy,2020-03-16 03:12:22.702789,2020-03-16 03:12:22.702789,https://cdn.soccerwiki.org/images/logos/clubs/93_1360265668.jpg,0
 94,SS Arezzo,Italy,2020-03-16 03:12:22.715088,2020-03-16 03:12:22.715088,https://cdn.soccerwiki.org/images/logos/clubs/94_1285154497.jpg,0
 95,Ascoli Picchio,Italy,2020-03-16 03:12:22.717783,2020-03-16 03:12:22.717783,https://cdn.soccerwiki.org/images/logos/clubs/95.png,0
-96,Atalanta BC,Italy,2020-03-16 03:12:22.732035,2020-03-16 03:12:22.732035,https://cdn.soccerwiki.org/images/logos/clubs/96.png,1
+96,Atalanta,Italy,2020-03-16 03:12:22.732035,2020-03-16 03:12:22.732035,https://cdn.soccerwiki.org/images/logos/clubs/96.png,1
 97,SSC Bari,Italy,2020-03-16 03:12:22.734472,2020-03-16 03:12:22.734472,https://cdn.soccerwiki.org/images/logos/clubs/97.png,0
 98,Bologna FC,Italy,2020-03-16 03:12:22.746981,2020-03-16 03:12:22.746981,https://cdn.soccerwiki.org/images/logos/clubs/98.png,0
 99,Brescia Calcio,Italy,2020-03-16 03:12:22.749275,2020-03-16 03:12:22.749275,https://cdn.soccerwiki.org/images/logos/clubs/99.png,0
@@ -105,15 +105,15 @@ id,name,country,created_at,updated_at,logo_url,active
 104,Chievo Verona,Italy,2020-03-16 03:12:22.770528,2020-03-16 03:12:22.770528,https://cdn.soccerwiki.org/images/logos/clubs/104.png,0
 105,FC Crotone,Italy,2020-03-16 03:12:22.772997,2020-03-16 03:12:22.772997,https://cdn.soccerwiki.org/images/logos/clubs/105.png,0
 106,Empoli,Italy,2020-03-16 03:12:22.775694,2020-03-16 03:12:22.775694,https://cdn.soccerwiki.org/images/logos/clubs/106.png,0
-107,ACF Fiorentina,Italy,2020-03-16 03:12:22.777931,2020-03-16 03:12:22.777931,https://cdn.soccerwiki.org/images/logos/clubs/107.png,1
+107,Fiorentina,Italy,2020-03-16 03:12:22.777931,2020-03-16 03:12:22.777931,https://cdn.soccerwiki.org/images/logos/clubs/107.png,1
 108,Genoa CFC,Italy,2020-03-16 03:12:22.779679,2020-03-16 03:12:22.779679,https://cdn.soccerwiki.org/images/logos/clubs/108.png,0
 109,Internazionale,Italy,2020-03-16 03:12:22.781476,2020-03-16 03:12:22.781476,https://cdn.soccerwiki.org/images/logos/clubs/109.png,1
 110,Juventus,Italy,2020-03-16 03:12:22.787725,2020-03-16 03:12:22.787725,https://cdn.soccerwiki.org/images/logos/clubs/110.png,1
-111,SS Lazio,Italy,2020-03-16 03:12:22.789712,2020-03-16 03:12:22.789712,https://cdn.soccerwiki.org/images/logos/clubs/111.png,1
+111,Lazio,Italy,2020-03-16 03:12:22.789712,2020-03-16 03:12:22.789712,https://cdn.soccerwiki.org/images/logos/clubs/111.png,1
 112,US Lecce,Italy,2020-03-16 03:12:22.791701,2020-03-16 03:12:22.791701,https://cdn.soccerwiki.org/images/logos/clubs/112.png,0
 113,AS Livorno,Italy,2020-03-16 03:12:22.794244,2020-03-16 03:12:22.794244,https://cdn.soccerwiki.org/images/logos/clubs/113.png,0
 114,ACR Messina,Italy,2020-03-16 03:12:22.796429,2020-03-16 03:12:22.796429,https://cdn.soccerwiki.org/images/logos/clubs/114.jpg,0
-115,AC Milan,Italy,2020-03-16 03:12:22.798711,2020-03-16 03:12:22.798711,https://cdn.soccerwiki.org/images/logos/clubs/115.png,1
+115,Milan,Italy,2020-03-16 03:12:22.798711,2020-03-16 03:12:22.798711,https://cdn.soccerwiki.org/images/logos/clubs/115.png,1
 116,Modena,Italy,2020-03-16 03:12:22.800631,2020-03-16 03:12:22.800631,https://cdn.soccerwiki.org/images/logos/clubs/116.png,0
 117,SSD Palermo,Italy,2020-03-16 03:12:22.802602,2020-03-16 03:12:22.802602,https://cdn.soccerwiki.org/images/logos/clubs/117.png,0
 118,Parma,Italy,2020-03-16 03:12:22.804554,2020-03-16 03:12:22.804554,https://cdn.soccerwiki.org/images/logos/clubs/118.png,0
@@ -121,7 +121,7 @@ id,name,country,created_at,updated_at,logo_url,active
 120,Pescara Calcio,Italy,2020-03-16 03:12:22.808593,2020-03-16 03:12:22.808593,https://cdn.soccerwiki.org/images/logos/clubs/120.png,0
 121,Piacenza Calcio,Italy,2020-03-16 03:12:22.811286,2020-03-16 03:12:22.811286,https://cdn.soccerwiki.org/images/logos/clubs/121_1360788775.jpg,0
 122,Reggina 1914,Italy,2020-03-16 03:12:22.813864,2020-03-16 03:12:22.813864,https://cdn.soccerwiki.org/images/logos/clubs/122.jpg,0
-123,AS Roma,Italy,2020-03-16 03:12:22.815969,2020-03-16 03:12:22.815969,https://cdn.soccerwiki.org/images/logos/clubs/123.png,1
+123,Roma,Italy,2020-03-16 03:12:22.815969,2020-03-16 03:12:22.815969,https://cdn.soccerwiki.org/images/logos/clubs/123.png,1
 124,US Salernitana,Italy,2020-03-16 03:12:22.817902,2020-03-16 03:12:22.817902,https://cdn.soccerwiki.org/images/logos/clubs/124.png,0
 125,Sampdoria,Italy,2020-03-16 03:12:22.819827,2020-03-16 03:12:22.819827,https://cdn.soccerwiki.org/images/logos/clubs/125.png,0
 126,Robur Siena,Italy,2020-03-16 03:12:22.821574,2020-03-16 03:12:22.821574,https://cdn.soccerwiki.org/images/logos/clubs/126.jpg,0
@@ -136,23 +136,23 @@ id,name,country,created_at,updated_at,logo_url,active
 135,Deportivo Alavés,Spain,2020-03-16 03:12:22.84079,2020-03-16 03:12:22.84079,https://cdn.soccerwiki.org/images/logos/clubs/135.png,0
 136,Albacete Balompié,Spain,2020-03-16 03:12:22.843081,2020-03-16 03:12:22.843081,https://cdn.soccerwiki.org/images/logos/clubs/136.png,0
 137,UD Almería,Spain,2020-03-16 03:12:22.844994,2020-03-16 03:12:22.844994,https://cdn.soccerwiki.org/images/logos/clubs/137.png,0
-138,Athletic Club,Spain,2020-03-16 03:12:22.847725,2020-03-16 03:12:22.847725,https://cdn.soccerwiki.org/images/logos/clubs/138.png,1
-139,Atlético Madrid,Spain,2020-03-16 03:12:22.849749,2020-03-16 03:12:22.849749,https://cdn.soccerwiki.org/images/logos/clubs/139.png,1
+138,Athletic Bilbao,Spain,2020-03-16 03:12:22.847725,2020-03-16 03:12:22.847725,https://cdn.soccerwiki.org/images/logos/clubs/138.png,1
+139,Atlético de Madrid,Spain,2020-03-16 03:12:22.849749,2020-03-16 03:12:22.849749,https://cdn.soccerwiki.org/images/logos/clubs/139.png,1
 140,Barcelona,Spain,2020-03-16 03:12:22.851553,2020-03-16 03:12:22.851553,https://cdn.soccerwiki.org/images/logos/clubs/140.png,1
-141,Celta Vigo,Spain,2020-03-16 03:12:22.85336,2020-03-16 03:12:22.85336,https://cdn.soccerwiki.org/images/logos/clubs/141.png,1
-142,Granada CF,Spain,2020-03-16 03:12:22.855164,2020-03-16 03:12:22.855164,https://cdn.soccerwiki.org/images/logos/clubs/142.png,1
+141,Celta de Vigo,Spain,2020-03-16 03:12:22.85336,2020-03-16 03:12:22.85336,https://cdn.soccerwiki.org/images/logos/clubs/141.png,1
+142,Granada,Spain,2020-03-16 03:12:22.855164,2020-03-16 03:12:22.855164,https://cdn.soccerwiki.org/images/logos/clubs/142.png,1
 143,Cádiz CF,Spain,2020-03-16 03:12:22.85703,2020-03-16 03:12:22.85703,https://cdn.soccerwiki.org/images/logos/clubs/143.png,0
 144,Córdoba CF,Spain,2020-03-16 03:12:22.859211,2020-03-16 03:12:22.859211,https://cdn.soccerwiki.org/images/logos/clubs/144.png,0
 145,RC Deportivo,Spain,2020-03-16 03:12:22.86184,2020-03-16 03:12:22.86184,https://cdn.soccerwiki.org/images/logos/clubs/145.png,0
 146,SD Eibar,Spain,2020-03-16 03:12:22.863805,2020-03-16 03:12:22.863805,https://cdn.soccerwiki.org/images/logos/clubs/146.png,0
 147,Elche CF,Spain,2020-03-16 03:12:22.86588,2020-03-16 03:12:22.86588,https://cdn.soccerwiki.org/images/logos/clubs/147.png,0
 148,RCD Espanyol,Spain,2020-03-16 03:12:22.867826,2020-03-16 03:12:22.867826,https://cdn.soccerwiki.org/images/logos/clubs/148.png,0
-149,Getafe CF,Spain,2020-03-16 03:12:22.869617,2020-03-16 03:12:22.869617,https://cdn.soccerwiki.org/images/logos/clubs/149.png,1
+149,Getafe,Spain,2020-03-16 03:12:22.869617,2020-03-16 03:12:22.869617,https://cdn.soccerwiki.org/images/logos/clubs/149.png,1
 150,Gimnàstic Tarragona,Spain,2020-03-16 03:12:22.871415,2020-03-16 03:12:22.871415,https://cdn.soccerwiki.org/images/logos/clubs/150.png,0
-151,Levante UD,Spain,2020-03-16 03:12:22.873703,2020-03-16 03:12:22.873703,https://cdn.soccerwiki.org/images/logos/clubs/151.png,1
+151,Levante,Spain,2020-03-16 03:12:22.873703,2020-03-16 03:12:22.873703,https://cdn.soccerwiki.org/images/logos/clubs/151.png,1
 152,Lleida Esportiu,Spain,2020-03-16 03:12:22.876567,2020-03-16 03:12:22.876567,https://cdn.soccerwiki.org/images/logos/clubs/152.png,0
 153,RCD Mallorca,Spain,2020-03-16 03:12:22.88167,2020-03-16 03:12:22.88167,https://cdn.soccerwiki.org/images/logos/clubs/153.png,0
-154,Málaga CF,Spain,2020-03-16 03:12:22.883524,2020-03-16 03:12:22.883524,https://cdn.soccerwiki.org/images/logos/clubs/154.png,1
+154,Málaga,Spain,2020-03-16 03:12:22.883524,2020-03-16 03:12:22.883524,https://cdn.soccerwiki.org/images/logos/clubs/154.png,1
 155,Atlético Malagueño,Spain,2020-03-16 03:12:22.885465,2020-03-16 03:12:22.885465,https://cdn.soccerwiki.org/images/logos/clubs/155.jpg,0
 156,CD Numancia,Spain,2020-03-16 03:12:22.887509,2020-03-16 03:12:22.887509,https://cdn.soccerwiki.org/images/logos/clubs/156.png,0
 157,CA Osasuna,Spain,2020-03-16 03:12:22.889301,2020-03-16 03:12:22.889301,https://cdn.soccerwiki.org/images/logos/clubs/157.png,0
@@ -170,9 +170,9 @@ id,name,country,created_at,updated_at,logo_url,active
 169,Real Sporting,Spain,2020-03-16 03:12:22.91468,2020-03-16 03:12:22.91468,https://cdn.soccerwiki.org/images/logos/clubs/169.png,0
 170,CD Tenerife,Spain,2020-03-16 03:12:22.916744,2020-03-16 03:12:22.916744,https://cdn.soccerwiki.org/images/logos/clubs/170.png,0
 171,Terrassa FC,Spain,2020-03-16 03:12:22.91892,2020-03-16 03:12:22.91892,https://cdn.soccerwiki.org/images/logos/clubs/171.png,0
-172,Valencia CF,Spain,2020-03-16 03:12:22.921055,2020-03-16 03:12:22.921055,https://cdn.soccerwiki.org/images/logos/clubs/172.png,1
+172,Valencia,Spain,2020-03-16 03:12:22.921055,2020-03-16 03:12:22.921055,https://cdn.soccerwiki.org/images/logos/clubs/172.png,1
 173,Real Valladolid,Spain,2020-03-16 03:12:22.923035,2020-03-16 03:12:22.923035,https://cdn.soccerwiki.org/images/logos/clubs/173.png,1
-174,Villarreal CF,Spain,2020-03-16 03:12:22.930215,2020-03-16 03:12:22.930215,https://cdn.soccerwiki.org/images/logos/clubs/174.png,1
+174,Villarreal,Spain,2020-03-16 03:12:22.930215,2020-03-16 03:12:22.930215,https://cdn.soccerwiki.org/images/logos/clubs/174.png,1
 175,Xerez,Spain,2020-03-16 03:12:22.932315,2020-03-16 03:12:22.932315,https://cdn.soccerwiki.org/images/logos/clubs/175.png,0
 176,Real Zaragoza,Spain,2020-03-16 03:12:22.934241,2020-03-16 03:12:22.934241,https://cdn.soccerwiki.org/images/logos/clubs/176.png,0
 177,ADO Den Haag,Netherlands,2020-03-16 03:12:22.936408,2020-03-16 03:12:22.936408,https://cdn.soccerwiki.org/images/logos/clubs/177.png,0
@@ -216,13 +216,13 @@ id,name,country,created_at,updated_at,logo_url,active
 215,Alverca,Portugal,2020-03-16 03:12:23.038918,2020-03-16 03:12:23.038918,https://cdn.soccerwiki.org/images/logos/clubs/215.png,0
 216,SC Beira-Mar,Portugal,2020-03-16 03:12:23.040873,2020-03-16 03:12:23.040873,https://cdn.soccerwiki.org/images/logos/clubs/216.png,0
 217,Belenenses SAD,Portugal,2020-03-16 03:12:23.043722,2020-03-16 03:12:23.043722,https://cdn.soccerwiki.org/images/logos/clubs/217.png,0
-218,SL Benfica,Portugal,2020-03-16 03:12:23.045958,2020-03-16 03:12:23.045958,https://cdn.soccerwiki.org/images/logos/clubs/218.png,1
+218,Benfica,Portugal,2020-03-16 03:12:23.045958,2020-03-16 03:12:23.045958,https://cdn.soccerwiki.org/images/logos/clubs/218.png,1
 219,Boavista FC,Portugal,2020-03-16 03:12:23.048669,2020-03-16 03:12:23.048669,https://cdn.soccerwiki.org/images/logos/clubs/219.png,0
 220,Desportivo das Aves,Portugal,2020-03-16 03:12:23.050842,2020-03-16 03:12:23.050842,https://cdn.soccerwiki.org/images/logos/clubs/220.png,0
 221,GD Chaves,Portugal,2020-03-16 03:12:23.052755,2020-03-16 03:12:23.052755,https://cdn.soccerwiki.org/images/logos/clubs/221.png,0
 222,GD Estoril Praia,Portugal,2020-03-16 03:12:23.054559,2020-03-16 03:12:23.054559,https://cdn.soccerwiki.org/images/logos/clubs/222.png,0
 223,Estrela da Amadora,Portugal,2020-03-16 03:12:23.056412,2020-03-16 03:12:23.056412,https://cdn.soccerwiki.org/images/logos/clubs/223.jpg,0
-224,FC Porto,Portugal,2020-03-16 03:12:23.058426,2020-03-16 03:12:23.058426,https://cdn.soccerwiki.org/images/logos/clubs/224.png,1
+224,Porto,Portugal,2020-03-16 03:12:23.058426,2020-03-16 03:12:23.058426,https://cdn.soccerwiki.org/images/logos/clubs/224.png,1
 225,CD Feirense,Portugal,2020-03-16 03:12:23.060777,2020-03-16 03:12:23.060777,https://cdn.soccerwiki.org/images/logos/clubs/225.png,0
 226,FC Felgueiras 1932,Portugal,2020-03-16 03:12:23.063341,2020-03-16 03:12:23.063341,https://cdn.soccerwiki.org/images/logos/clubs/226_1283950615.jpg,0
 227,Gil Vicente FC,Portugal,2020-03-16 03:12:23.065421,2020-03-16 03:12:23.065421,https://cdn.soccerwiki.org/images/logos/clubs/227.png,0
@@ -230,29 +230,29 @@ id,name,country,created_at,updated_at,logo_url,active
 229,Leixões SC,Portugal,2020-03-16 03:12:23.069311,2020-03-16 03:12:23.069311,https://cdn.soccerwiki.org/images/logos/clubs/229.png,0
 230,Maia,Portugal,2020-03-16 03:12:23.071469,2020-03-16 03:12:23.071469,https://cdn.soccerwiki.org/images/logos/clubs/230.png,0
 231,Marco,Portugal,2020-03-16 03:12:23.082023,2020-03-16 03:12:23.082023,https://cdn.soccerwiki.org/images/logos/clubs/231_1354035309.jpg,0
-232,CS Maritimo,Portugal,2020-03-16 03:12:23.084168,2020-03-16 03:12:23.084168,https://cdn.soccerwiki.org/images/logos/clubs/232.png,1
-233,Moreirense FC,Portugal,2020-03-16 03:12:23.086108,2020-03-16 03:12:23.086108,https://cdn.soccerwiki.org/images/logos/clubs/233.png,1
+232,Maritimo,Portugal,2020-03-16 03:12:23.084168,2020-03-16 03:12:23.084168,https://cdn.soccerwiki.org/images/logos/clubs/232.png,1
+233,Moreirense,Portugal,2020-03-16 03:12:23.086108,2020-03-16 03:12:23.086108,https://cdn.soccerwiki.org/images/logos/clubs/233.png,1
 234,CD Nacional,Portugal,2020-03-16 03:12:23.088131,2020-03-16 03:12:23.088131,https://cdn.soccerwiki.org/images/logos/clubs/234.png,0
 235,Naval 1º de Maio,Portugal,2020-03-16 03:12:23.089972,2020-03-16 03:12:23.089972,https://cdn.soccerwiki.org/images/logos/clubs/235.png,0
 236,SC Olhanense,Portugal,2020-03-16 03:12:23.091977,2020-03-16 03:12:23.091977,https://cdn.soccerwiki.org/images/logos/clubs/236.png,0
 237,Ovarense,Portugal,2020-03-16 03:12:23.094391,2020-03-16 03:12:23.094391,https://cdn.soccerwiki.org/images/logos/clubs/237.png,0
 238,Paços de Ferreira,Portugal,2020-03-16 03:12:23.096559,2020-03-16 03:12:23.096559,https://cdn.soccerwiki.org/images/logos/clubs/238.png,0
 239,FC Penafiel,Portugal,2020-03-16 03:12:23.098545,2020-03-16 03:12:23.098545,https://cdn.soccerwiki.org/images/logos/clubs/239.png,0
-240,Portimonense SC,Portugal,2020-03-16 03:12:23.100433,2020-03-16 03:12:23.100433,https://cdn.soccerwiki.org/images/logos/clubs/240.png,1
+240,Portimonense,Portugal,2020-03-16 03:12:23.100433,2020-03-16 03:12:23.100433,https://cdn.soccerwiki.org/images/logos/clubs/240.png,1
 241,Rio Ave,Portugal,2020-03-16 03:12:23.102314,2020-03-16 03:12:23.102314,https://cdn.soccerwiki.org/images/logos/clubs/241.png,1
-242,CD Santa Clara,Portugal,2020-03-16 03:12:23.104353,2020-03-16 03:12:23.104353,https://cdn.soccerwiki.org/images/logos/clubs/242.png,1
-243,Sporting de Braga,Portugal,2020-03-16 03:12:23.107116,2020-03-16 03:12:23.107116,https://cdn.soccerwiki.org/images/logos/clubs/243.png,1
+242,Santa Clara,Portugal,2020-03-16 03:12:23.104353,2020-03-16 03:12:23.104353,https://cdn.soccerwiki.org/images/logos/clubs/242.png,1
+243,Sporting Braga,Portugal,2020-03-16 03:12:23.107116,2020-03-16 03:12:23.107116,https://cdn.soccerwiki.org/images/logos/clubs/243.png,1
 244,Sporting Covilhã,Portugal,2020-03-16 03:12:23.109586,2020-03-16 03:12:23.109586,https://cdn.soccerwiki.org/images/logos/clubs/244.png,0
 245,SC Espinho,Portugal,2020-03-16 03:12:23.111563,2020-03-16 03:12:23.111563,https://cdn.soccerwiki.org/images/logos/clubs/245.png,0
 246,Sporting CP,Portugal,2020-03-16 03:12:23.113573,2020-03-16 03:12:23.113573,https://cdn.soccerwiki.org/images/logos/clubs/246.png,0
 247,União de Leiria,Portugal,2020-03-16 03:12:23.115705,2020-03-16 03:12:23.115705,https://cdn.soccerwiki.org/images/logos/clubs/247.png,0
 248,União da Madeira,Portugal,2020-03-16 03:12:23.1178,2020-03-16 03:12:23.1178,https://cdn.soccerwiki.org/images/logos/clubs/248.png,0
 249,Varzim SC,Portugal,2020-03-16 03:12:23.11987,2020-03-16 03:12:23.11987,https://cdn.soccerwiki.org/images/logos/clubs/249.png,0
-250,Vitória de Guimarães,Portugal,2020-03-16 03:12:23.121979,2020-03-16 03:12:23.121979,https://cdn.soccerwiki.org/images/logos/clubs/250.png,1
+250,Vitória Guimarães,Portugal,2020-03-16 03:12:23.121979,2020-03-16 03:12:23.121979,https://cdn.soccerwiki.org/images/logos/clubs/250.png,1
 251,Vitória de Setúbal,Portugal,2020-03-16 03:12:23.128224,2020-03-16 03:12:23.128224,https://cdn.soccerwiki.org/images/logos/clubs/251.png,1
 252,Alania Vladikavkaz,Russia,2020-03-16 03:12:23.130387,2020-03-16 03:12:23.130387,https://cdn.soccerwiki.org/images/logos/clubs/252.png,0
 253,Amkar Perm,Russia,2020-03-16 03:12:23.132384,2020-03-16 03:12:23.132384,https://cdn.soccerwiki.org/images/logos/clubs/253.png,0
-254,CSKA Moskva,Russia,2020-03-16 03:12:23.13419,2020-03-16 03:12:23.13419,https://cdn.soccerwiki.org/images/logos/clubs/254.png,1
+254,CSKA Moskow,Russia,2020-03-16 03:12:23.13419,2020-03-16 03:12:23.13419,https://cdn.soccerwiki.org/images/logos/clubs/254.png,1
 255,Dynamo Moskva,Russia,2020-03-16 03:12:23.136087,2020-03-16 03:12:23.136087,https://cdn.soccerwiki.org/images/logos/clubs/255.png,0
 256,FK Moskva,Russia,2020-03-16 03:12:23.138309,2020-03-16 03:12:23.138309,,0
 257,Krylia Sovetov Samara,Russia,2020-03-16 03:12:23.140912,2020-03-16 03:12:23.140912,https://cdn.soccerwiki.org/images/logos/clubs/257.png,0
@@ -261,16 +261,16 @@ id,name,country,created_at,updated_at,logo_url,active
 260,Rubin Kazan,Russia,2020-03-16 03:12:23.146956,2020-03-16 03:12:23.146956,https://cdn.soccerwiki.org/images/logos/clubs/260.png,0
 261,Saturn,Russia,2020-03-16 03:12:23.148903,2020-03-16 03:12:23.148903,https://cdn.soccerwiki.org/images/logos/clubs/261.jpg,0
 262,Shinnik Yaroslavl,Russia,2020-03-16 03:12:23.150852,2020-03-16 03:12:23.150852,https://cdn.soccerwiki.org/images/logos/clubs/262.png,0
-263,Spartak Moskva,Russia,2020-03-16 03:12:23.152748,2020-03-16 03:12:23.152748,https://cdn.soccerwiki.org/images/logos/clubs/263.png,1
+263,Spartak Moskow,Russia,2020-03-16 03:12:23.152748,2020-03-16 03:12:23.152748,https://cdn.soccerwiki.org/images/logos/clubs/263.png,1
 264,Torpedo Moskva,Russia,2020-03-16 03:12:23.154462,2020-03-16 03:12:23.154462,https://cdn.soccerwiki.org/images/logos/clubs/264.png,0
-265,Zenit Saint Petersburg,Russia,2020-03-16 03:12:23.156227,2020-03-16 03:12:23.156227,https://cdn.soccerwiki.org/images/logos/clubs/265.png,1
+265,Zenit,Russia,2020-03-16 03:12:23.156227,2020-03-16 03:12:23.156227,https://cdn.soccerwiki.org/images/logos/clubs/265.png,1
 266,Almagro,Argentina,2020-03-16 03:12:23.158098,2020-03-16 03:12:23.158098,https://cdn.soccerwiki.org/images/logos/clubs/266.png,0
 267,Argentinos Juniors,Argentina,2020-03-16 03:12:23.160556,2020-03-16 03:12:23.160556,https://cdn.soccerwiki.org/images/logos/clubs/267.png,1
 268,Arsenal de Sarandí,Argentina,2020-03-16 03:12:23.162869,2020-03-16 03:12:23.162869,https://cdn.soccerwiki.org/images/logos/clubs/268.png,1
 269,Banfield,Argentina,2020-03-16 03:12:23.164741,2020-03-16 03:12:23.164741,https://cdn.soccerwiki.org/images/logos/clubs/269.png,1
 270,Boca Juniors,Argentina,2020-03-16 03:12:23.16667,2020-03-16 03:12:23.16667,https://cdn.soccerwiki.org/images/logos/clubs/270.png,1
 271,Colón,Argentina,2020-03-16 03:12:23.168659,2020-03-16 03:12:23.168659,https://cdn.soccerwiki.org/images/logos/clubs/271.png,1
-272,Estudiantes de LP,Argentina,2020-03-16 03:12:23.170644,2020-03-16 03:12:23.170644,https://cdn.soccerwiki.org/images/logos/clubs/272.png,1
+272,Estudiantes,Argentina,2020-03-16 03:12:23.170644,2020-03-16 03:12:23.170644,https://cdn.soccerwiki.org/images/logos/clubs/272.png,1
 273,Gimnasia de Jujuy,Argentina,2020-03-16 03:12:23.1728,2020-03-16 03:12:23.1728,https://cdn.soccerwiki.org/images/logos/clubs/273.png,0
 274,Huracán,Argentina,2020-03-16 03:12:23.175466,2020-03-16 03:12:23.175466,https://cdn.soccerwiki.org/images/logos/clubs/274.png,1
 275,Independiente,Argentina,2020-03-16 03:12:23.17756,2020-03-16 03:12:23.17756,https://cdn.soccerwiki.org/images/logos/clubs/275.png,1
@@ -278,15 +278,15 @@ id,name,country,created_at,updated_at,logo_url,active
 277,Lanús,Argentina,2020-03-16 03:12:23.185712,2020-03-16 03:12:23.185712,https://cdn.soccerwiki.org/images/logos/clubs/277.png,1
 278,Newell’s Old Boys,Argentina,2020-03-16 03:12:23.187692,2020-03-16 03:12:23.187692,https://cdn.soccerwiki.org/images/logos/clubs/278.png,1
 279,Club Olimpo,Argentina,2020-03-16 03:12:23.189511,2020-03-16 03:12:23.189511,https://cdn.soccerwiki.org/images/logos/clubs/279.png,0
-280,Quilmes AC,Argentina,2020-03-16 03:12:23.191511,2020-03-16 03:12:23.191511,https://cdn.soccerwiki.org/images/logos/clubs/280.png,1
-281,Racing Club,Argentina,2020-03-16 03:12:23.193948,2020-03-16 03:12:23.193948,https://cdn.soccerwiki.org/images/logos/clubs/281.png,1
+280,Quilmes,Argentina,2020-03-16 03:12:23.191511,2020-03-16 03:12:23.191511,https://cdn.soccerwiki.org/images/logos/clubs/280.png,1
+281,Racing,Argentina,2020-03-16 03:12:23.193948,2020-03-16 03:12:23.193948,https://cdn.soccerwiki.org/images/logos/clubs/281.png,1
 282,River Plate,Argentina,2020-03-16 03:12:23.196151,2020-03-16 03:12:23.196151,https://cdn.soccerwiki.org/images/logos/clubs/282.png,1
 283,Rosario Central,Argentina,2020-03-16 03:12:23.198164,2020-03-16 03:12:23.198164,https://cdn.soccerwiki.org/images/logos/clubs/283.png,1
 284,San Lorenzo,Argentina,2020-03-16 03:12:23.200089,2020-03-16 03:12:23.200089,https://cdn.soccerwiki.org/images/logos/clubs/284.png,1
 285,Vélez Sársfield,Argentina,2020-03-16 03:12:23.202089,2020-03-16 03:12:23.202089,https://cdn.soccerwiki.org/images/logos/clubs/285.png,1
 286,Atlético Mineiro,Brazil,2020-03-16 03:12:23.204032,2020-03-16 03:12:23.204032,https://cdn.soccerwiki.org/images/logos/clubs/286.png,1
 287,Athletico Paranaense,Brazil,2020-03-16 03:12:23.206356,2020-03-16 03:12:23.206356,https://cdn.soccerwiki.org/images/logos/clubs/287.png,1
-288,Botafogo FR,Brazil,2020-03-16 03:12:23.209005,2020-03-16 03:12:23.209005,https://cdn.soccerwiki.org/images/logos/clubs/288.png,1
+288,Botafogo,Brazil,2020-03-16 03:12:23.209005,2020-03-16 03:12:23.209005,https://cdn.soccerwiki.org/images/logos/clubs/288.png,1
 289,Brasiliense,Brazil,2020-03-16 03:12:23.210933,2020-03-16 03:12:23.210933,https://cdn.soccerwiki.org/images/logos/clubs/289.png,0
 290,Corinthians,Brazil,2020-03-16 03:12:23.212794,2020-03-16 03:12:23.212794,https://cdn.soccerwiki.org/images/logos/clubs/290.png,1
 291,Coritiba,Brazil,2020-03-16 03:12:23.214717,2020-03-16 03:12:23.214717,https://cdn.soccerwiki.org/images/logos/clubs/291.png,1
@@ -294,17 +294,17 @@ id,name,country,created_at,updated_at,logo_url,active
 293,Figueirense,Brazil,2020-03-16 03:12:23.218451,2020-03-16 03:12:23.218451,https://cdn.soccerwiki.org/images/logos/clubs/293.png,1
 294,Flamengo,Brazil,2020-03-16 03:12:23.220201,2020-03-16 03:12:23.220201,https://cdn.soccerwiki.org/images/logos/clubs/294.png,1
 295,Fluminense,Brazil,2020-03-16 03:12:23.222126,2020-03-16 03:12:23.222126,https://cdn.soccerwiki.org/images/logos/clubs/295.png,1
-296,Fortaleza EC,Brazil,2020-03-16 03:12:23.22394,2020-03-16 03:12:23.22394,https://cdn.soccerwiki.org/images/logos/clubs/296.png,1
+296,Fortaleza,Brazil,2020-03-16 03:12:23.22394,2020-03-16 03:12:23.22394,https://cdn.soccerwiki.org/images/logos/clubs/296.png,1
 297,Goiás,Brazil,2020-03-16 03:12:23.226075,2020-03-16 03:12:23.226075,https://cdn.soccerwiki.org/images/logos/clubs/297.png,1
-298,SC Internacional,Brazil,2020-03-16 03:12:23.228442,2020-03-16 03:12:23.228442,https://cdn.soccerwiki.org/images/logos/clubs/298.png,1
+298,Internacional,Brazil,2020-03-16 03:12:23.228442,2020-03-16 03:12:23.228442,https://cdn.soccerwiki.org/images/logos/clubs/298.png,1
 299,Juventude,Brazil,2020-03-16 03:12:23.230236,2020-03-16 03:12:23.230236,https://cdn.soccerwiki.org/images/logos/clubs/299.png,1
 300,Palmeiras,Brazil,2020-03-16 03:12:23.232145,2020-03-16 03:12:23.232145,https://cdn.soccerwiki.org/images/logos/clubs/300.png,1
-301,Paraná Clube,Brazil,2020-03-16 03:12:23.234046,2020-03-16 03:12:23.234046,https://cdn.soccerwiki.org/images/logos/clubs/301.png,1
-302,Paysandu SC,Brazil,2020-03-16 03:12:23.235761,2020-03-16 03:12:23.235761,https://cdn.soccerwiki.org/images/logos/clubs/302.png,1
+301,Paraná,Brazil,2020-03-16 03:12:23.234046,2020-03-16 03:12:23.234046,https://cdn.soccerwiki.org/images/logos/clubs/301.png,1
+302,Paysandu,Brazil,2020-03-16 03:12:23.235761,2020-03-16 03:12:23.235761,https://cdn.soccerwiki.org/images/logos/clubs/302.png,1
 303,Ponte Preta,Brazil,2020-03-16 03:12:23.237538,2020-03-16 03:12:23.237538,https://cdn.soccerwiki.org/images/logos/clubs/303.png,1
-304,Santos FC,Brazil,2020-03-16 03:12:23.239708,2020-03-16 03:12:23.239708,https://cdn.soccerwiki.org/images/logos/clubs/304.png,1
+304,Santos,Brazil,2020-03-16 03:12:23.239708,2020-03-16 03:12:23.239708,https://cdn.soccerwiki.org/images/logos/clubs/304.png,1
 305,São Caetano,Brazil,2020-03-16 03:12:23.242145,2020-03-16 03:12:23.242145,https://cdn.soccerwiki.org/images/logos/clubs/305.png,1
-306,São Paulo FC,Brazil,2020-03-16 03:12:23.243843,2020-03-16 03:12:23.243843,https://cdn.soccerwiki.org/images/logos/clubs/306.png,1
+306,São Paulo,Brazil,2020-03-16 03:12:23.243843,2020-03-16 03:12:23.243843,https://cdn.soccerwiki.org/images/logos/clubs/306.png,1
 307,Vasco da Gama,Brazil,2020-03-16 03:12:23.245542,2020-03-16 03:12:23.245542,https://cdn.soccerwiki.org/images/logos/clubs/307.png,1
 308,AC Ajaccio,France,2020-03-16 03:12:23.247263,2020-03-16 03:12:23.247263,https://cdn.soccerwiki.org/images/logos/clubs/308.png,0
 309,Amiens SC,France,2020-03-16 03:12:23.24916,2020-03-16 03:12:23.24916,https://cdn.soccerwiki.org/images/logos/clubs/309.png,0
@@ -327,37 +327,37 @@ id,name,country,created_at,updated_at,logo_url,active
 326,Le Mans FC,France,2020-03-16 03:12:23.286632,2020-03-16 03:12:23.286632,https://cdn.soccerwiki.org/images/logos/clubs/326.png,0
 327,RC Lens,France,2020-03-16 03:12:23.288623,2020-03-16 03:12:23.288623,https://cdn.soccerwiki.org/images/logos/clubs/327.png,0
 328,FC Lorient,France,2020-03-16 03:12:23.290634,2020-03-16 03:12:23.290634,https://cdn.soccerwiki.org/images/logos/clubs/328.png,0
-329,Olympique Lyonnais,France,2020-03-16 03:12:23.293001,2020-03-16 03:12:23.293001,https://cdn.soccerwiki.org/images/logos/clubs/329.png,1
+329,Lyon,France,2020-03-16 03:12:23.293001,2020-03-16 03:12:23.293001,https://cdn.soccerwiki.org/images/logos/clubs/329.png,1
 330,Olympique Marseille,France,2020-03-16 03:12:23.295526,2020-03-16 03:12:23.295526,https://cdn.soccerwiki.org/images/logos/clubs/330.png,1
 331,FC Metz,France,2020-03-16 03:12:23.297541,2020-03-16 03:12:23.297541,https://cdn.soccerwiki.org/images/logos/clubs/331.png,0
-332,AS Monaco,France,2020-03-16 03:12:23.299633,2020-03-16 03:12:23.299633,https://cdn.soccerwiki.org/images/logos/clubs/332.png,1
-333,Montpellier HSC,France,2020-03-16 03:12:23.301662,2020-03-16 03:12:23.301662,https://cdn.soccerwiki.org/images/logos/clubs/333.png,1
+332,Mônaco,France,2020-03-16 03:12:23.299633,2020-03-16 03:12:23.299633,https://cdn.soccerwiki.org/images/logos/clubs/332.png,1
+333,Montpellier,France,2020-03-16 03:12:23.301662,2020-03-16 03:12:23.301662,https://cdn.soccerwiki.org/images/logos/clubs/333.png,1
 334,AS Nancy Lorraine,France,2020-03-16 03:12:23.303649,2020-03-16 03:12:23.303649,https://cdn.soccerwiki.org/images/logos/clubs/334.png,0
 335,FC Nantes,France,2020-03-16 03:12:23.305881,2020-03-16 03:12:23.305881,https://cdn.soccerwiki.org/images/logos/clubs/335.png,0
-336,OGC Nice,France,2020-03-16 03:12:23.308694,2020-03-16 03:12:23.308694,https://cdn.soccerwiki.org/images/logos/clubs/336.png,1
+336,Nice,France,2020-03-16 03:12:23.308694,2020-03-16 03:12:23.308694,https://cdn.soccerwiki.org/images/logos/clubs/336.png,1
 337,Chamois Niortais,France,2020-03-16 03:12:23.310646,2020-03-16 03:12:23.310646,https://cdn.soccerwiki.org/images/logos/clubs/337.png,0
 338,Paris Saint-Germain,France,2020-03-16 03:12:23.312536,2020-03-16 03:12:23.312536,https://cdn.soccerwiki.org/images/logos/clubs/338.png,1
 339,Stade de Reims,France,2020-03-16 03:12:23.314599,2020-03-16 03:12:23.314599,https://cdn.soccerwiki.org/images/logos/clubs/339.png,0
 340,Stade Rennais,France,2020-03-16 03:12:23.316538,2020-03-16 03:12:23.316538,https://cdn.soccerwiki.org/images/logos/clubs/340.png,0
-341,AS Saint-Etienne,France,2020-03-16 03:12:23.318406,2020-03-16 03:12:23.318406,https://cdn.soccerwiki.org/images/logos/clubs/341.png,1
+341,Saint Etienne,France,2020-03-16 03:12:23.318406,2020-03-16 03:12:23.318406,https://cdn.soccerwiki.org/images/logos/clubs/341.png,1
 342,CS Sedan,France,2020-03-16 03:12:23.320095,2020-03-16 03:12:23.320095,https://cdn.soccerwiki.org/images/logos/clubs/342.png,0
 343,FC Sochaux-Montbéliard,France,2020-03-16 03:12:23.321866,2020-03-16 03:12:23.321866,https://cdn.soccerwiki.org/images/logos/clubs/343.png,0
-344,RC Strasbourg Alsace,France,2020-03-16 03:12:23.323542,2020-03-16 03:12:23.323542,https://cdn.soccerwiki.org/images/logos/clubs/344.png,1
-345,Toulouse FC,France,2020-03-16 03:12:23.325329,2020-03-16 03:12:23.325329,https://cdn.soccerwiki.org/images/logos/clubs/345.png,1
+344,Strasbourg,France,2020-03-16 03:12:23.323542,2020-03-16 03:12:23.323542,https://cdn.soccerwiki.org/images/logos/clubs/344.png,1
+345,Toulouse,France,2020-03-16 03:12:23.325329,2020-03-16 03:12:23.325329,https://cdn.soccerwiki.org/images/logos/clubs/345.png,1
 346,ES Troyes AC,France,2020-03-16 03:12:23.327726,2020-03-16 03:12:23.327726,https://cdn.soccerwiki.org/images/logos/clubs/346.png,0
 347,Dynamo Kyiv,Ukraine,2020-03-16 03:12:23.329923,2020-03-16 03:12:23.329923,https://cdn.soccerwiki.org/images/logos/clubs/347.png,1
 348,Shakhtar Donetsk,Ukraine,2020-03-16 03:12:23.33181,2020-03-16 03:12:23.33181,https://cdn.soccerwiki.org/images/logos/clubs/348.png,1
-349,Beşiktaş JK,Turkey,2020-03-16 03:12:23.333849,2020-03-16 03:12:23.333849,https://cdn.soccerwiki.org/images/logos/clubs/349.png,1
-350,Fenerbahçe SK,Turkey,2020-03-16 03:12:23.335951,2020-03-16 03:12:23.335951,https://cdn.soccerwiki.org/images/logos/clubs/350.png,1
-351,Galatasaray SK,Turkey,2020-03-16 03:12:23.338153,2020-03-16 03:12:23.338153,https://cdn.soccerwiki.org/images/logos/clubs/351.png,1
+349,Beşiktaş,Turkey,2020-03-16 03:12:23.333849,2020-03-16 03:12:23.333849,https://cdn.soccerwiki.org/images/logos/clubs/349.png,1
+350,Fenerbahçe,Turkey,2020-03-16 03:12:23.335951,2020-03-16 03:12:23.335951,https://cdn.soccerwiki.org/images/logos/clubs/350.png,1
+351,Galatasaray,Turkey,2020-03-16 03:12:23.338153,2020-03-16 03:12:23.338153,https://cdn.soccerwiki.org/images/logos/clubs/351.png,1
 352,Trabzonspor,Turkey,2020-03-16 03:12:23.34068,2020-03-16 03:12:23.34068,https://cdn.soccerwiki.org/images/logos/clubs/352.png,0
-353,RSC Anderlecht,Belgium,2020-03-16 03:12:23.343115,2020-03-16 03:12:23.343115,https://cdn.soccerwiki.org/images/logos/clubs/353.png,1
-354,Club Brugge KV,Belgium,2020-03-16 03:12:23.34498,2020-03-16 03:12:23.34498,https://cdn.soccerwiki.org/images/logos/clubs/354.png,1
-355,KRC Genk,Belgium,2020-03-16 03:12:23.347058,2020-03-16 03:12:23.347058,https://cdn.soccerwiki.org/images/logos/clubs/355.png,1
+353,Anderlecht,Belgium,2020-03-16 03:12:23.343115,2020-03-16 03:12:23.343115,https://cdn.soccerwiki.org/images/logos/clubs/353.png,1
+354,Club Brugge,Belgium,2020-03-16 03:12:23.34498,2020-03-16 03:12:23.34498,https://cdn.soccerwiki.org/images/logos/clubs/354.png,1
+355,Genk,Belgium,2020-03-16 03:12:23.347058,2020-03-16 03:12:23.347058,https://cdn.soccerwiki.org/images/logos/clubs/355.png,1
 356,Standard Liège,Belgium,2020-03-16 03:12:23.349034,2020-03-16 03:12:23.349034,https://cdn.soccerwiki.org/images/logos/clubs/356.png,0
 357,SK Rapid Wien,Austria,2020-03-16 03:12:23.350909,2020-03-16 03:12:23.350909,https://cdn.soccerwiki.org/images/logos/clubs/357.png,0
 358,SK Sturm Graz,Austria,2020-03-16 03:12:23.352647,2020-03-16 03:12:23.352647,https://cdn.soccerwiki.org/images/logos/clubs/358.png,0
-359,FC RB Salzburg,Austria,2020-03-16 03:12:23.354527,2020-03-16 03:12:23.354527,https://cdn.soccerwiki.org/images/logos/clubs/359.png,1
+359,RB Salzburg,Austria,2020-03-16 03:12:23.354527,2020-03-16 03:12:23.354527,https://cdn.soccerwiki.org/images/logos/clubs/359.png,1
 360,CSKA Sofia,Bulgary,2020-03-16 03:12:23.356285,2020-03-16 03:12:23.356285,https://cdn.soccerwiki.org/images/logos/clubs/360.png,0
 361,Levski Sofia,Bulgary,2020-03-16 03:12:23.358187,2020-03-16 03:12:23.358187,https://cdn.soccerwiki.org/images/logos/clubs/361.png,0
 362,Colo Colo,Chile,2020-03-16 03:12:23.36058,2020-03-16 03:12:23.36058,https://cdn.soccerwiki.org/images/logos/clubs/362.png,1
@@ -378,13 +378,13 @@ id,name,country,created_at,updated_at,logo_url,active
 377,Dinamo Bucureşti,Romania,2020-03-16 03:12:23.40096,2020-03-16 03:12:23.40096,https://cdn.soccerwiki.org/images/logos/clubs/377.png,0
 378,Rapid Bucureşti,Romania,2020-03-16 03:12:23.404545,2020-03-16 03:12:23.404545,https://cdn.soccerwiki.org/images/logos/clubs/378.png,0
 379,FCSB,Romania,2020-03-16 03:12:23.407807,2020-03-16 03:12:23.407807,https://cdn.soccerwiki.org/images/logos/clubs/379.png,0
-380,Crvena Zvezda,Serbia,2020-03-16 03:12:23.410456,2020-03-16 03:12:23.410456,https://cdn.soccerwiki.org/images/logos/clubs/380.png,1
+380,Estrela Vermelha,Serbia,2020-03-16 03:12:23.410456,2020-03-16 03:12:23.410456,https://cdn.soccerwiki.org/images/logos/clubs/380.png,1
 381,FK Partizan,Serbia,2020-03-16 03:12:23.415219,2020-03-16 03:12:23.415219,https://cdn.soccerwiki.org/images/logos/clubs/381.png,0
-382,FC Basel,Switzerland,2020-03-16 03:12:23.417437,2020-03-16 03:12:23.417437,https://cdn.soccerwiki.org/images/logos/clubs/382.png,1
+382,Basel,Switzerland,2020-03-16 03:12:23.417437,2020-03-16 03:12:23.417437,https://cdn.soccerwiki.org/images/logos/clubs/382.png,1
 383,FC Zurich,Switzerland,2020-03-16 03:12:23.419658,2020-03-16 03:12:23.419658,https://cdn.soccerwiki.org/images/logos/clubs/383.png,0
 384,Grasshopper-Club,Switzerland,2020-03-16 03:12:23.421821,2020-03-16 03:12:23.421821,https://cdn.soccerwiki.org/images/logos/clubs/384.png,0
-385,1. FC Köln,Germany,2020-03-16 03:12:23.424013,2020-03-16 03:12:23.424013,https://cdn.soccerwiki.org/images/logos/clubs/385.png,1
-386,1. FC Nürnberg,Germany,2020-03-16 03:12:23.426438,2020-03-16 03:12:23.426438,https://cdn.soccerwiki.org/images/logos/clubs/386.png,1
+385,Köln,Germany,2020-03-16 03:12:23.424013,2020-03-16 03:12:23.424013,https://cdn.soccerwiki.org/images/logos/clubs/385.png,1
+386,Nürnberg,Germany,2020-03-16 03:12:23.426438,2020-03-16 03:12:23.426438,https://cdn.soccerwiki.org/images/logos/clubs/386.png,1
 387,1. FC Saarbrücken,Germany,2020-03-16 03:12:23.429349,2020-03-16 03:12:23.429349,https://cdn.soccerwiki.org/images/logos/clubs/387.png,0
 388,Alemannia Aachen,Germany,2020-03-16 03:12:23.43404,2020-03-16 03:12:23.43404,https://cdn.soccerwiki.org/images/logos/clubs/388.jpg,0
 389,Arminia Bielefeld,Germany,2020-03-16 03:12:23.436792,2020-03-16 03:12:23.436792,https://cdn.soccerwiki.org/images/logos/clubs/389.png,0
@@ -393,31 +393,31 @@ id,name,country,created_at,updated_at,logo_url,active
 392,Borussia Dortmund,Germany,2020-03-16 03:12:23.449254,2020-03-16 03:12:23.449254,https://cdn.soccerwiki.org/images/logos/clubs/392.png,1
 393,Borussia Mönchengladbach,Germany,2020-03-16 03:12:23.451786,2020-03-16 03:12:23.451786,https://cdn.soccerwiki.org/images/logos/clubs/393.png,1
 394,Dynamo Dresden,Germany,2020-03-16 03:12:23.453855,2020-03-16 03:12:23.453855,https://cdn.soccerwiki.org/images/logos/clubs/394.png,1
-395,Eintracht Frankfurt,Germany,2020-03-16 03:12:23.455789,2020-03-16 03:12:23.455789,https://cdn.soccerwiki.org/images/logos/clubs/395.png,1
+395,Frankfurt,Germany,2020-03-16 03:12:23.455789,2020-03-16 03:12:23.455789,https://cdn.soccerwiki.org/images/logos/clubs/395.png,1
 396,Energie Cottbus,Germany,2020-03-16 03:12:23.458103,2020-03-16 03:12:23.458103,https://cdn.soccerwiki.org/images/logos/clubs/396.png,0
 397,Erzgebirge Aue,Germany,2020-03-16 03:12:23.461074,2020-03-16 03:12:23.461074,https://cdn.soccerwiki.org/images/logos/clubs/397.png,0
-398,FC Schalke 04,Germany,2020-03-16 03:12:23.464404,2020-03-16 03:12:23.464404,https://cdn.soccerwiki.org/images/logos/clubs/398.png,1
+398,Schalke 04,Germany,2020-03-16 03:12:23.464404,2020-03-16 03:12:23.464404,https://cdn.soccerwiki.org/images/logos/clubs/398.png,1
 399,1. FSV Mainz 05,Germany,2020-03-16 03:12:23.469352,2020-03-16 03:12:23.469352,https://cdn.soccerwiki.org/images/logos/clubs/399.png,0
 400,SpVgg Greuther Fürth,Germany,2020-03-16 03:12:23.471557,2020-03-16 03:12:23.471557,https://cdn.soccerwiki.org/images/logos/clubs/400.png,0
-401,Hamburger SV,Germany,2020-03-16 03:12:23.481403,2020-03-16 03:12:23.481403,https://cdn.soccerwiki.org/images/logos/clubs/401.png,1
-402,Hannover 96,Germany,2020-03-16 03:12:23.492242,2020-03-16 03:12:23.492242,https://cdn.soccerwiki.org/images/logos/clubs/402.png,1
+401,Hamburger,Germany,2020-03-16 03:12:23.481403,2020-03-16 03:12:23.481403,https://cdn.soccerwiki.org/images/logos/clubs/401.png,1
+402,Hannover,Germany,2020-03-16 03:12:23.492242,2020-03-16 03:12:23.492242,https://cdn.soccerwiki.org/images/logos/clubs/402.png,1
 403,Hansa Rostock,Germany,2020-03-16 03:12:23.49515,2020-03-16 03:12:23.49515,https://cdn.soccerwiki.org/images/logos/clubs/403.png,0
-404,Hertha BSC,Germany,2020-03-16 03:12:23.499665,2020-03-16 03:12:23.499665,https://cdn.soccerwiki.org/images/logos/clubs/404.png,1
+404,Hertha Berlin,Germany,2020-03-16 03:12:23.499665,2020-03-16 03:12:23.499665,https://cdn.soccerwiki.org/images/logos/clubs/404.png,1
 405,1. FC Kaiserslautern,Germany,2020-03-16 03:12:23.503334,2020-03-16 03:12:23.503334,https://cdn.soccerwiki.org/images/logos/clubs/405.png,0
 406,Karlsruher SC,Germany,2020-03-16 03:12:23.506004,2020-03-16 03:12:23.506004,https://cdn.soccerwiki.org/images/logos/clubs/406.png,0
 407,Rot-Weiß Ahlen,Germany,2020-03-16 03:12:23.509202,2020-03-16 03:12:23.509202,https://cdn.soccerwiki.org/images/logos/clubs/407.png,0
 408,MSV Duisburg,Germany,2020-03-16 03:12:23.512682,2020-03-16 03:12:23.512682,https://cdn.soccerwiki.org/images/logos/clubs/408.png,0
 409,Rot-Weiß Oberhausen,Germany,2020-03-16 03:12:23.518294,2020-03-16 03:12:23.518294,https://cdn.soccerwiki.org/images/logos/clubs/409_1360788830.jpg,0
 410,Rot-Weiß Erfurt,Germany,2020-03-16 03:12:23.520273,2020-03-16 03:12:23.520273,https://cdn.soccerwiki.org/images/logos/clubs/410.png,0
-411,SC Freiburg,Germany,2020-03-16 03:12:23.52227,2020-03-16 03:12:23.52227,https://cdn.soccerwiki.org/images/logos/clubs/411.png,1
+411,Freiburg,Germany,2020-03-16 03:12:23.52227,2020-03-16 03:12:23.52227,https://cdn.soccerwiki.org/images/logos/clubs/411.png,1
 412,Rot-Weiß Essen,Germany,2020-03-16 03:12:23.524435,2020-03-16 03:12:23.524435,https://cdn.soccerwiki.org/images/logos/clubs/412.png,0
 413,SSV Reutlingen 05,Germany,2020-03-16 03:12:23.526636,2020-03-16 03:12:23.526636,https://cdn.soccerwiki.org/images/logos/clubs/413.png,0
 414,Werder Bremen,Germany,2020-03-16 03:12:23.529324,2020-03-16 03:12:23.529324,https://cdn.soccerwiki.org/images/logos/clubs/414.png,1
 415,TSV 1860 München,Germany,2020-03-16 03:12:23.531338,2020-03-16 03:12:23.531338,https://cdn.soccerwiki.org/images/logos/clubs/415.png,0
 416,SpVgg Unterhaching,Germany,2020-03-16 03:12:23.533193,2020-03-16 03:12:23.533193,https://cdn.soccerwiki.org/images/logos/clubs/416.png,0
-417,VfB Stuttgart,Germany,2020-03-16 03:12:23.534909,2020-03-16 03:12:23.534909,https://cdn.soccerwiki.org/images/logos/clubs/417.png,1
+417,Stuttgart,Germany,2020-03-16 03:12:23.534909,2020-03-16 03:12:23.534909,https://cdn.soccerwiki.org/images/logos/clubs/417.png,1
 418,VfL Bochum,Germany,2020-03-16 03:12:23.536758,2020-03-16 03:12:23.536758,https://cdn.soccerwiki.org/images/logos/clubs/418.png,0
-419,VfL Wolfsburg,Germany,2020-03-16 03:12:23.539039,2020-03-16 03:12:23.539039,https://cdn.soccerwiki.org/images/logos/clubs/419.png,1
+419,Wolfsburg,Germany,2020-03-16 03:12:23.539039,2020-03-16 03:12:23.539039,https://cdn.soccerwiki.org/images/logos/clubs/419.png,1
 420,Aberdeen,Scotland,2020-03-16 03:12:23.541624,2020-03-16 03:12:23.541624,https://cdn.soccerwiki.org/images/logos/clubs/420.png,0
 421,Celtic,Scotland,2020-03-16 03:12:23.543525,2020-03-16 03:12:23.543525,https://cdn.soccerwiki.org/images/logos/clubs/421.png,1
 422,Dundee United,Scotland,2020-03-16 03:12:23.545266,2020-03-16 03:12:23.545266,https://cdn.soccerwiki.org/images/logos/clubs/422.png,0
@@ -428,7 +428,7 @@ id,name,country,created_at,updated_at,logo_url,active
 427,Livingston,Scotland,2020-03-16 03:12:23.554614,2020-03-16 03:12:23.554614,https://cdn.soccerwiki.org/images/logos/clubs/427.png,0
 428,Motherwell,Scotland,2020-03-16 03:12:23.556688,2020-03-16 03:12:23.556688,https://cdn.soccerwiki.org/images/logos/clubs/428.png,0
 429,Rangers,Scotland,2020-03-16 03:12:23.558791,2020-03-16 03:12:23.558791,https://cdn.soccerwiki.org/images/logos/clubs/429.png,0
-430,Lille OSC,France,2020-03-16 03:12:23.561395,2020-03-16 03:12:23.561395,https://cdn.soccerwiki.org/images/logos/clubs/432.png,1
+430,Lille,France,2020-03-16 03:12:23.561395,2020-03-16 03:12:23.561395,https://cdn.soccerwiki.org/images/logos/clubs/432.png,1
 431,Valenciennes,France,2020-03-16 03:12:23.563275,2020-03-16 03:12:23.563275,https://cdn.soccerwiki.org/images/logos/clubs/434.png,0
 432,Chornomorets Odessa,France,2020-03-16 03:12:23.565102,2020-03-16 03:12:23.565102,https://cdn.soccerwiki.org/images/logos/clubs/435.png,0
 433,FC Sète,France,2020-03-16 03:12:23.566981,2020-03-16 03:12:23.566981,https://cdn.soccerwiki.org/images/logos/clubs/436.jpg,0
@@ -466,7 +466,7 @@ id,name,country,created_at,updated_at,logo_url,active
 465,Djurgårdens IF,Sweden,2020-03-16 03:12:23.638766,2020-03-16 03:12:23.638766,https://cdn.soccerwiki.org/images/logos/clubs/470.png,0
 466,IFK Göteborg,Sweden,2020-03-16 03:12:23.641222,2020-03-16 03:12:23.641222,https://cdn.soccerwiki.org/images/logos/clubs/471.png,0
 467,Hammarby IF,Sweden,2020-03-16 03:12:23.643761,2020-03-16 03:12:23.643761,https://cdn.soccerwiki.org/images/logos/clubs/472.png,0
-468,Malmö FF,Sweden,2020-03-16 03:12:23.645782,2020-03-16 03:12:23.645782,https://cdn.soccerwiki.org/images/logos/clubs/473.png,1
+468,Malmö,Sweden,2020-03-16 03:12:23.645782,2020-03-16 03:12:23.645782,https://cdn.soccerwiki.org/images/logos/clubs/473.png,1
 469,Maccabi Haifa,Israel,2020-03-16 03:12:23.647804,2020-03-16 03:12:23.647804,https://cdn.soccerwiki.org/images/logos/clubs/474.png,0
 470,Mantova FC,Italy,2020-03-16 03:12:23.649793,2020-03-16 03:12:23.649793,https://cdn.soccerwiki.org/images/logos/clubs/475.jpg,0
 471,AC Rimini,Italy,2020-03-16 03:12:23.651674,2020-03-16 03:12:23.651674,https://cdn.soccerwiki.org/images/logos/clubs/476.png,0
@@ -475,7 +475,7 @@ id,name,country,created_at,updated_at,logo_url,active
 474,Chester FC,England,2020-03-16 03:12:23.676457,2020-03-16 03:12:23.676457,https://cdn.soccerwiki.org/images/logos/clubs/480.png,0
 475,Fortuna Düsseldorf,Germany,2020-03-16 03:12:23.678433,2020-03-16 03:12:23.678433,https://cdn.soccerwiki.org/images/logos/clubs/481.png,1
 476,Eintracht Braunschweig,Germany,2020-03-16 03:12:23.680534,2020-03-16 03:12:23.680534,https://cdn.soccerwiki.org/images/logos/clubs/482.png,0
-477,SC Paderborn 07,Germany,2020-03-16 03:12:23.682409,2020-03-16 03:12:23.682409,https://cdn.soccerwiki.org/images/logos/clubs/483.png,1
+477,Paderborn,Germany,2020-03-16 03:12:23.682409,2020-03-16 03:12:23.682409,https://cdn.soccerwiki.org/images/logos/clubs/483.png,1
 478,Wacker Burghausen,Germany,2020-03-16 03:12:23.684276,2020-03-16 03:12:23.684276,https://cdn.soccerwiki.org/images/logos/clubs/484_1358131413.jpg,0
 479,Sportfreunde Siegen,Germany,2020-03-16 03:12:23.686006,2020-03-16 03:12:23.686006,https://cdn.soccerwiki.org/images/logos/clubs/485.jpg,0
 480,Kickers Offenbach,Germany,2020-03-16 03:12:23.687733,2020-03-16 03:12:23.687733,https://cdn.soccerwiki.org/images/logos/clubs/486_1222619408.jpg,0
@@ -512,7 +512,7 @@ id,name,country,created_at,updated_at,logo_url,active
 511,Urawa Red Diamonds,Japan,2020-03-16 03:12:23.750347,2020-03-16 03:12:23.750347,https://cdn.soccerwiki.org/images/logos/clubs/517.png,0
 512,Kashima Antlers,Japan,2020-03-16 03:12:23.751965,2020-03-16 03:12:23.751965,https://cdn.soccerwiki.org/images/logos/clubs/518.png,0
 513,Tiro Federal,Argentina,2020-03-16 03:12:23.753574,2020-03-16 03:12:23.753574,https://cdn.soccerwiki.org/images/logos/clubs/519.png,0
-514,KAA Gent,Belgium,2020-03-16 03:12:23.755163,2020-03-16 03:12:23.755163,https://cdn.soccerwiki.org/images/logos/clubs/520.png,1
+514,Gent,Belgium,2020-03-16 03:12:23.755163,2020-03-16 03:12:23.755163,https://cdn.soccerwiki.org/images/logos/clubs/520.png,1
 515,Zamalek SC,,2020-03-16 03:12:23.75703,2020-03-16 03:12:23.75703,https://cdn.soccerwiki.org/images/logos/clubs/521.png,0
 516,Al Ahly,,2020-03-16 03:12:23.759126,2020-03-16 03:12:23.759126,https://cdn.soccerwiki.org/images/logos/clubs/522.png,0
 517,Shimizu S-Pulse,,2020-03-16 03:12:23.761928,2020-03-16 03:12:23.761928,https://cdn.soccerwiki.org/images/logos/clubs/523.png,0
@@ -603,18 +603,18 @@ id,name,country,created_at,updated_at,logo_url,active
 602,Arsenal Kyiv,,2020-03-16 03:12:23.982797,2020-03-16 03:12:23.982797,https://cdn.soccerwiki.org/images/logos/clubs/610.png,0
 603,Metalurh Donetsk,,2020-03-16 03:12:23.985238,2020-03-16 03:12:23.985238,,0
 604,Gretna 2008,,2020-03-16 03:12:23.990004,2020-03-16 03:12:23.990004,https://cdn.soccerwiki.org/images/logos/clubs/612.jpg,0
-605,Club Olimpia,Paraguay,2020-03-16 03:12:23.992246,2020-03-16 03:12:23.992246,https://cdn.soccerwiki.org/images/logos/clubs/613.png,1
+605,Olimpia,Paraguay,2020-03-16 03:12:23.992246,2020-03-16 03:12:23.992246,https://cdn.soccerwiki.org/images/logos/clubs/613.png,1
 606,Barnet,,2020-03-16 03:12:23.994379,2020-03-16 03:12:23.994379,https://cdn.soccerwiki.org/images/logos/clubs/614.png,0
 607,Cerro Porteño,Paraguay,2020-03-16 03:12:23.996745,2020-03-16 03:12:23.996745,https://cdn.soccerwiki.org/images/logos/clubs/615.png,1
-608,Club Libertad,Paraguay,2020-03-16 03:12:24.002429,2020-03-16 03:12:24.002429,https://cdn.soccerwiki.org/images/logos/clubs/616.png,1
-609,Club Guaraní,Paraguay,2020-03-16 03:12:24.005339,2020-03-16 03:12:24.005339,https://cdn.soccerwiki.org/images/logos/clubs/617.png,1
+608,Libertad,Paraguay,2020-03-16 03:12:24.002429,2020-03-16 03:12:24.002429,https://cdn.soccerwiki.org/images/logos/clubs/616.png,1
+609,Guaraní,Paraguay,2020-03-16 03:12:24.005339,2020-03-16 03:12:24.005339,https://cdn.soccerwiki.org/images/logos/clubs/617.png,1
 610,Millonarios,Colombia,2020-03-16 03:12:24.008813,2020-03-16 03:12:24.008813,https://cdn.soccerwiki.org/images/logos/clubs/618.png,1
 611,Once Caldas,Colombia,2020-03-16 03:12:24.011112,2020-03-16 03:12:24.011112,https://cdn.soccerwiki.org/images/logos/clubs/619.png,1
 612,América de Cali,Colombia,2020-03-16 03:12:24.013181,2020-03-16 03:12:24.013181,https://cdn.soccerwiki.org/images/logos/clubs/620.png,1
 613,Alianza Lima,Peru,2020-03-16 03:12:24.015303,2020-03-16 03:12:24.015303,https://cdn.soccerwiki.org/images/logos/clubs/621.png,1
-614,Universitario de Deportes,Peru,2020-03-16 03:12:24.017204,2020-03-16 03:12:24.017204,https://cdn.soccerwiki.org/images/logos/clubs/622.png,1
-615,Danubio,Uruguay,2020-03-16 03:12:24.019086,2020-03-16 03:12:24.019086,https://cdn.soccerwiki.org/images/logos/clubs/623.png,1
-616,Defensor Sporting,Uruguay,2020-03-16 03:12:24.020856,2020-03-16 03:12:24.020856,https://cdn.soccerwiki.org/images/logos/clubs/624.png,1
+614,Universitario,Peru,2020-03-16 03:12:24.017204,2020-03-16 03:12:24.017204,https://cdn.soccerwiki.org/images/logos/clubs/622.png,1
+615,Danúbio,Uruguay,2020-03-16 03:12:24.019086,2020-03-16 03:12:24.019086,https://cdn.soccerwiki.org/images/logos/clubs/623.png,1
+616,Defensor,Uruguay,2020-03-16 03:12:24.020856,2020-03-16 03:12:24.020856,https://cdn.soccerwiki.org/images/logos/clubs/624.png,1
 617,Al Hilal SC,,2020-03-16 03:12:24.022629,2020-03-16 03:12:24.022629,https://cdn.soccerwiki.org/images/logos/clubs/625.jpg,0
 618,Al Shabab,,2020-03-16 03:12:24.024521,2020-03-16 03:12:24.024521,https://cdn.soccerwiki.org/images/logos/clubs/626.png,0
 619,Al Ittihad,,2020-03-16 03:12:24.026981,2020-03-16 03:12:24.026981,https://cdn.soccerwiki.org/images/logos/clubs/627.png,0
@@ -644,7 +644,7 @@ id,name,country,created_at,updated_at,logo_url,active
 643,Osmanlispor FK,,2020-03-16 03:12:24.090916,2020-03-16 03:12:24.090916,https://cdn.soccerwiki.org/images/logos/clubs/653.png,0
 644,Sportivo Luqueño,Paraguay,2020-03-16 03:12:24.093351,2020-03-16 03:12:24.093351,https://cdn.soccerwiki.org/images/logos/clubs/654.png,1
 645,Deportivo Quito,Ecuador,2020-03-16 03:12:24.095859,2020-03-16 03:12:24.095859,https://cdn.soccerwiki.org/images/logos/clubs/655.png,0
-646,Liga de Quito,Ecuador,2020-03-16 03:12:24.098031,2020-03-16 03:12:24.098031,https://cdn.soccerwiki.org/images/logos/clubs/656.png,1
+646,LDU,Ecuador,2020-03-16 03:12:24.098031,2020-03-16 03:12:24.098031,https://cdn.soccerwiki.org/images/logos/clubs/656.png,1
 647,El Nacional,,2020-03-16 03:12:24.104272,2020-03-16 03:12:24.104272,https://cdn.soccerwiki.org/images/logos/clubs/657.png,0
 648,Barcelona SC,Ecuador,2020-03-16 03:12:24.108779,2020-03-16 03:12:24.108779,https://cdn.soccerwiki.org/images/logos/clubs/658.png,1
 649,CD Olmedo,,2020-03-16 03:12:24.111048,2020-03-16 03:12:24.111048,https://cdn.soccerwiki.org/images/logos/clubs/659.jpg,0
@@ -732,11 +732,11 @@ id,name,country,created_at,updated_at,logo_url,active
 731,Luch-Energiya Vladivostok,,2020-03-16 03:12:24.297428,2020-03-16 03:12:24.297428,https://cdn.soccerwiki.org/images/logos/clubs/743.png,0
 732,AEL,,2020-03-16 03:12:24.317623,2020-03-16 03:12:24.317623,https://cdn.soccerwiki.org/images/logos/clubs/744.png,0
 733,Fredrikstad FK,,2020-03-16 03:12:24.32009,2020-03-16 03:12:24.32009,https://cdn.soccerwiki.org/images/logos/clubs/745.jpg,0
-734,SSC Napoli,Italy,2020-03-16 03:12:24.322125,2020-03-16 03:12:24.322125,https://cdn.soccerwiki.org/images/logos/clubs/746.png,1
+734,Napoli,Italy,2020-03-16 03:12:24.322125,2020-03-16 03:12:24.322125,https://cdn.soccerwiki.org/images/logos/clubs/746.png,1
 735,CD Castellón,,2020-03-16 03:12:24.324215,2020-03-16 03:12:24.324215,https://cdn.soccerwiki.org/images/logos/clubs/747.jpg,0
 736,Lorca Atlético,,2020-03-16 03:12:24.326629,2020-03-16 03:12:24.326629,https://cdn.soccerwiki.org/images/logos/clubs/748_1336550406.jpg,0
 737,RAEC Mons,,2020-03-16 03:12:24.32931,2020-03-16 03:12:24.32931,,0
-738,FC Augsburg,Germany,2020-03-16 03:12:24.331491,2020-03-16 03:12:24.331491,https://cdn.soccerwiki.org/images/logos/clubs/750.png,1
+738,Augsburg,Germany,2020-03-16 03:12:24.331491,2020-03-16 03:12:24.331491,https://cdn.soccerwiki.org/images/logos/clubs/750.png,1
 739,FC Luzern,,2020-03-16 03:12:24.333857,2020-03-16 03:12:24.333857,https://cdn.soccerwiki.org/images/logos/clubs/751.png,0
 740,FC Sion,,2020-03-16 03:12:24.336131,2020-03-16 03:12:24.336131,https://cdn.soccerwiki.org/images/logos/clubs/752.png,0
 741,Baník Ostrava,,2020-03-16 03:12:24.338647,2020-03-16 03:12:24.338647,https://cdn.soccerwiki.org/images/logos/clubs/753.png,0
@@ -839,7 +839,7 @@ id,name,country,created_at,updated_at,logo_url,active
 838,Tamworth,,2020-03-16 03:12:24.565217,2020-03-16 03:12:24.565217,https://cdn.soccerwiki.org/images/logos/clubs/850.png,0
 839,Weymouth,,2020-03-16 03:12:24.567238,2020-03-16 03:12:24.567238,https://cdn.soccerwiki.org/images/logos/clubs/851.png,0
 840,Woking,,2020-03-16 03:12:24.569152,2020-03-16 03:12:24.569152,https://cdn.soccerwiki.org/images/logos/clubs/852.png,0
-841,Junior FC,Colombia,2020-03-16 03:12:24.571162,2020-03-16 03:12:24.571162,https://cdn.soccerwiki.org/images/logos/clubs/853.png,1
+841,Junior Barranquilla,Colombia,2020-03-16 03:12:24.571162,2020-03-16 03:12:24.571162,https://cdn.soccerwiki.org/images/logos/clubs/853.png,1
 842,UD Vecindario,,2020-03-16 03:12:24.573584,2020-03-16 03:12:24.573584,https://cdn.soccerwiki.org/images/logos/clubs/854_1334390403.jpg,0
 843,Atlético Huila,,2020-03-16 03:12:24.576204,2020-03-16 03:12:24.576204,https://cdn.soccerwiki.org/images/logos/clubs/855.png,0
 844,Calcio Padova,,2020-03-16 03:12:24.5781,2020-03-16 03:12:24.5781,https://cdn.soccerwiki.org/images/logos/clubs/856.png,0
@@ -872,9 +872,9 @@ id,name,country,created_at,updated_at,logo_url,active
 871,Servette FC,,2020-03-16 03:12:24.633886,2020-03-16 03:12:24.633886,https://cdn.soccerwiki.org/images/logos/clubs/883.png,0
 872,Deportivo Azogues,,2020-03-16 03:12:24.635732,2020-03-16 03:12:24.635732,https://cdn.soccerwiki.org/images/logos/clubs/884.jpg,0
 873,Deportivo Cuenca,Ecuador,2020-03-16 03:12:24.638,2020-03-16 03:12:24.638,https://cdn.soccerwiki.org/images/logos/clubs/885.png,1
-874,CS Emelec,Ecuador,2020-03-16 03:12:24.640567,2020-03-16 03:12:24.640567,https://cdn.soccerwiki.org/images/logos/clubs/886.png,1
+874,Emelec,Ecuador,2020-03-16 03:12:24.640567,2020-03-16 03:12:24.640567,https://cdn.soccerwiki.org/images/logos/clubs/886.png,1
 875,CD ESPOLI,,2020-03-16 03:12:24.650944,2020-03-16 03:12:24.650944,https://cdn.soccerwiki.org/images/logos/clubs/887_1254940073.jpg,0
-876,CS Macará,Venezuela,2020-03-16 03:12:24.653102,2020-03-16 03:12:24.653102,https://cdn.soccerwiki.org/images/logos/clubs/888.png,1
+876,Macará,Venezuela,2020-03-16 03:12:24.653102,2020-03-16 03:12:24.653102,https://cdn.soccerwiki.org/images/logos/clubs/888.png,1
 877,MSK Zilina,,2020-03-16 03:12:24.655131,2020-03-16 03:12:24.655131,https://cdn.soccerwiki.org/images/logos/clubs/889.png,0
 878,ASD Manfredonia,,2020-03-16 03:12:24.657062,2020-03-16 03:12:24.657062,https://cdn.soccerwiki.org/images/logos/clubs/890.jpg,0
 879,AS Martina Franca,,2020-03-16 03:12:24.659326,2020-03-16 03:12:24.659326,https://cdn.soccerwiki.org/images/logos/clubs/891.jpg,0
@@ -884,7 +884,7 @@ id,name,country,created_at,updated_at,logo_url,active
 883,Alianza Atlético,,2020-03-16 03:12:24.668075,2020-03-16 03:12:24.668075,https://cdn.soccerwiki.org/images/logos/clubs/895.jpg,0
 884,Club Cienciano,,2020-03-16 03:12:24.670241,2020-03-16 03:12:24.670241,https://cdn.soccerwiki.org/images/logos/clubs/896.jpg,0
 885,Coronel Bolognesi,,2020-03-16 03:12:24.672544,2020-03-16 03:12:24.672544,https://cdn.soccerwiki.org/images/logos/clubs/897.png,0
-886,FBC Melgar,Peru,2020-03-16 03:12:24.675367,2020-03-16 03:12:24.675367,https://cdn.soccerwiki.org/images/logos/clubs/898.png,1
+886,Melgar,Peru,2020-03-16 03:12:24.675367,2020-03-16 03:12:24.675367,https://cdn.soccerwiki.org/images/logos/clubs/898.png,1
 887,José Gálvez FBC,,2020-03-16 03:12:24.677351,2020-03-16 03:12:24.677351,https://cdn.soccerwiki.org/images/logos/clubs/899.png,0
 888,Sport Áncash,,2020-03-16 03:12:24.679526,2020-03-16 03:12:24.679526,https://cdn.soccerwiki.org/images/logos/clubs/900.png,0
 889,Sport Boys,,2020-03-16 03:12:24.681432,2020-03-16 03:12:24.681432,https://cdn.soccerwiki.org/images/logos/clubs/901.png,0
@@ -955,17 +955,17 @@ id,name,country,created_at,updated_at,logo_url,active
 954,Vidima-Rakovski,,2020-03-16 03:12:24.820875,2020-03-16 03:12:24.820875,https://cdn.soccerwiki.org/images/logos/clubs/966.png,0
 955,O'Higgins FC,,2020-03-16 03:12:24.822682,2020-03-16 03:12:24.822682,https://cdn.soccerwiki.org/images/logos/clubs/967.png,0
 956,Deportes Puerto Montt,,2020-03-16 03:12:24.824763,2020-03-16 03:12:24.824763,https://cdn.soccerwiki.org/images/logos/clubs/968.jpg,0
-957,Audax Italiano,,2020-03-16 03:12:24.827427,2020-03-16 03:12:24.827427,https://cdn.soccerwiki.org/images/logos/clubs/969.png,1
+957,Audax Italiano,Chile,2020-03-16 03:12:24.827427,2020-03-16 03:12:24.827427,https://cdn.soccerwiki.org/images/logos/clubs/969.png,1
 958,Coquimbo Unido,,2020-03-16 03:12:24.829665,2020-03-16 03:12:24.829665,https://cdn.soccerwiki.org/images/logos/clubs/970.png,0
-959,Santiago Wanderers,,2020-03-16 03:12:24.831666,2020-03-16 03:12:24.831666,https://cdn.soccerwiki.org/images/logos/clubs/971.png,1
-960,Universidad de Concepción,,2020-03-16 03:12:24.833454,2020-03-16 03:12:24.833454,https://cdn.soccerwiki.org/images/logos/clubs/972.png,1
-961,Deportes Antofagasta,,2020-03-16 03:12:24.83519,2020-03-16 03:12:24.83519,https://cdn.soccerwiki.org/images/logos/clubs/973.png,1
+959,Santiago Wanderers,Chile,2020-03-16 03:12:24.831666,2020-03-16 03:12:24.831666,https://cdn.soccerwiki.org/images/logos/clubs/971.png,1
+960,Universidad de Concepción,Chile,2020-03-16 03:12:24.833454,2020-03-16 03:12:24.833454,https://cdn.soccerwiki.org/images/logos/clubs/972.png,1
+961,Deportes Antofagasta,Chile,2020-03-16 03:12:24.83519,2020-03-16 03:12:24.83519,https://cdn.soccerwiki.org/images/logos/clubs/973.png,1
 962,CD Everton,,2020-03-16 03:12:24.837141,2020-03-16 03:12:24.837141,https://cdn.soccerwiki.org/images/logos/clubs/974.png,0
-963,CD Huachipato,Chile,2020-03-16 03:12:24.83941,2020-03-16 03:12:24.83941,https://cdn.soccerwiki.org/images/logos/clubs/975.png,1
-964,CD Palestino,Chile,2020-03-16 03:12:24.842293,2020-03-16 03:12:24.842293,https://cdn.soccerwiki.org/images/logos/clubs/976.png,1
+963,Huachipato,Chile,2020-03-16 03:12:24.83941,2020-03-16 03:12:24.83941,https://cdn.soccerwiki.org/images/logos/clubs/975.png,1
+964,Palestino,Chile,2020-03-16 03:12:24.842293,2020-03-16 03:12:24.842293,https://cdn.soccerwiki.org/images/logos/clubs/976.png,1
 965,Santiago Morning,,2020-03-16 03:12:24.844361,2020-03-16 03:12:24.844361,https://cdn.soccerwiki.org/images/logos/clubs/977.jpg,0
 966,Unión Española,Chile,2020-03-16 03:12:24.846118,2020-03-16 03:12:24.846118,https://cdn.soccerwiki.org/images/logos/clubs/978.png,1
-967,CD Cobresal,,2020-03-16 03:12:24.847879,2020-03-16 03:12:24.847879,https://cdn.soccerwiki.org/images/logos/clubs/979.png,1
+967,Cobresal,,2020-03-16 03:12:24.847879,2020-03-16 03:12:24.847879,https://cdn.soccerwiki.org/images/logos/clubs/979.png,1
 968,Levadia Tallinn,,2020-03-16 03:12:24.849657,2020-03-16 03:12:24.849657,https://cdn.soccerwiki.org/images/logos/clubs/980.png,0
 969,Trans Narva,,2020-03-16 03:12:24.851261,2020-03-16 03:12:24.851261,https://cdn.soccerwiki.org/images/logos/clubs/981.png,0
 970,Flora,,2020-03-16 03:12:24.852918,2020-03-16 03:12:24.852918,https://cdn.soccerwiki.org/images/logos/clubs/982.png,0
@@ -992,7 +992,7 @@ id,name,country,created_at,updated_at,logo_url,active
 991,Lamontville Golden Arrows,,2020-03-16 03:12:24.901317,2020-03-16 03:12:24.901317,https://cdn.soccerwiki.org/images/logos/clubs/1003.png,0
 992,Jomo Cosmos,,2020-03-16 03:12:24.921583,2020-03-16 03:12:24.921583,https://cdn.soccerwiki.org/images/logos/clubs/1004.png,0
 993,Maritzburg United,,2020-03-16 03:12:24.923667,2020-03-16 03:12:24.923667,https://cdn.soccerwiki.org/images/logos/clubs/1005.jpg,0
-994,Santos CT,Brazil,2020-03-16 03:12:24.926004,2020-03-16 03:12:24.926004,https://cdn.soccerwiki.org/images/logos/clubs/1006.png,1
+994,Santos,Brazil,2020-03-16 03:12:24.926004,2020-03-16 03:12:24.926004,https://cdn.soccerwiki.org/images/logos/clubs/1006.png,1
 995,Cape Umoya United,,2020-03-16 03:12:24.92902,2020-03-16 03:12:24.92902,https://cdn.soccerwiki.org/images/logos/clubs/1007.png,0
 996,Supersport United,,2020-03-16 03:12:24.931102,2020-03-16 03:12:24.931102,https://cdn.soccerwiki.org/images/logos/clubs/1008.png,0
 997,Ismaily SC,,2020-03-16 03:12:24.933108,2020-03-16 03:12:24.933108,https://cdn.soccerwiki.org/images/logos/clubs/1009.png,0
@@ -1079,7 +1079,7 @@ id,name,country,created_at,updated_at,logo_url,active
 1078,Deportes Concepción,,2020-03-16 03:12:25.135461,2020-03-16 03:12:25.135461,https://cdn.soccerwiki.org/images/logos/clubs/1090.png,0
 1079,Lota Schwager,,2020-03-16 03:12:25.137579,2020-03-16 03:12:25.137579,https://cdn.soccerwiki.org/images/logos/clubs/1091.jpg,0
 1080,Deportes Melipilla,,2020-03-16 03:12:25.140331,2020-03-16 03:12:25.140331,https://cdn.soccerwiki.org/images/logos/clubs/1092.png,0
-1081,Club Nacional,Uruguay,2020-03-16 03:12:25.142798,2020-03-16 03:12:25.142798,https://cdn.soccerwiki.org/images/logos/clubs/1093.png,1
+1081,Nacional,Brazil,2020-03-16 03:12:25.142798,2020-03-16 03:12:25.142798,https://cdn.soccerwiki.org/images/logos/clubs/1093.png,1
 1082,Miramar Misiones,,2020-03-16 03:12:25.147767,2020-03-16 03:12:25.147767,https://cdn.soccerwiki.org/images/logos/clubs/1094.png,0
 1083,Rampla Juniors,,2020-03-16 03:12:25.14982,2020-03-16 03:12:25.14982,https://cdn.soccerwiki.org/images/logos/clubs/1095.png,0
 1084,CA Progreso,,2020-03-16 03:12:25.151692,2020-03-16 03:12:25.151692,https://cdn.soccerwiki.org/images/logos/clubs/1096.png,0
@@ -1197,10 +1197,10 @@ id,name,country,created_at,updated_at,logo_url,active
 1196,IFK Norrköping,,2020-03-16 03:12:25.403321,2020-03-16 03:12:25.403321,https://cdn.soccerwiki.org/images/logos/clubs/1208.png,0
 1197,Bodo/Glimt,,2020-03-16 03:12:25.405183,2020-03-16 03:12:25.405183,https://cdn.soccerwiki.org/images/logos/clubs/1209.png,0
 1198,Unión Atlético Maracaibo,,2020-03-16 03:12:25.407828,2020-03-16 03:12:25.407828,https://cdn.soccerwiki.org/images/logos/clubs/1210.jpg,0
-1199,Caracas FC,Venezuela,2020-03-16 03:12:25.409944,2020-03-16 03:12:25.409944,https://cdn.soccerwiki.org/images/logos/clubs/1211.png,1
+1199,Caracas,Venezuela,2020-03-16 03:12:25.409944,2020-03-16 03:12:25.409944,https://cdn.soccerwiki.org/images/logos/clubs/1211.png,1
 1200,San Jose Earthquakes,,2020-03-16 03:12:25.41185,2020-03-16 03:12:25.41185,https://cdn.soccerwiki.org/images/logos/clubs/1212.png,0
 1201,Al Gharafa,,2020-03-16 03:12:25.413666,2020-03-16 03:12:25.413666,https://cdn.soccerwiki.org/images/logos/clubs/1213.png,0
-1202,Monagas SC,Venezuela,2020-03-16 03:12:25.415528,2020-03-16 03:12:25.415528,https://cdn.soccerwiki.org/images/logos/clubs/1214.png,1
+1202,Monagas,Venezuela,2020-03-16 03:12:25.415528,2020-03-16 03:12:25.415528,https://cdn.soccerwiki.org/images/logos/clubs/1214.png,1
 1203,Deportivo Petare,,2020-03-16 03:12:25.417176,2020-03-16 03:12:25.417176,https://cdn.soccerwiki.org/images/logos/clubs/1215.jpg,0
 1204,Free State Stars,,2020-03-16 03:12:25.418979,2020-03-16 03:12:25.418979,https://cdn.soccerwiki.org/images/logos/clubs/1216_1347868802.jpg,0
 1205,Sepahan,,2020-03-16 03:12:25.420753,2020-03-16 03:12:25.420753,https://cdn.soccerwiki.org/images/logos/clubs/1217.png,0
@@ -1219,8 +1219,8 @@ id,name,country,created_at,updated_at,logo_url,active
 1218,APOP Kinyras,,2020-03-16 03:12:25.455935,2020-03-16 03:12:25.455935,https://cdn.soccerwiki.org/images/logos/clubs/1230_1270729220.jpg,0
 1219,Ittihad,,2020-03-16 03:12:25.457821,2020-03-16 03:12:25.457821,https://cdn.soccerwiki.org/images/logos/clubs/1231.png,0
 1220,Portuguesa,Brazil,2020-03-16 03:12:25.46015,2020-03-16 03:12:25.46015,https://cdn.soccerwiki.org/images/logos/clubs/1232.png,1
-1221,Ipatinga FC,Brazil,2020-03-16 03:12:25.462615,2020-03-16 03:12:25.462615,https://cdn.soccerwiki.org/images/logos/clubs/1233.png,1
-1222,EC Vitória,Brazil,2020-03-16 03:12:25.464475,2020-03-16 03:12:25.464475,https://cdn.soccerwiki.org/images/logos/clubs/1237.png,1
+1221,Ipatinga,Brazil,2020-03-16 03:12:25.462615,2020-03-16 03:12:25.462615,https://cdn.soccerwiki.org/images/logos/clubs/1233.png,1
+1222,Vitória,Brazil,2020-03-16 03:12:25.464475,2020-03-16 03:12:25.464475,https://cdn.soccerwiki.org/images/logos/clubs/1237.png,1
 1223,Bolívar,Bolivia,2020-03-16 03:12:25.466272,2020-03-16 03:12:25.466272,https://cdn.soccerwiki.org/images/logos/clubs/1238.png,1
 1224,CA Juventud,,2020-03-16 03:12:25.467999,2020-03-16 03:12:25.467999,https://cdn.soccerwiki.org/images/logos/clubs/1239.png,0
 1225,CA Cerro,,2020-03-16 03:12:25.470465,2020-03-16 03:12:25.470465,https://cdn.soccerwiki.org/images/logos/clubs/1240.png,0
@@ -1246,7 +1246,7 @@ id,name,country,created_at,updated_at,logo_url,active
 1245,Finn Harps,,2020-03-16 03:12:25.51179,2020-03-16 03:12:25.51179,https://cdn.soccerwiki.org/images/logos/clubs/1260.jpg,0
 1246,Al Ansar,,2020-03-16 03:12:25.513815,2020-03-16 03:12:25.513815,https://cdn.soccerwiki.org/images/logos/clubs/1261.jpg,0
 1247,CD Trofense,,2020-03-16 03:12:25.515751,2020-03-16 03:12:25.515751,https://cdn.soccerwiki.org/images/logos/clubs/1262.jpg,0
-1248,Zamora FC,Venezuela,2020-03-16 03:12:25.517761,2020-03-16 03:12:25.517761,https://cdn.soccerwiki.org/images/logos/clubs/1263.png,1
+1248,Zamora,Venezuela,2020-03-16 03:12:25.517761,2020-03-16 03:12:25.517761,https://cdn.soccerwiki.org/images/logos/clubs/1263.png,1
 1249,Deportivo Táchira,Venezuela,2020-03-16 03:12:25.519758,2020-03-16 03:12:25.519758,https://cdn.soccerwiki.org/images/logos/clubs/1264.png,1
 1250,Juan Aurich,,2020-03-16 03:12:25.521613,2020-03-16 03:12:25.521613,https://cdn.soccerwiki.org/images/logos/clubs/1265.png,0
 1251,Tokyo Verdy,,2020-03-16 03:12:25.541823,2020-03-16 03:12:25.541823,https://cdn.soccerwiki.org/images/logos/clubs/1266.png,0
@@ -1339,7 +1339,7 @@ id,name,country,created_at,updated_at,logo_url,active
 1338,KuPS,,2020-03-16 03:12:25.749082,2020-03-16 03:12:25.749082,https://cdn.soccerwiki.org/images/logos/clubs/1353.png,0
 1339,Dempo SC,,2020-03-16 03:12:25.751033,2020-03-16 03:12:25.751033,https://cdn.soccerwiki.org/images/logos/clubs/1354.png,0
 1340,ASEC Mimosas,,2020-03-16 03:12:25.752984,2020-03-16 03:12:25.752984,https://cdn.soccerwiki.org/images/logos/clubs/1355.png,0
-1341,CS Blooming,Bolivia,2020-03-16 03:12:25.755071,2020-03-16 03:12:25.755071,https://cdn.soccerwiki.org/images/logos/clubs/1356.png,1
+1341,Blooming,Bolivia,2020-03-16 03:12:25.755071,2020-03-16 03:12:25.755071,https://cdn.soccerwiki.org/images/logos/clubs/1356.png,1
 1342,CD Técnico Universitario,,2020-03-16 03:12:25.756905,2020-03-16 03:12:25.756905,https://cdn.soccerwiki.org/images/logos/clubs/1357.png,0
 1343,Chacarita Juniors,,2020-03-16 03:12:25.75901,2020-03-16 03:12:25.75901,https://cdn.soccerwiki.org/images/logos/clubs/1358.png,0
 1344,Universidad Católica del Ecuador,,2020-03-16 03:12:25.761728,2020-03-16 03:12:25.761728,https://cdn.soccerwiki.org/images/logos/clubs/1359.png,0
@@ -1397,12 +1397,12 @@ id,name,country,created_at,updated_at,logo_url,active
 1396,FK Laktaši,,2020-03-16 03:12:25.880222,2020-03-16 03:12:25.880222,https://cdn.soccerwiki.org/images/logos/clubs/1411.jpg,0
 1397,CD Olimpia,,2020-03-16 03:12:25.882224,2020-03-16 03:12:25.882224,https://cdn.soccerwiki.org/images/logos/clubs/1412.png,0
 1398,The Strongest,Bolivia,2020-03-16 03:12:25.884291,2020-03-16 03:12:25.884291,https://cdn.soccerwiki.org/images/logos/clubs/1413.png,1
-1399,Avaí FC,Brazil,2020-03-16 03:12:25.890125,2020-03-16 03:12:25.890125,https://cdn.soccerwiki.org/images/logos/clubs/1414.png,1
+1399,Avaí,Brazil,2020-03-16 03:12:25.890125,2020-03-16 03:12:25.890125,https://cdn.soccerwiki.org/images/logos/clubs/1414.png,1
 1400,Olimpik PFK,,2020-03-16 03:12:25.895259,2020-03-16 03:12:25.895259,https://cdn.soccerwiki.org/images/logos/clubs/1415_1230656955.jpg,0
 1401,Ferencvárosi TC,,2020-03-16 03:12:25.89754,2020-03-16 03:12:25.89754,https://cdn.soccerwiki.org/images/logos/clubs/1416.png,0
 1402,Polokwane City,,2020-03-16 03:12:25.90032,2020-03-16 03:12:25.90032,https://cdn.soccerwiki.org/images/logos/clubs/1417.png,0
 1403,Grêmio Barueri,,2020-03-16 03:12:25.902837,2020-03-16 03:12:25.902837,https://cdn.soccerwiki.org/images/logos/clubs/1418.png,0
-1404,EC Santo André,,2020-03-16 03:12:25.905875,2020-03-16 03:12:25.905875,https://cdn.soccerwiki.org/images/logos/clubs/1419.png,1
+1404,Santo André,,2020-03-16 03:12:25.905875,2020-03-16 03:12:25.905875,https://cdn.soccerwiki.org/images/logos/clubs/1419.png,1
 1405,Hearts of Oak,,2020-03-16 03:12:25.908984,2020-03-16 03:12:25.908984,https://cdn.soccerwiki.org/images/logos/clubs/1420.png,0
 1406,Club León,,2020-03-16 03:12:25.911158,2020-03-16 03:12:25.911158,https://cdn.soccerwiki.org/images/logos/clubs/1421.png,0
 1407,Gold Coast United,,2020-03-16 03:12:25.913209,2020-03-16 03:12:25.913209,https://cdn.soccerwiki.org/images/logos/clubs/1422.png,0
@@ -1425,8 +1425,8 @@ id,name,country,created_at,updated_at,logo_url,active
 1424,FC Urartu,,2020-03-16 03:12:25.956766,2020-03-16 03:12:25.956766,https://cdn.soccerwiki.org/images/logos/clubs/1439.png,0
 1425,AC Arles-Avignon,,2020-03-16 03:12:25.958961,2020-03-16 03:12:25.958961,https://cdn.soccerwiki.org/images/logos/clubs/1440_1354423524.jpg,0
 1426,Glenavon,,2020-03-16 03:12:25.961771,2020-03-16 03:12:25.961771,https://cdn.soccerwiki.org/images/logos/clubs/1441.png,0
-1427,CJ Wilstermann,Bolivia,2020-03-16 03:12:25.963933,2020-03-16 03:12:25.963933,https://cdn.soccerwiki.org/images/logos/clubs/1442.png,1
-1428,CD San José,Bolivia,2020-03-16 03:12:25.966298,2020-03-16 03:12:25.966298,https://cdn.soccerwiki.org/images/logos/clubs/1443.png,1
+1427,Jorge Wilstermann,Bolivia,2020-03-16 03:12:25.963933,2020-03-16 03:12:25.963933,https://cdn.soccerwiki.org/images/logos/clubs/1442.png,1
+1428,San José,Bolivia,2020-03-16 03:12:25.966298,2020-03-16 03:12:25.966298,https://cdn.soccerwiki.org/images/logos/clubs/1443.png,1
 1429,Mjallby AIF,,2020-03-16 03:12:25.96942,2020-03-16 03:12:25.96942,https://cdn.soccerwiki.org/images/logos/clubs/1444.png,0
 1430,AFC Wimbledon,,2020-03-16 03:12:25.972196,2020-03-16 03:12:25.972196,https://cdn.soccerwiki.org/images/logos/clubs/1445.png,0
 1431,PAS Giannina,,2020-03-16 03:12:25.975025,2020-03-16 03:12:25.975025,https://cdn.soccerwiki.org/images/logos/clubs/1446.png,0
@@ -1441,7 +1441,7 @@ id,name,country,created_at,updated_at,logo_url,active
 1440,FC Vizela,,2020-03-16 03:12:26.00223,2020-03-16 03:12:26.00223,https://cdn.soccerwiki.org/images/logos/clubs/1455.png,0
 1441,UD Oliveirense,,2020-03-16 03:12:26.005188,2020-03-16 03:12:26.005188,https://cdn.soccerwiki.org/images/logos/clubs/1456.png,0
 1442,Vila Nova,Brazil,2020-03-16 03:12:26.008209,2020-03-16 03:12:26.008209,https://cdn.soccerwiki.org/images/logos/clubs/1457.png,1
-1443,Ceará SC,Brazil,2020-03-16 03:12:26.010781,2020-03-16 03:12:26.010781,https://cdn.soccerwiki.org/images/logos/clubs/1458.png,1
+1443,Ceará,Brazil,2020-03-16 03:12:26.010781,2020-03-16 03:12:26.010781,https://cdn.soccerwiki.org/images/logos/clubs/1458.png,1
 1444,Sorrento Calcio,,2020-03-16 03:12:26.012893,2020-03-16 03:12:26.012893,https://cdn.soccerwiki.org/images/logos/clubs/1459.png,0
 1445,FC Lumezzane,,2020-03-16 03:12:26.014765,2020-03-16 03:12:26.014765,https://cdn.soccerwiki.org/images/logos/clubs/1460.jpg,0
 1446,Paganese Calcio,,2020-03-16 03:12:26.016614,2020-03-16 03:12:26.016614,https://cdn.soccerwiki.org/images/logos/clubs/1461_1259068634.jpg,0
@@ -1456,7 +1456,7 @@ id,name,country,created_at,updated_at,logo_url,active
 1455,ASD Progreditur Marcianise,,2020-03-16 03:12:26.035695,2020-03-16 03:12:26.035695,https://cdn.soccerwiki.org/images/logos/clubs/1470.jpg,0
 1456,KAS Eupen,,2020-03-16 03:12:26.037768,2020-03-16 03:12:26.037768,https://cdn.soccerwiki.org/images/logos/clubs/1471.png,0
 1457,Al Wehda,,2020-03-16 03:12:26.039674,2020-03-16 03:12:26.039674,https://cdn.soccerwiki.org/images/logos/clubs/1472.png,0
-1458,EC Bahia,Brazil,2020-03-16 03:12:26.041946,2020-03-16 03:12:26.041946,https://cdn.soccerwiki.org/images/logos/clubs/1473.png,1
+1458,Bahia,Brazil,2020-03-16 03:12:26.041946,2020-03-16 03:12:26.041946,https://cdn.soccerwiki.org/images/logos/clubs/1473.png,1
 1459,Colegio Nacional de Iquitos,,2020-03-16 03:12:26.044404,2020-03-16 03:12:26.044404,https://cdn.soccerwiki.org/images/logos/clubs/1474.png,0
 1460,Ayacucho FC,,2020-03-16 03:12:26.046724,2020-03-16 03:12:26.046724,https://cdn.soccerwiki.org/images/logos/clubs/1475.png,0
 1461,Sport Huancayo,,2020-03-16 03:12:26.049429,2020-03-16 03:12:26.049429,https://cdn.soccerwiki.org/images/logos/clubs/1476.png,0
@@ -1480,7 +1480,7 @@ id,name,country,created_at,updated_at,logo_url,active
 1479,Independiente Rivadavia,,2020-03-16 03:12:26.088649,2020-03-16 03:12:26.088649,https://cdn.soccerwiki.org/images/logos/clubs/1494.png,0
 1480,Brujas,,2020-03-16 03:12:26.094207,2020-03-16 03:12:26.094207,https://cdn.soccerwiki.org/images/logos/clubs/1495_1277178412.jpg,0
 1481,Unión Santa Fe,Argentina,2020-03-16 03:12:26.096581,2020-03-16 03:12:26.096581,https://cdn.soccerwiki.org/images/logos/clubs/1496.png,1
-1482,CA Talleres,Argentina,2020-03-16 03:12:26.098613,2020-03-16 03:12:26.098613,https://cdn.soccerwiki.org/images/logos/clubs/1497.png,1
+1482,Talleres,Argentina,2020-03-16 03:12:26.098613,2020-03-16 03:12:26.098613,https://cdn.soccerwiki.org/images/logos/clubs/1497.png,1
 1483,Cartaginés,,2020-03-16 03:12:26.10076,2020-03-16 03:12:26.10076,https://cdn.soccerwiki.org/images/logos/clubs/1498_1260450358.jpg,0
 1484,Pérez Zeledón,,2020-03-16 03:12:26.102827,2020-03-16 03:12:26.102827,https://cdn.soccerwiki.org/images/logos/clubs/1499.jpg,0
 1485,Geylang International,,2020-03-16 03:12:26.1051,2020-03-16 03:12:26.1051,https://cdn.soccerwiki.org/images/logos/clubs/1500.jpg,0
@@ -1498,7 +1498,7 @@ id,name,country,created_at,updated_at,logo_url,active
 1497,Holstein Kiel,,2020-03-16 03:12:26.131969,2020-03-16 03:12:26.131969,https://cdn.soccerwiki.org/images/logos/clubs/1512.png,0
 1498,1. FC Heidenheim 1846,,2020-03-16 03:12:26.133953,2020-03-16 03:12:26.133953,https://cdn.soccerwiki.org/images/logos/clubs/1513.png,0
 1499,Gangwon FC,,2020-03-16 03:12:26.136171,2020-03-16 03:12:26.136171,https://cdn.soccerwiki.org/images/logos/clubs/1514.png,0
-1500,Guarani FC,Brazil,2020-03-16 03:12:26.141335,2020-03-16 03:12:26.141335,https://cdn.soccerwiki.org/images/logos/clubs/1515.png,1
+1500,Guarani,Brazil,2020-03-16 03:12:26.141335,2020-03-16 03:12:26.141335,https://cdn.soccerwiki.org/images/logos/clubs/1515.png,1
 1501,Henan Jianye,,2020-03-16 03:12:26.14363,2020-03-16 03:12:26.14363,https://cdn.soccerwiki.org/images/logos/clubs/1516.png,0
 1502,Beijing Renhe,,2020-03-16 03:12:26.145722,2020-03-16 03:12:26.145722,https://cdn.soccerwiki.org/images/logos/clubs/1517.png,0
 1503,Qingdao Jonoon,,2020-03-16 03:12:26.147853,2020-03-16 03:12:26.147853,https://cdn.soccerwiki.org/images/logos/clubs/1518.jpg,0
@@ -1755,7 +1755,7 @@ id,name,country,created_at,updated_at,logo_url,active
 1754,General Caballero SC,,2020-03-16 03:12:26.925098,2020-03-16 03:12:26.925098,https://cdn.soccerwiki.org/images/logos/clubs/1769.jpg,0
 1755,FK Proleter,,2020-03-16 03:12:26.92758,2020-03-16 03:12:26.92758,https://cdn.soccerwiki.org/images/logos/clubs/1770.png,0
 1756,SKN St.Pölten,,2020-03-16 03:12:26.931223,2020-03-16 03:12:26.931223,https://cdn.soccerwiki.org/images/logos/clubs/1771.png,0
-1757,Criciúma EC,Brazil,2020-03-16 03:12:26.934151,2020-03-16 03:12:26.934151,https://cdn.soccerwiki.org/images/logos/clubs/1772.png,1
+1757,Criciúma,Brazil,2020-03-16 03:12:26.934151,2020-03-16 03:12:26.934151,https://cdn.soccerwiki.org/images/logos/clubs/1772.png,1
 1758,Carrarese Calcio,,2020-03-16 03:12:26.93633,2020-03-16 03:12:26.93633,https://cdn.soccerwiki.org/images/logos/clubs/1773_1360874025.jpg,0
 1759,Tochigi SC,,2020-03-16 03:12:26.93873,2020-03-16 03:12:26.93873,https://cdn.soccerwiki.org/images/logos/clubs/1774_1360874028.jpg,0
 1760,Ontinyent CF,,2020-03-16 03:12:26.941305,2020-03-16 03:12:26.941305,https://cdn.soccerwiki.org/images/logos/clubs/1775.png,0
@@ -1995,9 +1995,9 @@ id,name,country,created_at,updated_at,logo_url,active
 1994,Krymteplytsia,,2020-03-16 03:12:27.791199,2020-03-16 03:12:27.791199,https://cdn.soccerwiki.org/images/logos/clubs/2010_1338278411.jpg,0
 1995,Cobresol FBC,,2020-03-16 03:12:27.793203,2020-03-16 03:12:27.793203,https://cdn.soccerwiki.org/images/logos/clubs/2011_1337846406.jpg,0
 1996,Gazişehir Gaziantep FK,,2020-03-16 03:12:27.795289,2020-03-16 03:12:27.795289,https://cdn.soccerwiki.org/images/logos/clubs/2012.png,0
-1997,Salgueiro AC,Brazil,2020-03-16 03:12:27.797294,2020-03-16 03:12:27.797294,https://cdn.soccerwiki.org/images/logos/clubs/2013.png,1
-1998,SER Caxias do Sul,Brazil,2020-03-16 03:12:27.799635,2020-03-16 03:12:27.799635,https://cdn.soccerwiki.org/images/logos/clubs/2014_1338278406.jpg,1
-1999,Clube de Regatas Brasil,Brazil,2020-03-16 03:12:27.804923,2020-03-16 03:12:27.804923,https://cdn.soccerwiki.org/images/logos/clubs/2015.png,1
+1997,Salgueiro,Brazil,2020-03-16 03:12:27.797294,2020-03-16 03:12:27.797294,https://cdn.soccerwiki.org/images/logos/clubs/2013.png,1
+1998,Caxias do Sul,Brazil,2020-03-16 03:12:27.799635,2020-03-16 03:12:27.799635,https://cdn.soccerwiki.org/images/logos/clubs/2014_1338278406.jpg,1
+1999,CRB,Brazil,2020-03-16 03:12:27.804923,2020-03-16 03:12:27.804923,https://cdn.soccerwiki.org/images/logos/clubs/2015.png,1
 2000,Hyde United,,2020-03-16 03:12:27.807144,2020-03-16 03:12:27.807144,https://cdn.soccerwiki.org/images/logos/clubs/2016.png,0
 2001,USM El Harrach,,2020-03-16 03:12:27.809485,2020-03-16 03:12:27.809485,https://cdn.soccerwiki.org/images/logos/clubs/2017.png,0
 2002,GOŠK Gabela,,2020-03-16 03:12:27.812346,2020-03-16 03:12:27.812346,https://cdn.soccerwiki.org/images/logos/clubs/2018.png,0
@@ -2045,7 +2045,7 @@ id,name,country,created_at,updated_at,logo_url,active
 2044,ES Zarzis,,2020-03-16 03:12:27.935498,2020-03-16 03:12:27.935498,https://cdn.soccerwiki.org/images/logos/clubs/2060_1361397328.jpg,0
 2045,Isidro Metapán,,2020-03-16 03:12:27.937706,2020-03-16 03:12:27.937706,https://cdn.soccerwiki.org/images/logos/clubs/2061_1362214811.jpg,0
 2046,AO Platanias,,2020-03-16 03:12:27.939678,2020-03-16 03:12:27.939678,https://cdn.soccerwiki.org/images/logos/clubs/2062.png,0
-2047,Joinville EC,Brazil,2020-03-16 03:12:27.941622,2020-03-16 03:12:27.941622,https://cdn.soccerwiki.org/images/logos/clubs/2063.png,1
+2047,Joinville,Brazil,2020-03-16 03:12:27.941622,2020-03-16 03:12:27.941622,https://cdn.soccerwiki.org/images/logos/clubs/2063.png,1
 2048,CS Turnu Severin,,2020-03-16 03:12:27.943839,2020-03-16 03:12:27.943839,https://cdn.soccerwiki.org/images/logos/clubs/2064.png,0
 2049,Donji Srem,,2020-03-16 03:12:27.949225,2020-03-16 03:12:27.949225,https://cdn.soccerwiki.org/images/logos/clubs/2065.png,0
 2050,Egri FC,,2020-03-16 03:12:27.951385,2020-03-16 03:12:27.951385,https://cdn.soccerwiki.org/images/logos/clubs/2066_1344153606.jpg,0
@@ -2073,7 +2073,7 @@ id,name,country,created_at,updated_at,logo_url,active
 2072,Rayo Vallecano B,,2020-03-16 03:12:28.010105,2020-03-16 03:12:28.010105,https://cdn.soccerwiki.org/images/logos/clubs/2088_1342512094.jpg,0
 2073,Real Sporting B,,2020-03-16 03:12:28.012315,2020-03-16 03:12:28.012315,https://cdn.soccerwiki.org/images/logos/clubs/2089.png,0
 2074,Gimnástic Torrelavega,,2020-03-16 03:12:28.015369,2020-03-16 03:12:28.015369,https://cdn.soccerwiki.org/images/logos/clubs/2090.jpg,0
-2075,Bilbao Athletic,Spain,2020-03-16 03:12:28.017997,2020-03-16 03:12:28.017997,https://cdn.soccerwiki.org/images/logos/clubs/2091_1349816384.jpg,1
+2075,Athletic Bilbao,Spain,2020-03-16 03:12:28.017997,2020-03-16 03:12:28.017997,https://cdn.soccerwiki.org/images/logos/clubs/2091_1349816384.jpg,0
 2076,Real Sociedad B,,2020-03-16 03:12:28.020128,2020-03-16 03:12:28.020128,https://cdn.soccerwiki.org/images/logos/clubs/2092_1360172538.jpg,0
 2077,CA Osasuna B,,2020-03-16 03:12:28.022179,2020-03-16 03:12:28.022179,https://cdn.soccerwiki.org/images/logos/clubs/2093.png,0
 2078,TSV Hartberg,,2020-03-16 03:12:28.024132,2020-03-16 03:12:28.024132,https://cdn.soccerwiki.org/images/logos/clubs/2094.png,0
@@ -2156,7 +2156,7 @@ id,name,country,created_at,updated_at,logo_url,active
 2155,Chippa United,,2020-03-16 03:12:28.217004,2020-03-16 03:12:28.217004,https://cdn.soccerwiki.org/images/logos/clubs/2171.jpg,0
 2156,FK Jedinstvo,,2020-03-16 03:12:28.219416,2020-03-16 03:12:28.219416,https://cdn.soccerwiki.org/images/logos/clubs/2172_1347609608.jpg,0
 2157,Club Petrolero,,2020-03-16 03:12:28.221768,2020-03-16 03:12:28.221768,https://cdn.soccerwiki.org/images/logos/clubs/2173.png,0
-2158,Oeste FC,Brazil,2020-03-16 03:12:28.223738,2020-03-16 03:12:28.223738,https://cdn.soccerwiki.org/images/logos/clubs/2174.png,1
+2158,Oeste,Brazil,2020-03-16 03:12:28.223738,2020-03-16 03:12:28.223738,https://cdn.soccerwiki.org/images/logos/clubs/2174.png,1
 2159,AD Carmelita,,2020-03-16 03:12:28.225751,2020-03-16 03:12:28.225751,https://cdn.soccerwiki.org/images/logos/clubs/2175_1361397274.jpg,0
 2160,Limón FC,,2020-03-16 03:12:28.227798,2020-03-16 03:12:28.227798,https://cdn.soccerwiki.org/images/logos/clubs/2176.png,0
 2161,Belén Siglo XXI,,2020-03-16 03:12:28.22982,2020-03-16 03:12:28.22982,https://cdn.soccerwiki.org/images/logos/clubs/2177_1355380630.jpg,0
@@ -2165,7 +2165,7 @@ id,name,country,created_at,updated_at,logo_url,active
 2164,Dibba Al Fujairah,,2020-03-16 03:12:28.235887,2020-03-16 03:12:28.235887,https://cdn.soccerwiki.org/images/logos/clubs/2180_1349381157.jpg,0
 2165,Trujillanos FC,,2020-03-16 03:12:28.238144,2020-03-16 03:12:28.238144,https://cdn.soccerwiki.org/images/logos/clubs/2181.png,0
 2166,Yaracuyanos FC,,2020-03-16 03:12:28.240886,2020-03-16 03:12:28.240886,https://cdn.soccerwiki.org/images/logos/clubs/2182.png,0
-2167,Zulia FC,,2020-03-16 03:12:28.243241,2020-03-16 03:12:28.243241,https://cdn.soccerwiki.org/images/logos/clubs/2183.png,1
+2167,Zulia,,2020-03-16 03:12:28.243241,2020-03-16 03:12:28.243241,https://cdn.soccerwiki.org/images/logos/clubs/2183.png,1
 2168,Deportivo La Guaira,,2020-03-16 03:12:28.245492,2020-03-16 03:12:28.245492,https://cdn.soccerwiki.org/images/logos/clubs/2184.png,0
 2169,Atlético Venezuela,,2020-03-16 03:12:28.248656,2020-03-16 03:12:28.248656,https://cdn.soccerwiki.org/images/logos/clubs/2185.png,0
 2170,Atlético El Vigía,,2020-03-16 03:12:28.250969,2020-03-16 03:12:28.250969,https://cdn.soccerwiki.org/images/logos/clubs/2186.png,0
@@ -2327,8 +2327,8 @@ id,name,country,created_at,updated_at,logo_url,active
 2326,Semen Padang FC,,2020-03-16 03:12:28.663015,2020-03-16 03:12:28.663015,https://cdn.soccerwiki.org/images/logos/clubs/2375.png,0
 2327,African Warriors,,2020-03-16 03:12:28.665061,2020-03-16 03:12:28.665061,https://cdn.soccerwiki.org/images/logos/clubs/2376.jpg,0
 2328,Septemvri Simitli,,2020-03-16 03:12:28.667109,2020-03-16 03:12:28.667109,https://cdn.soccerwiki.org/images/logos/clubs/2377.jpg,0
-2329,Madureira EC,Brazil,2020-03-16 03:12:28.669308,2020-03-16 03:12:28.669308,https://cdn.soccerwiki.org/images/logos/clubs/2378.png,1
-2330,Chapecoense AF,Brazil,2020-03-16 03:12:28.671448,2020-03-16 03:12:28.671448,https://cdn.soccerwiki.org/images/logos/clubs/2379.png,1
+2329,Madureira,Brazil,2020-03-16 03:12:28.669308,2020-03-16 03:12:28.669308,https://cdn.soccerwiki.org/images/logos/clubs/2378.png,1
+2330,Chapecoense,Brazil,2020-03-16 03:12:28.671448,2020-03-16 03:12:28.671448,https://cdn.soccerwiki.org/images/logos/clubs/2379.png,1
 2331,United Sikkim,,2020-03-16 03:12:28.67429,2020-03-16 03:12:28.67429,https://cdn.soccerwiki.org/images/logos/clubs/2380.jpg,0
 2332,Club Comunicaciones,,2020-03-16 03:12:28.676476,2020-03-16 03:12:28.676476,https://cdn.soccerwiki.org/images/logos/clubs/2381.png,0
 2333,Brown de Adrogué,,2020-03-16 03:12:28.678556,2020-03-16 03:12:28.678556,https://cdn.soccerwiki.org/images/logos/clubs/2382.png,0
@@ -2343,9 +2343,9 @@ id,name,country,created_at,updated_at,logo_url,active
 2342,IFK Värnamo,,2020-03-16 03:12:28.697692,2020-03-16 03:12:28.697692,https://cdn.soccerwiki.org/images/logos/clubs/2391.jpg,0
 2343,Mogi Mirim EC,,2020-03-16 03:12:28.699875,2020-03-16 03:12:28.699875,https://cdn.soccerwiki.org/images/logos/clubs/2392.png,0
 2344,Fujieda MYFC,,2020-03-16 03:12:28.70609,2020-03-16 03:12:28.70609,https://cdn.soccerwiki.org/images/logos/clubs/2393.jpg,0
-2345,Macaé Esporte FC,Brazil,2020-03-16 03:12:28.70893,2020-03-16 03:12:28.70893,https://cdn.soccerwiki.org/images/logos/clubs/2394.png,1
+2345,Macaé,Brazil,2020-03-16 03:12:28.70893,2020-03-16 03:12:28.70893,https://cdn.soccerwiki.org/images/logos/clubs/2394.png,1
 2346,Sampaio Corrêa,Brazil,2020-03-16 03:12:28.711423,2020-03-16 03:12:28.711423,https://cdn.soccerwiki.org/images/logos/clubs/2395.png,1
-2347,Campinense Clube,Brazil,2020-03-16 03:12:28.714505,2020-03-16 03:12:28.714505,https://cdn.soccerwiki.org/images/logos/clubs/2396.png,1
+2347,Campinense,Brazil,2020-03-16 03:12:28.714505,2020-03-16 03:12:28.714505,https://cdn.soccerwiki.org/images/logos/clubs/2396.png,1
 2348,Oulun Palloseura,,2020-03-16 03:12:28.717092,2020-03-16 03:12:28.717092,https://cdn.soccerwiki.org/images/logos/clubs/2397.jpg,0
 2349,Hapoel Jerusalem,,2020-03-16 03:12:28.719415,2020-03-16 03:12:28.719415,https://cdn.soccerwiki.org/images/logos/clubs/2398.jpg,0
 2350,CSM Râmnicu Vâlcea,,2020-03-16 03:12:28.721869,2020-03-16 03:12:28.721869,https://cdn.soccerwiki.org/images/logos/clubs/2399.png,0
@@ -2365,7 +2365,7 @@ id,name,country,created_at,updated_at,logo_url,active
 2364,CD Walter Ormeño,,2020-03-16 03:12:28.752995,2020-03-16 03:12:28.752995,https://cdn.soccerwiki.org/images/logos/clubs/2413.jpg,0
 2365,Vilaverdense FC,,2020-03-16 03:12:28.755086,2020-03-16 03:12:28.755086,https://cdn.soccerwiki.org/images/logos/clubs/2414.png,0
 2366,Orsomarso SC,,2020-03-16 03:12:28.757328,2020-03-16 03:12:28.757328,https://cdn.soccerwiki.org/images/logos/clubs/2415.png,0
-2367,Cuiabá EC,Brazil,2020-03-16 03:12:28.759556,2020-03-16 03:12:28.759556,https://cdn.soccerwiki.org/images/logos/clubs/2416.png,1
+2367,Cuiabá,Brazil,2020-03-16 03:12:28.759556,2020-03-16 03:12:28.759556,https://cdn.soccerwiki.org/images/logos/clubs/2416.png,1
 2368,Persiba Balikpapan,,2020-03-16 03:12:28.761818,2020-03-16 03:12:28.761818,https://cdn.soccerwiki.org/images/logos/clubs/2417.png,0
 2369,FC Bihor Oradea,,2020-03-16 03:12:28.76392,2020-03-16 03:12:28.76392,https://cdn.soccerwiki.org/images/logos/clubs/2418.png,0
 2370,FC Wiltz 71,,2020-03-16 03:12:28.765822,2020-03-16 03:12:28.765822,https://cdn.soccerwiki.org/images/logos/clubs/2419.jpg,0
@@ -2404,7 +2404,7 @@ id,name,country,created_at,updated_at,logo_url,active
 2403,Goyang Hi FC,,2020-03-16 03:12:28.848834,2020-03-16 03:12:28.848834,https://cdn.soccerwiki.org/images/logos/clubs/2452.png,0
 2404,AS Kaloum Star,,2020-03-16 03:12:28.851741,2020-03-16 03:12:28.851741,https://cdn.soccerwiki.org/images/logos/clubs/2453.jpg,0
 2405,Persepam Madura United,,2020-03-16 03:12:28.854206,2020-03-16 03:12:28.854206,https://cdn.soccerwiki.org/images/logos/clubs/2454.jpg,0
-2406,Ituano FC,Brazil,2020-03-16 03:12:28.861153,2020-03-16 03:12:28.861153,https://cdn.soccerwiki.org/images/logos/clubs/2455.png,1
+2406,Ituano,Brazil,2020-03-16 03:12:28.861153,2020-03-16 03:12:28.861153,https://cdn.soccerwiki.org/images/logos/clubs/2455.png,1
 2407,US Poggibonsi,,2020-03-16 03:12:28.864024,2020-03-16 03:12:28.864024,https://cdn.soccerwiki.org/images/logos/clubs/2456.jpg,0
 2408,Eyüpspor,,2020-03-16 03:12:28.866428,2020-03-16 03:12:28.866428,https://cdn.soccerwiki.org/images/logos/clubs/2457.jpg,0
 2409,Elverum Fotball,,2020-03-16 03:12:28.869479,2020-03-16 03:12:28.869479,https://cdn.soccerwiki.org/images/logos/clubs/2458.jpg,0
@@ -2424,12 +2424,12 @@ id,name,country,created_at,updated_at,logo_url,active
 2423,Ninh Bình FC,,2020-03-16 03:12:28.901284,2020-03-16 03:12:28.901284,https://cdn.soccerwiki.org/images/logos/clubs/2472.jpg,0
 2424,FC Maramureș UBM,,2020-03-16 03:12:28.903532,2020-03-16 03:12:28.903532,https://cdn.soccerwiki.org/images/logos/clubs/2473.jpg,0
 2425,FCM Dunărea Galați,,2020-03-16 03:12:28.909112,2020-03-16 03:12:28.909112,https://cdn.soccerwiki.org/images/logos/clubs/2474.jpg,0
-2426,Volta Redonda FC,Brazil,2020-03-16 03:12:28.911546,2020-03-16 03:12:28.911546,https://cdn.soccerwiki.org/images/logos/clubs/2475.png,1
-2427,Clube do Remo,Brazil,2020-03-16 03:12:28.914885,2020-03-16 03:12:28.914885,https://cdn.soccerwiki.org/images/logos/clubs/2476.jpg,1
+2426,Volta Redonda,Brazil,2020-03-16 03:12:28.911546,2020-03-16 03:12:28.911546,https://cdn.soccerwiki.org/images/logos/clubs/2475.png,1
+2427,Remo,Brazil,2020-03-16 03:12:28.914885,2020-03-16 03:12:28.914885,https://cdn.soccerwiki.org/images/logos/clubs/2476.jpg,1
 2428,KFC Dessel Sport,,2020-03-16 03:12:28.917522,2020-03-16 03:12:28.917522,https://cdn.soccerwiki.org/images/logos/clubs/2477.jpg,0
 2429,Brasil de Pelotas,Brazil,2020-03-16 03:12:28.919886,2020-03-16 03:12:28.919886,https://cdn.soccerwiki.org/images/logos/clubs/2478.png,1
 2430,FC Bansko,,2020-03-16 03:12:28.922236,2020-03-16 03:12:28.922236,https://cdn.soccerwiki.org/images/logos/clubs/2479.png,0
-2431,Paulista FC,Brazil,2020-03-16 03:12:28.924417,2020-03-16 03:12:28.924417,https://cdn.soccerwiki.org/images/logos/clubs/2480.png,1
+2431,Paulista,Brazil,2020-03-16 03:12:28.924417,2020-03-16 03:12:28.924417,https://cdn.soccerwiki.org/images/logos/clubs/2480.png,1
 2432,DPMM FC,,2020-03-16 03:12:28.92665,2020-03-16 03:12:28.92665,https://cdn.soccerwiki.org/images/logos/clubs/2481.png,0
 2433,Samut Songkhram FC,,2020-03-16 03:12:28.929196,2020-03-16 03:12:28.929196,https://cdn.soccerwiki.org/images/logos/clubs/2482.png,0
 2434,Defence Force,,2020-03-16 03:12:28.931758,2020-03-16 03:12:28.931758,https://cdn.soccerwiki.org/images/logos/clubs/2483.png,0
@@ -2443,10 +2443,10 @@ id,name,country,created_at,updated_at,logo_url,active
 2442,FK Timok Zaječar,,2020-03-16 03:12:28.951734,2020-03-16 03:12:28.951734,https://cdn.soccerwiki.org/images/logos/clubs/2491.jpg,0
 2443,FK Radnički Nova Pazova,,2020-03-16 03:12:28.953787,2020-03-16 03:12:28.953787,https://cdn.soccerwiki.org/images/logos/clubs/2492.png,0
 2444,Montego Bay United,,2020-03-16 03:12:28.955751,2020-03-16 03:12:28.955751,https://cdn.soccerwiki.org/images/logos/clubs/2493.jpg,0
-2445,Luverdense EC,Brazil,2020-03-16 03:12:28.957861,2020-03-16 03:12:28.957861,https://cdn.soccerwiki.org/images/logos/clubs/2494.png,1
+2445,Luverdense,Brazil,2020-03-16 03:12:28.957861,2020-03-16 03:12:28.957861,https://cdn.soccerwiki.org/images/logos/clubs/2494.png,1
 2446,Foresta Suceava,,2020-03-16 03:12:28.959963,2020-03-16 03:12:28.959963,https://cdn.soccerwiki.org/images/logos/clubs/2495.png,0
 2447,Waikato FC,,2020-03-16 03:12:28.962193,2020-03-16 03:12:28.962193,https://cdn.soccerwiki.org/images/logos/clubs/2496.png,0
-2448,Central FC,Brazil,2020-03-16 03:12:28.964555,2020-03-16 03:12:28.964555,https://cdn.soccerwiki.org/images/logos/clubs/2497.jpg,1
+2448,Central,Brazil,2020-03-16 03:12:28.964555,2020-03-16 03:12:28.964555,https://cdn.soccerwiki.org/images/logos/clubs/2497.jpg,0
 2449,North East Stars,,2020-03-16 03:12:28.966511,2020-03-16 03:12:28.966511,https://cdn.soccerwiki.org/images/logos/clubs/2498.png,0
 2450,Amarante FC,,2020-03-16 03:12:28.968501,2020-03-16 03:12:28.968501,https://cdn.soccerwiki.org/images/logos/clubs/2499.jpg,0
 2451,Chindia Târgovişte,,2020-03-16 03:12:28.970663,2020-03-16 03:12:28.970663,https://cdn.soccerwiki.org/images/logos/clubs/2500.png,0
@@ -2564,7 +2564,7 @@ id,name,country,created_at,updated_at,logo_url,active
 2563,Nova Iguaçu,Brazil,2020-03-16 03:12:29.264678,2020-03-16 03:12:29.264678,https://cdn.soccerwiki.org/images/logos/clubs/2614.png,1
 2564,CD Vida,,2020-03-16 03:12:29.266766,2020-03-16 03:12:29.266766,https://cdn.soccerwiki.org/images/logos/clubs/2615.png,0
 2565,FK Polonija,,2020-03-16 03:12:29.268969,2020-03-16 03:12:29.268969,https://cdn.soccerwiki.org/images/logos/clubs/2616.png,0
-2566,Resende FC,Brazil,2020-03-16 03:12:29.271316,2020-03-16 03:12:29.271316,https://cdn.soccerwiki.org/images/logos/clubs/2617.png,1
+2566,Resende,Brazil,2020-03-16 03:12:29.271316,2020-03-16 03:12:29.271316,https://cdn.soccerwiki.org/images/logos/clubs/2617.png,1
 2567,Yanbian Funde,,2020-03-16 03:12:29.27401,2020-03-16 03:12:29.27401,https://cdn.soccerwiki.org/images/logos/clubs/2618.png,0
 2568,FC Orenburg,,2020-03-16 03:12:29.276609,2020-03-16 03:12:29.276609,https://cdn.soccerwiki.org/images/logos/clubs/2619.png,0
 2569,AA Aparecidense,,2020-03-16 03:12:29.28161,2020-03-16 03:12:29.28161,https://cdn.soccerwiki.org/images/logos/clubs/2620.png,0
@@ -2828,7 +2828,7 @@ id,name,country,created_at,updated_at,logo_url,active
 2827,Sever Murmansk,,2020-03-16 03:12:29.948063,2020-03-16 03:12:29.948063,https://cdn.soccerwiki.org/images/logos/clubs/2878.png,0
 2828,MFK Zemplín Michalovce,,2020-03-16 03:12:29.950597,2020-03-16 03:12:29.950597,https://cdn.soccerwiki.org/images/logos/clubs/2879.png,0
 2829,Bayrampaşa SK,,2020-03-16 03:12:29.953003,2020-03-16 03:12:29.953003,https://cdn.soccerwiki.org/images/logos/clubs/2880.jpg,0
-2830,Londrina EC,Brazil,2020-03-16 03:12:29.955139,2020-03-16 03:12:29.955139,https://cdn.soccerwiki.org/images/logos/clubs/2881.png,1
+2830,Londrina,Brazil,2020-03-16 03:12:29.955139,2020-03-16 03:12:29.955139,https://cdn.soccerwiki.org/images/logos/clubs/2881.png,1
 2831,PO Atsalenios,,2020-03-16 03:12:29.957529,2020-03-16 03:12:29.957529,https://cdn.soccerwiki.org/images/logos/clubs/2882.jpg,0
 2832,CS Universitatea Craiova,,2020-03-16 03:12:29.960146,2020-03-16 03:12:29.960146,https://cdn.soccerwiki.org/images/logos/clubs/2883.png,0
 2833,Juventud Independiente,,2020-03-16 03:12:29.962785,2020-03-16 03:12:29.962785,https://cdn.soccerwiki.org/images/logos/clubs/2884.png,0
@@ -2952,7 +2952,7 @@ id,name,country,created_at,updated_at,logo_url,active
 2951,Nairn County,,2020-03-16 03:12:30.265452,2020-03-16 03:12:30.265452,https://cdn.soccerwiki.org/images/logos/clubs/3002.jpg,0
 2952,Rothes,,2020-03-16 03:12:30.267574,2020-03-16 03:12:30.267574,https://cdn.soccerwiki.org/images/logos/clubs/3003.jpg,0
 2953,Wick Academy,,2020-03-16 03:12:30.269689,2020-03-16 03:12:30.269689,https://cdn.soccerwiki.org/images/logos/clubs/3004.jpg,0
-2954,Tombense FC,Brazil,2020-03-16 03:12:30.272262,2020-03-16 03:12:30.272262,https://cdn.soccerwiki.org/images/logos/clubs/3005.png,1
+2954,Tombense,Brazil,2020-03-16 03:12:30.272262,2020-03-16 03:12:30.272262,https://cdn.soccerwiki.org/images/logos/clubs/3005.png,1
 2955,PS Kemi Kings,,2020-03-16 03:12:30.27494,2020-03-16 03:12:30.27494,https://cdn.soccerwiki.org/images/logos/clubs/3006.jpg,0
 2956,Galway United FC,,2020-03-16 03:12:30.277243,2020-03-16 03:12:30.277243,https://cdn.soccerwiki.org/images/logos/clubs/3007.jpg,0
 2957,Shamrock Rovers B,,2020-03-16 03:12:30.280281,2020-03-16 03:12:30.280281,https://cdn.soccerwiki.org/images/logos/clubs/3008.jpg,0
@@ -2965,7 +2965,7 @@ id,name,country,created_at,updated_at,logo_url,active
 2964,US Ivry,,2020-03-16 03:12:30.303407,2020-03-16 03:12:30.303407,https://cdn.soccerwiki.org/images/logos/clubs/3015.png,0
 2965,Catarroja CF,,2020-03-16 03:12:30.306467,2020-03-16 03:12:30.306467,https://cdn.soccerwiki.org/images/logos/clubs/3016.jpg,0
 2966,Botafogo PB,Brazil,2020-03-16 03:12:30.309645,2020-03-16 03:12:30.309645,https://cdn.soccerwiki.org/images/logos/clubs/3017.png,1
-2967,Boavista RJ,Brazil,2020-03-16 03:12:30.312343,2020-03-16 03:12:30.312343,https://cdn.soccerwiki.org/images/logos/clubs/3018.png,1
+2967,Boavista,Brazil,2020-03-16 03:12:30.312343,2020-03-16 03:12:30.312343,https://cdn.soccerwiki.org/images/logos/clubs/3018.png,1
 2968,Valdres FK,,2020-03-16 03:12:30.315734,2020-03-16 03:12:30.315734,https://cdn.soccerwiki.org/images/logos/clubs/3019.jpg,0
 2969,Eintracht Braunschweig II,,2020-03-16 03:12:30.318092,2020-03-16 03:12:30.318092,https://cdn.soccerwiki.org/images/logos/clubs/3020.jpg,0
 2970,UE Cornellà,,2020-03-16 03:12:30.320376,2020-03-16 03:12:30.320376,https://cdn.soccerwiki.org/images/logos/clubs/3021.png,0
@@ -3004,7 +3004,7 @@ id,name,country,created_at,updated_at,logo_url,active
 3003,OKC Energy FC,,2020-03-16 03:12:30.414633,2020-03-16 03:12:30.414633,https://cdn.soccerwiki.org/images/logos/clubs/3054.png,0
 3004,Los Angeles Galaxy II,,2020-03-16 03:12:30.422272,2020-03-16 03:12:30.422272,https://cdn.soccerwiki.org/images/logos/clubs/3055.png,0
 3005,Sacramento Republic,,2020-03-16 03:12:30.424504,2020-03-16 03:12:30.424504,https://cdn.soccerwiki.org/images/logos/clubs/3056.jpg,0
-3006,AD Cabofriense,Brazil,2020-03-16 03:12:30.42662,2020-03-16 03:12:30.42662,https://cdn.soccerwiki.org/images/logos/clubs/3057.png,1
+3006,Cabofriense,Brazil,2020-03-16 03:12:30.42662,2020-03-16 03:12:30.42662,https://cdn.soccerwiki.org/images/logos/clubs/3057.png,1
 3007,Than Quảng Ninh,,2020-03-16 03:12:30.428833,2020-03-16 03:12:30.428833,https://cdn.soccerwiki.org/images/logos/clubs/3058.jpg,0
 3008,EC Pelotas,,2020-03-16 03:12:30.431047,2020-03-16 03:12:30.431047,https://cdn.soccerwiki.org/images/logos/clubs/3059.jpg,0
 3009,Murici FC,,2020-03-16 03:12:30.433277,2020-03-16 03:12:30.433277,https://cdn.soccerwiki.org/images/logos/clubs/3060.jpg,0
@@ -3047,7 +3047,7 @@ id,name,country,created_at,updated_at,logo_url,active
 3046,SV Spakenburg,,2020-03-16 03:12:30.528466,2020-03-16 03:12:30.528466,https://cdn.soccerwiki.org/images/logos/clubs/3097.jpg,0
 3047,Haaksbergse SC,,2020-03-16 03:12:30.530471,2020-03-16 03:12:30.530471,https://cdn.soccerwiki.org/images/logos/clubs/3098.jpg,0
 3048,Progresso do Sambizanga,,2020-03-16 03:12:30.532677,2020-03-16 03:12:30.532677,https://cdn.soccerwiki.org/images/logos/clubs/3099.jpg,0
-3049,Delfín SC,Ecuador,2020-03-16 03:12:30.534654,2020-03-16 03:12:30.534654,https://cdn.soccerwiki.org/images/logos/clubs/3100.png,1
+3049,Delfín,Ecuador,2020-03-16 03:12:30.534654,2020-03-16 03:12:30.534654,https://cdn.soccerwiki.org/images/logos/clubs/3100.png,1
 3050,Istiqlol Dushanbe,,2020-03-16 03:12:30.554534,2020-03-16 03:12:30.554534,https://cdn.soccerwiki.org/images/logos/clubs/3101.jpg,0
 3051,Alecrim FC,,2020-03-16 03:12:30.557068,2020-03-16 03:12:30.557068,https://cdn.soccerwiki.org/images/logos/clubs/3102.png,0
 3052,Barrio México,,2020-03-16 03:12:30.563976,2020-03-16 03:12:30.563976,https://cdn.soccerwiki.org/images/logos/clubs/3103.jpg,0
@@ -3193,7 +3193,7 @@ id,name,country,created_at,updated_at,logo_url,active
 3192,Humble Lions,,2020-03-16 03:12:30.922797,2020-03-16 03:12:30.922797,https://cdn.soccerwiki.org/images/logos/clubs/3243.jpg,0
 3193,Friburguense AC,,2020-03-16 03:12:30.924906,2020-03-16 03:12:30.924906,https://cdn.soccerwiki.org/images/logos/clubs/3244.png,0
 3194,AA Internacional,,2020-03-16 03:12:30.927108,2020-03-16 03:12:30.927108,https://cdn.soccerwiki.org/images/logos/clubs/3245.jpg,0
-3195,EC Novo Hamburgo,Brazil,2020-03-16 03:12:30.930012,2020-03-16 03:12:30.930012,https://cdn.soccerwiki.org/images/logos/clubs/3246.png,1
+3195,Novo Hamburgo,Brazil,2020-03-16 03:12:30.930012,2020-03-16 03:12:30.930012,https://cdn.soccerwiki.org/images/logos/clubs/3246.png,1
 3196,Botafogo BA,,2020-03-16 03:12:30.932776,2020-03-16 03:12:30.932776,https://cdn.soccerwiki.org/images/logos/clubs/3247.jpg,0
 3197,Olaria AC,,2020-03-16 03:12:30.935301,2020-03-16 03:12:30.935301,https://cdn.soccerwiki.org/images/logos/clubs/3248.png,0
 3198,AA Anapolina,,2020-03-16 03:12:30.937777,2020-03-16 03:12:30.937777,https://cdn.soccerwiki.org/images/logos/clubs/3249.jpg,0
@@ -3428,7 +3428,7 @@ id,name,country,created_at,updated_at,logo_url,active
 3427,Moura AC,,2020-03-16 03:12:31.640916,2020-03-16 03:12:31.640916,https://cdn.soccerwiki.org/images/logos/clubs/3478.jpg,0
 3428,Feirense FC,,2020-03-16 03:12:31.64397,2020-03-16 03:12:31.64397,https://cdn.soccerwiki.org/images/logos/clubs/3479.jpg,0
 3429,Estrela do Norte,,2020-03-16 03:12:31.64872,2020-03-16 03:12:31.64872,https://cdn.soccerwiki.org/images/logos/clubs/3480.jpg,0
-3430,Grêmio Novorizontino,Brazil,2020-03-16 03:12:31.6525,2020-03-16 03:12:31.6525,https://cdn.soccerwiki.org/images/logos/clubs/3481.jpg,1
+3430,Novorizontino,Brazil,2020-03-16 03:12:31.6525,2020-03-16 03:12:31.6525,https://cdn.soccerwiki.org/images/logos/clubs/3481.jpg,1
 3431,Phuket FC,,2020-03-16 03:12:31.655671,2020-03-16 03:12:31.655671,https://cdn.soccerwiki.org/images/logos/clubs/3482.png,0
 3432,FC Caransebeș,,2020-03-16 03:12:31.659081,2020-03-16 03:12:31.659081,https://cdn.soccerwiki.org/images/logos/clubs/3483.png,0
 3433,Juventude de Pedras Salgadas,,2020-03-16 03:12:31.663006,2020-03-16 03:12:31.663006,https://cdn.soccerwiki.org/images/logos/clubs/3484.jpg,0
@@ -3450,7 +3450,7 @@ id,name,country,created_at,updated_at,logo_url,active
 3449,CE Aimoré,,2020-03-16 03:12:31.768308,2020-03-16 03:12:31.768308,https://cdn.soccerwiki.org/images/logos/clubs/3500.jpg,0
 3450,SE Itapirense,,2020-03-16 03:12:31.771016,2020-03-16 03:12:31.771016,https://cdn.soccerwiki.org/images/logos/clubs/3501.jpg,0
 3451,EC Passo Fundo,,2020-03-16 03:12:31.774453,2020-03-16 03:12:31.774453,https://cdn.soccerwiki.org/images/logos/clubs/3502.png,0
-3452,EC Água Santa,Brazil,2020-03-16 03:12:31.777201,2020-03-16 03:12:31.777201,https://cdn.soccerwiki.org/images/logos/clubs/3503.png,1
+3452,Água Santa,Brazil,2020-03-16 03:12:31.777201,2020-03-16 03:12:31.777201,https://cdn.soccerwiki.org/images/logos/clubs/3503.png,1
 3453,EC Rio Verde,,2020-03-16 03:12:31.78043,2020-03-16 03:12:31.78043,https://cdn.soccerwiki.org/images/logos/clubs/3504.jpg,0
 3454,Cametá SC,,2020-03-16 03:12:31.78339,2020-03-16 03:12:31.78339,https://cdn.soccerwiki.org/images/logos/clubs/3505.jpg,0
 3455,AD Confiança,,2020-03-16 03:12:31.786288,2020-03-16 03:12:31.786288,https://cdn.soccerwiki.org/images/logos/clubs/3506.png,0
@@ -3494,7 +3494,7 @@ id,name,country,created_at,updated_at,logo_url,active
 3493,Monts d'or Azergues,,2020-03-16 03:12:31.890164,2020-03-16 03:12:31.890164,https://cdn.soccerwiki.org/images/logos/clubs/3544.jpg,0
 3494,EP Manosque,,2020-03-16 03:12:31.89236,2020-03-16 03:12:31.89236,https://cdn.soccerwiki.org/images/logos/clubs/3545.jpg,0
 3495,FC Höllviken,,2020-03-16 03:12:31.894591,2020-03-16 03:12:31.894591,https://cdn.soccerwiki.org/images/logos/clubs/3546.jpg,0
-3496,EC São Bento,Brazil,2020-03-16 03:12:31.896912,2020-03-16 03:12:31.896912,https://cdn.soccerwiki.org/images/logos/clubs/3547.png,1
+3496,São Bento,Brazil,2020-03-16 03:12:31.896912,2020-03-16 03:12:31.896912,https://cdn.soccerwiki.org/images/logos/clubs/3547.png,1
 3497,FC Stumbras Kaunas,,2020-03-16 03:12:31.899415,2020-03-16 03:12:31.899415,https://cdn.soccerwiki.org/images/logos/clubs/3548.png,0
 3498,US Agropoli 1921,,2020-03-16 03:12:31.901727,2020-03-16 03:12:31.901727,https://cdn.soccerwiki.org/images/logos/clubs/3549.jpg,0
 3499,Terracina Calcio 1925,,2020-03-16 03:12:31.904214,2020-03-16 03:12:31.904214,https://cdn.soccerwiki.org/images/logos/clubs/3550.jpg,0
@@ -3625,7 +3625,7 @@ id,name,country,created_at,updated_at,logo_url,active
 3624,Legião FC,,2020-03-16 03:12:32.388085,2020-03-16 03:12:32.388085,https://cdn.soccerwiki.org/images/logos/clubs/3675.jpg,0
 3625,Mqabba FC,,2020-03-16 03:12:32.391198,2020-03-16 03:12:32.391198,https://cdn.soccerwiki.org/images/logos/clubs/3676.jpg,0
 3626,Juventud Unida Universitario,,2020-03-16 03:12:32.394459,2020-03-16 03:12:32.394459,https://cdn.soccerwiki.org/images/logos/clubs/3677.png,0
-3627,Grêmio Esportivo Juventus,Brazil,2020-03-16 03:12:32.398764,2020-03-16 03:12:32.398764,https://cdn.soccerwiki.org/images/logos/clubs/3678.png,1
+3627,Juventus Jaraguá,Brazil,2020-03-16 03:12:32.398764,2020-03-16 03:12:32.398764,https://cdn.soccerwiki.org/images/logos/clubs/3678.png,1
 3628,Qviding FIF,,2020-03-16 03:12:32.403117,2020-03-16 03:12:32.403117,https://cdn.soccerwiki.org/images/logos/clubs/3679.png,0
 3629,Rijnsburgse Boys,,2020-03-16 03:12:32.406565,2020-03-16 03:12:32.406565,https://cdn.soccerwiki.org/images/logos/clubs/3680.jpg,0
 3630,Sportivo Las Parejas,,2020-03-16 03:12:32.409903,2020-03-16 03:12:32.409903,https://cdn.soccerwiki.org/images/logos/clubs/3681.png,0
@@ -4322,7 +4322,7 @@ id,name,country,created_at,updated_at,logo_url,active
 4321,CDA Navalcarnero,,2020-03-16 03:12:34.516022,2020-03-16 03:12:34.516022,https://cdn.soccerwiki.org/images/logos/clubs/4372.png,0
 4322,Sektzia Nes Tziona,,2020-03-16 03:12:34.535124,2020-03-16 03:12:34.535124,https://cdn.soccerwiki.org/images/logos/clubs/4373.jpg,0
 4323,Windsor Arch Ka I,,2020-03-16 03:12:34.537763,2020-03-16 03:12:34.537763,https://cdn.soccerwiki.org/images/logos/clubs/4374.jpg,0
-4324,Democrata FC,Brazil,2020-03-16 03:12:34.541021,2020-03-16 03:12:34.541021,https://cdn.soccerwiki.org/images/logos/clubs/4375.jpg,1
+4324,Democrata,Brazil,2020-03-16 03:12:34.541021,2020-03-16 03:12:34.541021,https://cdn.soccerwiki.org/images/logos/clubs/4375.jpg,1
 4325,Verdal IL,,2020-03-16 03:12:34.543616,2020-03-16 03:12:34.543616,https://cdn.soccerwiki.org/images/logos/clubs/4376.jpg,0
 4326,Baotou Nanjiao,,2020-03-16 03:12:34.546014,2020-03-16 03:12:34.546014,https://cdn.soccerwiki.org/images/logos/clubs/4377.jpg,0
 4327,Nantong Zhiyun,,2020-03-16 03:12:34.548735,2020-03-16 03:12:34.548735,https://cdn.soccerwiki.org/images/logos/clubs/4378.png,0
@@ -4430,7 +4430,7 @@ id,name,country,created_at,updated_at,logo_url,active
 4429,Prudentópolis FC,,2020-03-16 03:12:34.879629,2020-03-16 03:12:34.879629,https://cdn.soccerwiki.org/images/logos/clubs/4480.jpg,0
 4430,Hatta Club,,2020-03-16 03:12:34.884067,2020-03-16 03:12:34.884067,https://cdn.soccerwiki.org/images/logos/clubs/4481.jpg,0
 4431,Portuguesa Santista,,2020-03-16 03:12:34.887007,2020-03-16 03:12:34.887007,https://cdn.soccerwiki.org/images/logos/clubs/4482.png,0
-4432,Brusque FC,Brazil,2020-03-16 03:12:34.889641,2020-03-16 03:12:34.889641,https://cdn.soccerwiki.org/images/logos/clubs/4483.png,1
+4432,Brusque,Brazil,2020-03-16 03:12:34.889641,2020-03-16 03:12:34.889641,https://cdn.soccerwiki.org/images/logos/clubs/4483.png,1
 4433,Thai Honda FC,,2020-03-16 03:12:34.891975,2020-03-16 03:12:34.891975,https://cdn.soccerwiki.org/images/logos/clubs/4484.png,0
 4434,CAP Uberlândia,,2020-03-16 03:12:34.894219,2020-03-16 03:12:34.894219,https://cdn.soccerwiki.org/images/logos/clubs/4485.jpg,0
 4435,Blacktown City,,2020-03-16 03:12:34.897814,2020-03-16 03:12:34.897814,https://cdn.soccerwiki.org/images/logos/clubs/4486.jpg,0
@@ -4703,7 +4703,7 @@ id,name,country,created_at,updated_at,logo_url,active
 4702,FK Fyllingsdalen,,2020-03-16 03:12:35.740817,2020-03-16 03:12:35.740817,https://cdn.soccerwiki.org/images/logos/clubs/4753.png,0
 4703,Ferrocarril Midland,,2020-03-16 03:12:35.743926,2020-03-16 03:12:35.743926,https://cdn.soccerwiki.org/images/logos/clubs/4754.png,0
 4704,FC Hermannstadt,,2020-03-16 03:12:35.74668,2020-03-16 03:12:35.74668,https://cdn.soccerwiki.org/images/logos/clubs/4755.png,0
-4705,Atlético Tubarão,Brazil,2020-03-16 03:12:35.749956,2020-03-16 03:12:35.749956,https://cdn.soccerwiki.org/images/logos/clubs/4756.jpg,1
+4705,Tubarão,Brazil,2020-03-16 03:12:35.749956,2020-03-16 03:12:35.749956,https://cdn.soccerwiki.org/images/logos/clubs/4756.jpg,1
 4706,Ethnikos Assia,,2020-03-16 03:12:35.752762,2020-03-16 03:12:35.752762,https://cdn.soccerwiki.org/images/logos/clubs/4757.png,0
 4707,AA Altos,,2020-03-16 03:12:35.755758,2020-03-16 03:12:35.755758,https://cdn.soccerwiki.org/images/logos/clubs/4758.jpg,0
 4708,RC Bobo Dioulasso,,2020-03-16 03:12:35.758715,2020-03-16 03:12:35.758715,https://cdn.soccerwiki.org/images/logos/clubs/4759.png,0
