@@ -2,21 +2,28 @@
   <%= form.hidden_field :bet_league_id, value: @bet_league.id %>
 
   <div data-controller="fields-for">
-    <%= form.fields_for :games do |game_form| %>
-      <%= render "games/fields", game_form: game_form %>
-    <% end %>
+    <div data-target="fields-for.games">
+      <%= form.fields_for :games do |game_form| %>
+        <%= render "games/fields", game_form: game_form %>
+      <% end %>
+    </div>
 
     <div class="row mb-3">
       <div class="col">
         <%= link_to("#{fa_icon('plus')} Adicionar Jogo".html_safe, '#self', {
           class: 'btn btn-primary btn-lg btn-block',
           data: {
-            action: "fields-for#add",
-            fields: form.fields_for(:games, Game.new, child_index: "new_field") do |game_form|
-              render("games/fields", game_form: game_form)
-            end
+            action: "fields-for#add"
           }
         }) %>
+
+        <template data-target="fields-for.template">
+          <%=
+            form.fields_for(:games, Game.new, child_index: "new_field") do |game_form|
+              render("games/fields", game_form: game_form)
+            end
+          %>
+        </template>
       </div>
     </div>
   </div>

@@ -5,8 +5,9 @@
 
   <div class="row align-items-center mb-3 no-gutters">
     <div class="col-5">
-      <%= game_form.select :home_id, Team.order(name: :asc).collect { |p| [p.name, p.id] },
-        {}, prompt: '- Select -', class: 'form-control', 'data-behavior' => 'selectpicker', 'data-live-search'=>"true" %>
+      <%= game_form.select :home_id, team_options_for_select(game_form.object.home_id),
+        {}, class: 'form-control', 'data-behavior' => 'selectpicker',
+        'data-live-search' => 'true', title: 'Selecione um time...' %>
     </div>
 
     <div class="col-1 d-flex justify-content-center">
@@ -14,8 +15,9 @@
     </div>
 
     <div class="col-5">
-      <%= game_form.select :visitor_id, Team.order(name: :asc).collect { |p| [p.name, p.id] },
-        {}, prompt: '- Select -', class: 'form-control', 'data-behavior' => 'selectpicker', 'data-live-search'=>"true" %>
+      <%= game_form.select :visitor_id, team_options_for_select(game_form.object.visitor_id),
+        {}, class: 'form-control', 'data-behavior' => 'selectpicker',
+        'data-live-search'=>'true', title: 'Selecione um time...' %>
     </div>
 
     <div class="col-1 d-flex justify-content-center">

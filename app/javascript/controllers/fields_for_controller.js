@@ -1,10 +1,10 @@
-import {Controller} from "stimulus"
+import {Controller} from 'stimulus'
 
 export default class extends Controller {
-  static targets = ["fields", "destroy"]
+  static targets = ['fields', 'destroy', 'template', 'games']
 
   hide(e) {
-    let fields = e.target.closest("[data-target='fields-for.fields']");
+    let fields = e.target.closest('[data-target="fields-for.fields"]');
     e.preventDefault();
 
     fields.children[0].value = '1';
@@ -12,10 +12,13 @@ export default class extends Controller {
   }
 
   add(e) {
-    let html = e.target.dataset.fields.replace(/new_field/g, new Date().getTime());
+    let clone = this.templateTarget.cloneNode(true);
+    clone.innerHTML = clone.innerHTML.replace(/new_field/g, new Date().getTime());
+    let fragment = document.importNode(clone.content, true)
 
     e.preventDefault();
-    e.target.insertAdjacentHTML('beforebegin', html);
+
+    this.gamesTarget.appendChild(fragment);
     $('[data-behavior="selectpicker"]').selectpicker();
   }
 }
