@@ -1,24 +1,38 @@
-# README
+# Palpita ai
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TODO: Explain what the app is...
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
 
-* System dependencies
+Create databases
+```
+createdb palpita_ai_development
+createdb palpita_ai_test
+```
 
-* Configuration
+Install dependencies
+```
+gem install bundler
+bundle install
+yarn install
+```
 
-* Database creation
+Run migrations
 
-* Database initialization
+```
+bundle exec rake db:migrate
+```
 
-* How to run the test suite
+Import teams from CSV file
 
-* Services (job queues, cache servers, search engines, etc.)
+```ruby
+ImportTeamsJob.perform_now
+```
 
-* Deployment instructions
+Run rails server and sidekiq
 
-* ...
+```
+bundle exec rails s
+bundle exec sidekiq
+```
