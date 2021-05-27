@@ -28,6 +28,7 @@ Import teams from CSV file
 
 ```ruby
 ImportTeamsJob.perform_now
+UpdateTeamsJob.perform_now
 ```
 
 Run rails server and sidekiq

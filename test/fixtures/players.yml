@@ -5,9 +5,11 @@ obina:
   name: João Obina Morinigo
   email: joao@gmail.com
   encrypted_password: <%= Devise::Encryptor.digest(Player, 'password') %>
+  user_type: 1
 
 eduardo:
   id: 2
   name: Eduardo José de Borba
   email: eduardo@gmail.com
   encrypted_password: <%= Devise::Encryptor.digest(Player, 'password') %>
+  user_type: 0

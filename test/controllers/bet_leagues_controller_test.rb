@@ -3,7 +3,8 @@ require 'test_helper'
 class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @bet_league = bet_leagues(:camp_do_obina)
-    sign_in(players(:obina))
+    @player = players(:obina)
+    sign_in(@player)
   end
 
   test 'should get new' do
@@ -62,5 +63,26 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to bet_leagues_url
+  end
+
+
+  test 'should block when not owner' do
+    other_league = bet_leagues(:camp_do_eduardo)
+    assert_not_equal other_league.owner, @player
+
+    get edit_bet_league_url(other_league)
+
+    assert_response :redirect
+    assert_redirected_to bet_league_url(other_league)
+  end
+
+
+  test 'should block when not admin' do
+    @player.standard!
+
+    get new_bet_league_url
+
+    assert_response :redirect
+    assert_redirected_to home_index_path
   end
 end

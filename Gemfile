@@ -36,9 +36,7 @@ gem 'csv'
 gem 'translate_enum'
 
 group :development, :test do
-  gem 'pry-rails'
-  gem 'pry-byebug', require: false
-  gem 'pry-remote'
+  gem 'byebug'
 end
 
 group :development do
