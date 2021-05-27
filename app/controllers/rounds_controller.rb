@@ -2,7 +2,8 @@ class RoundsController < ApplicationController
   before_action :set_round, only: %i[show edit update destroy]
   before_action :set_bet_league, only: %i[new create]
   before_action :authenticate_player!
-  before_action :block_not_owner, only: %i[new edit create update destroy]
+  before_action :block_not_owner, only: %i[edit update destroy]
+  before_action :block_not_admin, only: %i[new edit create update destroy]
 
   def show; end
 
@@ -42,7 +43,7 @@ class RoundsController < ApplicationController
   def destroy
     @round.destroy
     redirect_to rounds_url,
-                notice: 'Round was successfully destroyed.'
+                notice: 'Rodada foi deletada com sucesso.'
   end
 
   private
