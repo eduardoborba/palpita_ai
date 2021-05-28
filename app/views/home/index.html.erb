@@ -1,10 +1,12 @@
 <h1>Ligas</h1>
 
-<div class="mb-3">
-  <a href="<%= new_bet_league_path %>" class="btn btn-primary btn-lg btn-block">
-    <%= fa_icon 'plus' %> Criar Liga
-  </a>
-</div>
+<% if current_player.admin? %>
+  <div class="mb-3">
+    <a href="<%= new_bet_league_path %>" class="btn btn-primary btn-lg btn-block">
+      <%= fa_icon 'plus' %> Criar Liga
+    </a>
+  </div>
+<% end %>
 
 <div class="list-group">
   <% @bet_leagues.each do |bet_league| %>
