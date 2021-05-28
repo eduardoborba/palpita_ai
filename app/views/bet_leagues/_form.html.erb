@@ -8,6 +8,15 @@
 
   <div class="row mb-3">
     <div class="col">
+      <%= form.label :league_type, 'Tipo de Campeonato:' %>
+      <%= form.select :league_type,
+        BetLeague.league_types.map { |type, id| [BetLeague.human_enum_name(:league_type, type), type] },
+        {}, class: 'form-control', 'data-behavior': 'selectpicker', 'data-live-search'=>"true" %>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col">
       <%= form.label :description, 'Descrição:' %>
       <%= form.text_area :description, class: "form-control" %>
     </div>

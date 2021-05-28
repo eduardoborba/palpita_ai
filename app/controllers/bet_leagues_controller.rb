@@ -47,6 +47,6 @@ class BetLeaguesController < ApplicationController
   end
 
   def bet_league_params
-    params.require(:bet_league).permit(:name, :description)
+    params.require(:bet_league).permit(:name, :description, :league_type)
   end
 end

@@ -1,0 +1,10 @@
+---
+pt-BR:
+  activerecord:
+    attributes:
+      bet_league:
+        name: Nome
+        league_type_list:
+          league: Liga
+          cup: Copa
+          playoffs: 'Mata-a-mata'

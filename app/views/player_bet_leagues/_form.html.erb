@@ -4,7 +4,8 @@
   <div class="row mb-3">
     <div class="col">
       <%= form.select :player_ids, Player.order(name: :asc).collect { |p| [p.name, p.id] },
-        {}, class: 'form-control', multiple: 'multiple', 'data-behavior': 'selectpicker', 'data-live-search'=>"true" %>
+        {}, class: 'form-control', multiple: 'multiple', 'data-behavior': 'selectpicker', 'data-live-search'=>"true",
+        'title' => 'Selecione os partipantes...' %>
     </div>
   </div>
 
