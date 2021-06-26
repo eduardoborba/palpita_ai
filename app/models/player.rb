@@ -10,4 +10,12 @@ class Player < ApplicationRecord
   has_many :player_round_assignments
 
   enum user_type: [:standard, :admin]
+
+  before_create :set_user_type
+
+  private
+
+  def set_user_type
+    self.user_type = Player.user_types[:standard] if self.user_type.blank?
+  end
 end
