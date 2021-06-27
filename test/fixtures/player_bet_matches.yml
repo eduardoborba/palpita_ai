@@ -1,0 +1,8 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+obina_bet_match_to_round_1:
+  id: 1
+  player_id: 1
+  bet_match_id: 1
+  score: 0
+  nailed_count: 0

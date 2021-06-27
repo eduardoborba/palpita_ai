@@ -1,0 +1,8 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+bet_match_to_round_1:
+  id: 1
+  bet_cup_id: 1
+  bet_cup_round_id: 1
+  home_player_id: 1
+  visitor_player_id: 2

@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+copa_do_obina_phase_1_round_1:
+  id: 1
+  bet_cup_id: 1
+  bet_cup_phase_id: 1
+  accept_bets_after: <%= Time.zone.now %>
+  accept_bets_until: <%= 2.days.from_now %>
+
+copa_do_obina_phase_2_round_1:
+  id: 2
+  bet_cup_id: 1
+  bet_cup_phase_id: 2
+  accept_bets_after: <%= 3.days.from_now %>
+  accept_bets_until: <%= 5.days.from_now %>
+
+copa_do_eduardo_round_1:
+  id: 3
+  bet_cup_id: 2
+  bet_cup_phase_id: 3
+  accept_bets_after: <%= Time.zone.now %>
+  accept_bets_until: <%= 2.days.from_now %>
+
+copa_do_eduardo_round_2:
+  id: 4
+  bet_cup_id: 2
+  bet_cup_phase_id: 4
+  accept_bets_after: <%= 3.days.from_now %>
+  accept_bets_until: <%= 5.days.from_now %>
