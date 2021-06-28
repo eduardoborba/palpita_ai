@@ -15,3 +15,12 @@ round_2:
   accept_bets_until: <%= 2.days.from_now %>
   round_number: 2
   status: 1
+
+cup_round_1:
+  id: 3
+  bet_cup_id: 1
+  bet_cup_phase_id: 1
+  accept_bets_after: <%= Time.zone.now %>
+  accept_bets_until: <%= 2.days.from_now %>
+  round_number: 1
+  status: 1

@@ -3,6 +3,6 @@
 bet_match_to_round_1:
   id: 1
   bet_cup_id: 1
-  round_id: 1
+  round_id: 3
   home_player_id: 1
   visitor_player_id: 2
