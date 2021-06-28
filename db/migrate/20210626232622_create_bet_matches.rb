@@ -8,5 +8,10 @@ class CreateBetMatches < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+
+    add_foreign_key :bet_matches, :bet_cups
+    add_foreign_key :bet_matches, :rounds
+    add_foreign_key :bet_matches, :players, column: :home_player_id
+    add_foreign_key :bet_matches, :players, column: :visitor_player_id
   end
 end

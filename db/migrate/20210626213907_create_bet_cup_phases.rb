@@ -6,5 +6,7 @@ class CreateBetCupPhases < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+
+    add_foreign_key :bet_cup_phases, :bet_cups
   end
 end

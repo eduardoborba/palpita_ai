@@ -150,6 +150,15 @@ ActiveRecord::Schema.define(version: 2021_06_28_004340) do
     t.index ["name"], name: "index_teams_on_name"
   end
 
+  add_foreign_key "bet_cup_phases", "bet_cups"
+  add_foreign_key "bet_cups", "players", column: "owner_id"
+  add_foreign_key "bet_matches", "bet_cups"
+  add_foreign_key "bet_matches", "players", column: "home_player_id"
+  add_foreign_key "bet_matches", "players", column: "visitor_player_id"
+  add_foreign_key "bet_matches", "rounds"
+  add_foreign_key "player_bet_cup_phase_assignments", "bet_cup_phases"
+  add_foreign_key "player_bet_cup_phase_assignments", "bet_cups"
+  add_foreign_key "player_bet_cup_phase_assignments", "players"
   add_foreign_key "player_round_assignments", "bet_cups"
   add_foreign_key "rounds", "bet_cup_phases"
   add_foreign_key "rounds", "bet_cups"

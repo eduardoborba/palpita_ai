@@ -8,5 +8,7 @@ class CreateBetCups < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+
+    add_foreign_key :bet_cups, :players, column: :owner_id
   end
 end

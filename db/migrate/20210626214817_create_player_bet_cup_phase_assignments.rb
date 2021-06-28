@@ -8,5 +8,9 @@ class CreatePlayerBetCupPhaseAssignments < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+
+    add_foreign_key :player_bet_cup_phase_assignments, :bet_cups
+    add_foreign_key :player_bet_cup_phase_assignments, :bet_cup_phases
+    add_foreign_key :player_bet_cup_phase_assignments, :players
   end
 end
