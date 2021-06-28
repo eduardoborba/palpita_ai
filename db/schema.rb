@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_26_233505) do
+ActiveRecord::Schema.define(version: 2021_06_28_004340) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,16 +18,6 @@ ActiveRecord::Schema.define(version: 2021_06_26_233505) do
   create_table "bet_cup_phases", force: :cascade do |t|
     t.integer "bet_cup_id"
     t.integer "phase_type"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "bet_cup_rounds", force: :cascade do |t|
-    t.integer "bet_cup_id"
-    t.integer "bet_cup_phase_id"
-    t.integer "round_number"
-    t.datetime "accept_bets_after"
-    t.datetime "accept_bets_until"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -52,7 +42,7 @@ ActiveRecord::Schema.define(version: 2021_06_26_233505) do
 
   create_table "bet_matches", force: :cascade do |t|
     t.integer "bet_cup_id"
-    t.integer "bet_cup_round_id"
+    t.integer "round_id"
     t.integer "home_player_id"
     t.integer "visitor_player_id"
     t.datetime "created_at", precision: 6, null: false
@@ -113,15 +103,6 @@ ActiveRecord::Schema.define(version: 2021_06_26_233505) do
     t.integer "nailed_count"
   end
 
-  create_table "player_bet_matches", force: :cascade do |t|
-    t.integer "player_id"
-    t.integer "bet_match_id"
-    t.integer "score"
-    t.integer "nailed_count"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "player_round_assignments", force: :cascade do |t|
     t.integer "bet_league_id"
     t.integer "player_id"
@@ -130,6 +111,7 @@ ActiveRecord::Schema.define(version: 2021_06_26_233505) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "round_score"
     t.integer "nailed_count"
+    t.integer "bet_cup_id"
   end
 
   create_table "players", force: :cascade do |t|
@@ -154,6 +136,8 @@ ActiveRecord::Schema.define(version: 2021_06_26_233505) do
     t.datetime "updated_at", precision: 6, null: false
     t.datetime "accept_bets_after"
     t.datetime "accept_bets_until"
+    t.integer "bet_cup_id"
+    t.integer "bet_cup_phase_id"
   end
 
   create_table "teams", force: :cascade do |t|
@@ -166,4 +150,7 @@ ActiveRecord::Schema.define(version: 2021_06_26_233505) do
     t.index ["name"], name: "index_teams_on_name"
   end
 
+  add_foreign_key "player_round_assignments", "bet_cups"
+  add_foreign_key "rounds", "bet_cup_phases"
+  add_foreign_key "rounds", "bet_cups"
 end
