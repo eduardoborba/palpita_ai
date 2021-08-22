@@ -82,9 +82,9 @@
             <small>
               <%= round.translated_status %>
             </small>
-            <% if round.finished? && round.player_round_assignments.exists?(player: current_player) %>
+            <% if round.finished? && round.player_round_assignments.exists?(player_bet_league: current_player_bet_league) %>
               <small>
-                <% round_score = round.player_round_assignments.find_by(player: current_player).round_score %>
+                <% round_score = round.player_round_assignments.find_by(player_bet_league: current_player_bet_league).round_score %>
                 <%= round_score %>
                 <%= round_score == 1 ? 'pt' : 'pts' %>
               </small>

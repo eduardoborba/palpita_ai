@@ -1,5 +1,6 @@
 <%= form_for(player_round_assignment) do |form| %>
   <%= form.hidden_field :round_id %>
+  <%= form.hidden_field :player_bet_league_id %>
 
   <%= form.fields_for :bets do |bet_form| %>
     <div class="row align-items-center mb-3 no-gutters">
