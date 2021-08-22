@@ -62,7 +62,6 @@ ActiveRecord::Schema.define(version: 2021_08_22_104158) do
     t.integer "player_round_assignment_id"
     t.integer "bet_score"
     t.boolean "nailed"
-    t.integer "player_bet_match_id"
     t.index ["game_id"], name: "index_bets_on_game_id"
     t.index ["player_round_assignment_id"], name: "index_bets_on_player_round_assignment_id"
   end
