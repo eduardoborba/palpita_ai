@@ -42,11 +42,11 @@
       </div>
     </div>
 
-    <% game.bets.joins(:player).each do |bet| %>
+    <% game.bets.joins(player_round_assignment: { player_bet_league: :player }).each do |bet| %>
       <div class="list-group-item">
         <div class="row align-items-center no-gutters">
           <div class="col-4 text-truncate">
-            <%= bet.player.name %>:
+            <%= bet.player_round_assignment.player_bet_league.player.name %>:
           </div>
 
           <div class="col-1 text-right">

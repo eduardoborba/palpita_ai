@@ -106,13 +106,13 @@ ActiveRecord::Schema.define(version: 2021_08_22_111905) do
   end
 
   create_table "player_round_assignments", force: :cascade do |t|
-    t.integer "player_id"
     t.integer "round_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "round_score"
     t.integer "nailed_count"
-    t.index ["player_id"], name: "index_player_round_assignments_on_player_id"
+    t.integer "player_bet_league_id"
+    t.index ["player_bet_league_id"], name: "index_player_round_assignments_on_player_bet_league_id"
     t.index ["round_id"], name: "index_player_round_assignments_on_round_id"
   end
 
@@ -169,7 +169,7 @@ ActiveRecord::Schema.define(version: 2021_08_22_111905) do
   add_foreign_key "player_bet_cup_phase_assignments", "players"
   add_foreign_key "player_bet_leagues", "bet_leagues"
   add_foreign_key "player_bet_leagues", "players"
-  add_foreign_key "player_round_assignments", "players"
+  add_foreign_key "player_round_assignments", "player_bet_leagues"
   add_foreign_key "player_round_assignments", "rounds"
   add_foreign_key "rounds", "bet_cup_phases"
   add_foreign_key "rounds", "bet_cups"

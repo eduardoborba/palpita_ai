@@ -8,8 +8,9 @@ class PlayerRoundAssignmentsControllerTest < ActionDispatch::IntegrationTest
     @game = @round2.games.take
     @bet_league = @round1.bet_league
     @player = players(:obina)
+    @player_bet_league = @player.player_bet_leagues.find_by(bet_league: @bet_league)
 
-    PlayerRoundAssignment.where(player: @player, round: @round2).destroy_all
+    PlayerRoundAssignment.where(player_bet_league: @player_bet_league, round: @round2).destroy_all
     sign_in(@player)
   end
 
@@ -23,13 +24,10 @@ class PlayerRoundAssignmentsControllerTest < ActionDispatch::IntegrationTest
       assert_difference('Bet.count', +1) do
         post player_round_assignments_url, params: {
           player_round_assignment: {
-            bet_league_id: @bet_league.id,
-            player_id: @player.id,
+            player_bet_league_id: @player_bet_league.id,
             round_id: @round2.id,
             bets_attributes: [{
               game_id: @game.id,
-              player_id: @player.id,
-              bet_league_id: @bet_league.id,
               home_bet: 1,
               visitor_bet: 0
             }]
@@ -57,23 +55,18 @@ class PlayerRoundAssignmentsControllerTest < ActionDispatch::IntegrationTest
 
     patch player_round_assignment_url(@player_round_assignment), params: {
       player_round_assignment: {
-        bet_league_id: @player_round_assignment.bet_league_id,
-        player_id: @player_round_assignment.player_id,
+        player_bet_league_id: @player_bet_league.id,
         round_id: @player_round_assignment.round_id,
         bets_attributes: [{
           id: @bet1.id,
           game_id: @bet1.game_id,
-          player_id: @player.id,
           player_round_assignment: @player_round_assignment.id,
-          bet_league_id: @bet_league.id,
           home_bet: 3,
           visitor_bet: 0
         }, {
           id: @bet2.id,
           game_id: @bet2.game_id,
-          player_id: @player.id,
           player_round_assignment: @player_round_assignment.id,
-          bet_league_id: @bet_league.id,
           home_bet: 0,
           visitor_bet: 1
         }]

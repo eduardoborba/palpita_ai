@@ -33,12 +33,10 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
               0 => {
                 home_id: @flamengo.id,
                 visitor_id: @vasco.id,
-                bet_league_id: @bet_league.id
               },
               1 => {
                 home_id: @corinthians.id,
                 visitor_id: @sao_paulo.id,
-                bet_league_id: @bet_league.id
               }
             }
           }
@@ -72,14 +70,12 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
                 id: @round.games.first.id,
                 home_id: @round.games.first.home_id,
                 visitor_id: @round.games.first.visitor_id,
-                bet_league_id: @bet_league.id,
                 _destroy: '0'
               },
               1 => {
                 id: @round.games.second.id,
                 home_id: @round.games.second.home_id,
                 visitor_id: @round.games.second.visitor_id,
-                bet_league_id: @bet_league.id,
                 _destroy: '1'
               }
             }
