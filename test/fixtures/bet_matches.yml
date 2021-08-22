@@ -1,7 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-obina_bet_to_round_1:
+bet_match_to_round_1:
   id: 1
-  player_bet_league_id: 1
-  round_id: 1
-  round_score: 0
+  round_id: 3
+  home_player_id: 1
+  visitor_player_id: 2

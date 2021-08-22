@@ -1,14 +1,11 @@
 <%= form_for(player_round_assignment) do |form| %>
-  <%= form.hidden_field :bet_league_id %>
   <%= form.hidden_field :round_id %>
-  <%= form.hidden_field :player_id %>
+  <%= form.hidden_field :player_bet_league_id %>
 
   <%= form.fields_for :bets do |bet_form| %>
     <div class="row align-items-center mb-3 no-gutters">
       <%= bet_form.hidden_field(:id, class: 'form-control') %>
       <%= bet_form.hidden_field(:game_id, class: 'form-control') %>
-      <%= bet_form.hidden_field(:player_id, class: 'form-control') %>
-      <%= bet_form.hidden_field(:bet_league_id, class: 'form-control') %>
 
       <div class="col-2 text-right text-truncate">
         <%= bet_form.object.game.home.name %>

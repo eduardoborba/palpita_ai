@@ -15,8 +15,8 @@
     <h1>
       Finalizar Rodada
 
-      <% if current_player.player_round_assignments.exists?(round: @round) %>
-        <% player_round_assignment = current_player.player_round_assignments.find_by(round: @round) %>
+      <% if current_player_bet_league.player_round_assignments.exists?(round: @round) %>
+        <% player_round_assignment = current_player_bet_league.player_round_assignments.find_by(round: @round) %>
         <a href="<%= player_round_assignment_path(player_round_assignment) %>">
           <%= fa_icon 'eye' %>
         </a>

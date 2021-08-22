@@ -1,9 +1,10 @@
 class Round < ApplicationRecord
   include TranslateEnum
 
-  has_many :games
-  belongs_to :bet_league
-  has_many :player_round_assignments
+  has_many :games, dependent: :destroy
+  has_many :player_round_assignments, dependent: :destroy
+  belongs_to :bet_league, optional: true
+  belongs_to :bet_cup, optional: true
 
   accepts_nested_attributes_for :games, allow_destroy: true
 

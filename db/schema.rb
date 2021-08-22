@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_27_210808) do
+ActiveRecord::Schema.define(version: 2021_08_22_111905) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bet_cup_phases", force: :cascade do |t|
+    t.integer "bet_cup_id"
+    t.integer "phase_type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "bet_cups", force: :cascade do |t|
+    t.text "name"
+    t.text "description"
+    t.integer "owner_id"
+    t.integer "status"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "bet_leagues", force: :cascade do |t|
     t.string "name"
@@ -22,13 +38,20 @@ ActiveRecord::Schema.define(version: 2021_05_27_210808) do
     t.integer "owner_id"
     t.integer "status"
     t.text "description"
+    t.index ["owner_id"], name: "index_bet_leagues_on_owner_id"
+  end
+
+  create_table "bet_matches", force: :cascade do |t|
+    t.integer "round_id"
+    t.integer "home_player_id"
+    t.integer "visitor_player_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "bets", force: :cascade do |t|
     t.integer "game_id"
-    t.integer "player_id"
     t.integer "player_score"
-    t.integer "bet_league_id"
     t.integer "home_bet"
     t.integer "visitor_bet"
     t.datetime "created_at", precision: 6, null: false
@@ -36,6 +59,8 @@ ActiveRecord::Schema.define(version: 2021_05_27_210808) do
     t.integer "player_round_assignment_id"
     t.integer "bet_score"
     t.boolean "nailed"
+    t.index ["game_id"], name: "index_bets_on_game_id"
+    t.index ["player_round_assignment_id"], name: "index_bets_on_player_round_assignment_id"
   end
 
   create_table "championships", force: :cascade do |t|
@@ -54,9 +79,19 @@ ActiveRecord::Schema.define(version: 2021_05_27_210808) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "round_id"
-    t.integer "bet_league_id"
     t.integer "position"
+    t.index ["home_id"], name: "index_games_on_home_id"
     t.index ["round_id"], name: "index_games_on_round_id"
+    t.index ["visitor_id"], name: "index_games_on_visitor_id"
+  end
+
+  create_table "player_bet_cup_phase_assignments", force: :cascade do |t|
+    t.integer "bet_cup_id"
+    t.integer "bet_cup_phase_id"
+    t.integer "player_id"
+    t.boolean "passed_through"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "player_bet_leagues", force: :cascade do |t|
@@ -66,16 +101,19 @@ ActiveRecord::Schema.define(version: 2021_05_27_210808) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "nailed_count"
+    t.index ["bet_league_id"], name: "index_player_bet_leagues_on_bet_league_id"
+    t.index ["player_id"], name: "index_player_bet_leagues_on_player_id"
   end
 
   create_table "player_round_assignments", force: :cascade do |t|
-    t.integer "bet_league_id"
-    t.integer "player_id"
     t.integer "round_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "round_score"
     t.integer "nailed_count"
+    t.integer "player_bet_league_id"
+    t.index ["player_bet_league_id"], name: "index_player_round_assignments_on_player_bet_league_id"
+    t.index ["round_id"], name: "index_player_round_assignments_on_round_id"
   end
 
   create_table "players", force: :cascade do |t|
@@ -100,6 +138,9 @@ ActiveRecord::Schema.define(version: 2021_05_27_210808) do
     t.datetime "updated_at", precision: 6, null: false
     t.datetime "accept_bets_after"
     t.datetime "accept_bets_until"
+    t.integer "bet_cup_id"
+    t.integer "bet_cup_phase_id"
+    t.index ["bet_league_id"], name: "index_rounds_on_bet_league_id"
   end
 
   create_table "teams", force: :cascade do |t|
@@ -112,4 +153,25 @@ ActiveRecord::Schema.define(version: 2021_05_27_210808) do
     t.index ["name"], name: "index_teams_on_name"
   end
 
+  add_foreign_key "bet_cup_phases", "bet_cups"
+  add_foreign_key "bet_cups", "players", column: "owner_id"
+  add_foreign_key "bet_leagues", "players", column: "owner_id"
+  add_foreign_key "bet_matches", "players", column: "home_player_id"
+  add_foreign_key "bet_matches", "players", column: "visitor_player_id"
+  add_foreign_key "bet_matches", "rounds"
+  add_foreign_key "bets", "games"
+  add_foreign_key "bets", "player_round_assignments"
+  add_foreign_key "games", "rounds"
+  add_foreign_key "games", "teams", column: "home_id"
+  add_foreign_key "games", "teams", column: "visitor_id"
+  add_foreign_key "player_bet_cup_phase_assignments", "bet_cup_phases"
+  add_foreign_key "player_bet_cup_phase_assignments", "bet_cups"
+  add_foreign_key "player_bet_cup_phase_assignments", "players"
+  add_foreign_key "player_bet_leagues", "bet_leagues"
+  add_foreign_key "player_bet_leagues", "players"
+  add_foreign_key "player_round_assignments", "player_bet_leagues"
+  add_foreign_key "player_round_assignments", "rounds"
+  add_foreign_key "rounds", "bet_cup_phases"
+  add_foreign_key "rounds", "bet_cups"
+  add_foreign_key "rounds", "bet_leagues"
 end

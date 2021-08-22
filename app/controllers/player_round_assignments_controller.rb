@@ -9,15 +9,12 @@ class PlayerRoundAssignmentsController < ApplicationController
   def new
     @player_round_assignment = PlayerRoundAssignment.new(
       round: @round,
-      player: current_player,
-      bet_league: @bet_league
+      player_bet_league: current_player.player_bet_leagues.find_by(bet_league: @bet_league),
     )
 
     @player_round_assignment.bets = @round.games.map do |game|
       Bet.new(
         game: game,
-        player: current_player,
-        bet_league: @bet_league
       )
     end
   end
@@ -56,7 +53,7 @@ class PlayerRoundAssignmentsController < ApplicationController
   def set_player_round_assignment
     @player_round_assignment = PlayerRoundAssignment.find(params[:id])
     @round = @player_round_assignment.round
-    @bet_league = @player_round_assignment.bet_league
+    @bet_league = @player_round_assignment.round.bet_league
   end
 
   def set_round
@@ -67,10 +64,9 @@ class PlayerRoundAssignmentsController < ApplicationController
 
   def player_round_assignment_params
     params.require(:player_round_assignment).permit(
-      :bet_league_id, :player_id, :round_id,
+      :player_bet_league_id, :round_id,
       bets_attributes: [
-        :id, :game_id, :player_id, :bet_league_id,
-        :player_round_assignment_id, :home_bet, :visitor_bet
+        :id, :game_id, :player_round_assignment_id, :home_bet, :visitor_bet
       ]
     )
   end
