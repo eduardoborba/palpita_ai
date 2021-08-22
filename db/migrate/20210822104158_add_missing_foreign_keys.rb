@@ -6,6 +6,8 @@ class AddMissingForeignKeys < ActiveRecord::Migration[6.0]
     add_foreign_key :games, :teams, column: :visitor_id
     add_index :games, :visitor_id
 
+    add_foreign_key :games, :rounds
+
     add_foreign_key :bets, :games
     add_index :bets, :game_id
 
