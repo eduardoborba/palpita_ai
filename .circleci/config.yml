@@ -46,9 +46,11 @@ jobs:
           key: palpita-ai-bundle-v2-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - node/install-packages:
-          pkg-manager: yarn
-          cache-key: "yarn.lock"
+      - run: Install python2
+          command: sudo apt update && DEBIAN_FRONTEND=noninteractive sudo apt install -y python2
+      - run:
+          name: Yarn Install
+          command: yarn install
       - run:
           name: webpacker
           command: bundle exec rake webpacker:compile
