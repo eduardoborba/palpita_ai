@@ -32,6 +32,12 @@ jobs:
       - image: redis
     steps:
       - checkout
+      - browser-tools/install-browser-tools
+      - run: |
+          ruby --version
+          node --version
+          java --version
+          google-chrome --version
       - run:
           name: Which bundler?
           command: bundle -v
