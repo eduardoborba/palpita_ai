@@ -1,8 +1,8 @@
-version: 2
+version: 3
 
 references:
   default_docker_ruby_executor: &default_docker_ruby_executor
-    image: circleci/ruby:2.6.5-node-browsers
+    image: circleci/ruby:2.7.6-node-browsers
     environment:
       BUNDLE_JOBS: 3
       BUNDLE_RETRY: 3
@@ -13,7 +13,7 @@ references:
       RAILS_ENV: test
       NODE_ENV: test
   postgres: &postgres
-    image: circleci/postgres:9.6.2-alpine
+    image: circleci/postgres:12.12
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: ""
