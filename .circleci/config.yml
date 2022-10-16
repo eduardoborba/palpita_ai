@@ -7,7 +7,7 @@ orbs:
 
 references:
   default_docker_ruby_executor: &default_docker_ruby_executor
-    image: cimg/ruby:2.7.6-browsers
+    image: cimg/ruby:2.7.6-node
     environment:
       BUNDLE_JOBS: 3
       BUNDLE_RETRY: 3
@@ -46,9 +46,6 @@ jobs:
           key: palpita-ai-bundle-v2-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - run:
-          name: Install python2
-          command: sudo apt update && DEBIAN_FRONTEND=noninteractive sudo apt install -y python2
       - run:
           name: Yarn Install
           command: yarn install
