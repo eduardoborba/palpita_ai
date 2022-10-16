@@ -46,7 +46,8 @@ jobs:
           key: palpita-ai-bundle-v2-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - run: Install python2
+      - run:
+          name: Install python2
           command: sudo apt update && DEBIAN_FRONTEND=noninteractive sudo apt install -y python2
       - run:
           name: Yarn Install
