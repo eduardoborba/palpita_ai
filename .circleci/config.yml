@@ -51,7 +51,7 @@ jobs:
             - palpita-ai-yarn-
       - run:
           name: Yarn Install
-          command: yarn install --cache-folder ~/.cache/yarn
+          command: yarn install
       - run:
           name: webpacker
           command: bundle exec rake webpacker:compile
