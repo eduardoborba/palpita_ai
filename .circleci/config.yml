@@ -45,10 +45,6 @@ jobs:
           key: palpita-ai-bundle-v2-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - restore_cache:
-          keys:
-            - palpita-ai-yarn-{{ checksum "yarn.lock" }}
-            - palpita-ai-yarn-
       - run:
           name: Yarn Install
           command: yarn install
