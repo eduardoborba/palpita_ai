@@ -46,9 +46,10 @@ jobs:
           key: palpita-ai-bundle-v2-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - run:
-          name: Yarn Install
-          command: yarn install
+      - node/install-packages:
+          check-cache: always
+          pkg-manager: yarn-berry
+          with-cache: false
       - run:
           name: webpacker
           command: bundle exec rake webpacker:compile
