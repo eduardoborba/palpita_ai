@@ -1,49 +1,44 @@
 version: "3.9"
 
 services:
-  palpita_ai:
+  palpita_ai_app: &palpita_ai_app
     build:
       context: .
       dockerfile: Dockerfile
     depends_on:
       - database
       - redis
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     volumes:
       - .:/palpita_ai
       # - gem_cache:/Library/Ruby/Gems/2.6.0/gems
       # - node_modules:/palpita_ai/node_modules
     ports:
       - "3000:3000"
-    env_file: .env
     environment:
       RAILS_ENV: development
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD:
   database:
     image: postgres:12.1
-    volumes:
-      - db_data:/var/lib/postgresql/data
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+    - 5432:5432
     environment:
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD:
   redis:
     image: redis:5.0.7
-  sidekiq:
+  palpita_ai_workers:
     build:
       context: .
       dockerfile: Dockerfile
-    depends_on:
-      - palpita_ai
-      - database
-      - redis
+    command: bundle exec sidekiq
     volumes:
       - .:/palpita_ai
-      # - gem_cache:/Library/Ruby/Gems/2.6.0/gems
-      # - node_modules:/palpita_ai/node_modules
+    depends_on:
+      - palpita_ai_app
+      - database
+      - redis
     environment:
       RAILS_ENV: development
-    entrypoint: ./entrypoints/sidekiq-entrypoint.sh
-
-volumes:
-  gem_cache:
-  db_data:
-  node_modules:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD:
