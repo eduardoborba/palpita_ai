@@ -8,16 +8,16 @@ references:
       BUNDLE_RETRY: 3
       BUNDLE_PATH: vendor/bundle
       PGHOST: 127.0.0.1
-      PGUSER: root
+      PGUSER: postgres
       PGPASSWORD: ""
       RAILS_ENV: test
       NODE_ENV: test
   postgres: &postgres
     image: cimg/postgres:12.11
     environment:
-      POSTGRES_USER: root
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: ""
-      # POSTGRES_DB: palpita_ai_test
+      POSTGRES_DB: palpita_ai_test
 
 jobs:
   build:
