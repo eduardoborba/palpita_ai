@@ -17,7 +17,7 @@ references:
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: ""
-      POSTGRES_DB: palpita_ai_test
+      # POSTGRES_DB: palpita_ai_test
 
 jobs:
   build:
