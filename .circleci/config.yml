@@ -13,7 +13,7 @@ references:
       RAILS_ENV: test
       NODE_ENV: test
   postgres: &postgres
-    image: cimg/postgres:12.11.0
+    image: cimg/postgres:12.11
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: ""
