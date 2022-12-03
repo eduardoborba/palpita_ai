@@ -31,10 +31,9 @@ RUN apk add --update --no-cache \
       shared-mime-info
 
 RUN gem install bundler -v 1.17.2
-WORKDIR /palpita_ai
-COPY . ./
-# RUN bundle config build.nokogiri --use-system-libraries
-# RUN bundle update --conservative mimemagic
+WORKDIR /app
+COPY . .
+
 RUN bundle check || bundle install
 
 COPY package.json yarn.lock ./

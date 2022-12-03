@@ -1,15 +1,15 @@
 version: "3.9"
 
 services:
-  palpita_ai_app: &palpita_ai_app
+  app: &app
     build:
       context: .
       dockerfile: Dockerfile
     depends_on:
       - database
       - redis
-    volumes:
-      - .:/palpita_ai
+    # volumes:
+    #   - .:/palpita_ai
       # - gem_cache:/Library/Ruby/Gems/2.6.0/gems
       # - node_modules:/palpita_ai/node_modules
     ports:
@@ -27,18 +27,18 @@ services:
       POSTGRES_PASSWORD:
   redis:
     image: redis:5.0.7
-  palpita_ai_workers:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    command: bundle exec sidekiq
-    volumes:
-      - .:/palpita_ai
-    depends_on:
-      - palpita_ai_app
-      - database
-      - redis
-    environment:
-      RAILS_ENV: development
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD:
+  # workers:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   command: bundle exec sidekiq
+  #   volumes:
+  #     - .:/palpita_ai
+  #   depends_on:
+  #     - palpita_ai_app
+  #     - database
+  #     - redis
+  #   environment:
+  #     RAILS_ENV: development
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD:
