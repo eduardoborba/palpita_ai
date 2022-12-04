@@ -1,16 +1,15 @@
 # syntax=docker/dockerfile:1
-FROM ruby:2.6.5-alpine
+FROM ruby:3.1.2-alpine
 
-ENV BUNDLER_VERSION=1.17.2
+ENV BUNDLER_VERSION=2.3.16
 
-RUN apk add --update --no-cache \
+RUN apk add --update \
       binutils-gold \
       build-base \
       curl \
       file \
       g++ \
       gcc \
-      git \
       less \
       libstdc++ \
       libffi-dev \
@@ -25,18 +24,16 @@ RUN apk add --update --no-cache \
       openssl \
       pkgconfig \
       postgresql-dev \
-      python \
       tzdata \
       yarn \
-      shared-mime-info
+      shared-mime-info \
+      postgresql-client
 
-RUN gem install bundler -v 1.17.2
+RUN gem install bundler -v ${BUNDLER_VERSION}
 WORKDIR /app
 COPY . .
 
 RUN bundle check || bundle install
-
-COPY package.json yarn.lock ./
 RUN yarn install --check-files
 
 # Add a script to be executed every time the container starts.
