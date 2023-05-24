@@ -6,9 +6,12 @@
 #
 default: &default
   adapter: postgresql
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  port: <%= ENV['POSTGRES_PORT'] || '5432' %>
+  host: <%= ENV['POSTGRES_HOST'] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  user: postgres
 
 development:
   <<: *default
