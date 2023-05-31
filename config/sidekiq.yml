@@ -1,8 +1,15 @@
-:schedule:
-  open_jobs:
-    cron: '0 * * * * *'   # Runs once per minute
-    class: OpenBetsWorker
+---
+production:
+  :concurrency: 4
+development:
+  :concurrency: 4
 
-  close_jobs:
-    cron: '0 * * * * *'   # Runs once per minute
-    class: CloseBetsWorker
+:scheduler:
+  :schedule:
+    open_jobs:
+      cron: '0 * * * * *'   # Runs once per minute
+      class: OpenBetsWorker
+
+    close_jobs:
+      cron: '0 * * * * *'   # Runs once per minute
+      class: CloseBetsWorker
