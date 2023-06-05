@@ -8,23 +8,32 @@
   </div>
 <% end %>
 
-<div class="list-group">
-  <% @bet_leagues.each do |bet_league| %>
-    <%= link_to bet_league_path(bet_league.id), class: 'list-group-item list-group-item-action' do %>
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
-          <%= bet_league.name %>
-        </h5>
+<% if @bet_leagues.count > 0 %>
+  <div class="list-group">
+    <% @bet_leagues.each do |bet_league| %>
+      <%= link_to bet_league_path(bet_league.id), class: 'list-group-item list-group-item-action' do %>
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">
+            <%= bet_league.name %>
+          </h5>
+          <small>
+            <% player_bet_league = bet_league.player_bet_leagues.find_by(player_id: current_player.id) %>
+            <%= player_bet_league.player_accumulated_score %>
+            <%= player_bet_league.player_accumulated_score == 1 ? 'pt' : 'pts' %>
+          </small>
+        </div>
         <small>
-          <% player_bet_league = bet_league.player_bet_leagues.find_by(player_id: current_player.id) %>
-          <%= player_bet_league.player_accumulated_score %>
-          <%= player_bet_league.player_accumulated_score == 1 ? 'pt' : 'pts' %>
+          <%= bet_league.player_bet_leagues.count %>
+          <%= bet_league.player_bet_leagues.count == 1 ? 'participante' : 'participantes' %>
         </small>
-      </div>
-      <small>
-        <%= bet_league.player_bet_leagues.count %>
-        <%= bet_league.player_bet_leagues.count == 1 ? 'participante' : 'participantes' %>
-      </small>
+      <% end %>
     <% end %>
+  </div>
+<% else %>
+  <p>Nenhuma liga disponível no momento.</p>
+  <% if current_player.admin? %>
+    <p>Clique em Criar Liga para começar um nova liga.</p>
+  <% else %>
+    <p>Aguarde algum organizador convidar você para um liga.</p>
   <% end %>
-</div>
+<% end %>
