@@ -12,6 +12,7 @@ class PlayerTest < ActiveSupport::TestCase
     )
     assert_nil player.user_type
 
+    player.skip_confirmation!
     player.save!
     player.reload
 

@@ -42,3 +42,4 @@ test/reports/*
 /.DS_Store
 
 /config/application.yml
+dump.rdb

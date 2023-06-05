@@ -6,6 +6,7 @@ obina:
   email: joao@gmail.com
   encrypted_password: <%= Devise::Encryptor.digest(Player, 'password') %>
   user_type: 1
+  confirmed_at: <%= Time.now %>
 
 eduardo:
   id: 2
@@ -13,3 +14,4 @@ eduardo:
   email: eduardo@gmail.com
   encrypted_password: <%= Devise::Encryptor.digest(Player, 'password') %>
   user_type: 0
+  confirmed_at: <%= Time.now %>

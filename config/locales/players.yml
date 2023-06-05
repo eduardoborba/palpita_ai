@@ -1,0 +1,7 @@
+---
+pt-BR:
+  activerecord:
+    attributes:
+      player:
+        password: 'Senha'
+        password_confirmation: 'Confirmação de senha'

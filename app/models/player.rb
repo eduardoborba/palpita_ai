@@ -1,9 +1,9 @@
 class Player < ApplicationRecord
   # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  # , :trackable and :omniauthable
   devise :database_authenticatable,
          :recoverable, :rememberable, :validatable,
-         :registerable
+         :registerable, :confirmable, :lockable, :timeoutable
 
   has_many :player_bet_leagues, dependent: :destroy
   has_many :bet_leagues, through: :player_bet_leagues
