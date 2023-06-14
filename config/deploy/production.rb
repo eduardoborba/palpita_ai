@@ -55,3 +55,4 @@ server 'palpitaai.com.br', user: 'deploy', roles: %w[app db web], my_property: :
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+set :rvm_ruby_version, '3.1.2'
