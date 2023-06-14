@@ -20,7 +20,7 @@ set :repo_url, 'git@github.com:eduardoborba/palpita_ai.git'
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, %w{config/master.key}
+set :linked_files, %w[config/master.key]
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "tmp/webpacker", "public/system", "vendor", "storage"
@@ -40,7 +40,7 @@ set :rvm_ruby_version, '3.1.2'
 
 task :restart_sidekiq do
   on roles(:worker) do
-    execute :service, "sidekiq restart"
+    execute :service, 'sidekiq restart'
   end
 end
-after "deploy:published", "restart_sidekiq"
+after 'deploy:published', 'restart_sidekiq'
