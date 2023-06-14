@@ -67,6 +67,9 @@ jobs:
           command: |
             mkdir test/reports
             bundle exec rake test
+      - run:
+          command: |
+            bundle exec rubocop
       - store_test_results:
           path: test/reports
       - store_artifacts:
