@@ -76,11 +76,11 @@ class FinishRoundWorker
   end
 
   def calculate_when_didnt_got_right_side(bet, game)
-    if bet.home_bet == game.home_score || bet.visitor_bet == game.visitor_score
-      bet.bet_score = 1
-    else
-      bet.bet_score = 0
-    end
+    bet.bet_score = if bet.home_bet == game.home_score || bet.visitor_bet == game.visitor_score
+                      1
+                    else
+                      0
+                    end
 
     bet.nailed = false
     bet.save!

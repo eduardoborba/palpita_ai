@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RoundsController < ApplicationController
   before_action :set_round, only: %i[show edit update destroy]
   before_action :set_bet_league, only: %i[new create]
@@ -13,7 +15,7 @@ class RoundsController < ApplicationController
       accept_bets_until: 1.week.from_now
     )
 
-    1.times { @round.games.build }
+    @round.games.build
   end
 
   def edit; end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BetCup < ApplicationRecord
   belongs_to :owner, class_name: 'Player'
 
@@ -6,5 +8,5 @@ class BetCup < ApplicationRecord
   has_many :bet_cup_matches
   has_many :rounds
 
-  enum status: [:unstarted, :started, :finished]
+  enum status: { unstarted: 0, started: 1, finished: 2 }
 end

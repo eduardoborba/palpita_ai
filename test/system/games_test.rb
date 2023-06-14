@@ -1,53 +1,55 @@
-require "application_system_test_case"
+# frozen_string_literal: true
+
+require 'application_system_test_case'
 
 class GamesTest < ApplicationSystemTestCase
   setup do
     @game = games(:one)
   end
 
-  test "visiting the index" do
+  test 'visiting the index' do
     visit games_url
-    assert_selector "h1", text: "Games"
+    assert_selector 'h1', text: 'Games'
   end
 
-  test "creating a Game" do
+  test 'creating a Game' do
     visit games_url
-    click_on "New Game"
+    click_on 'New Game'
 
-    fill_in "Championship", with: @game.championship_id
-    fill_in "Date time", with: @game.date_time
-    fill_in "Home", with: @game.home_id
-    fill_in "Home score", with: @game.home_score
-    fill_in "Visitor", with: @game.visitor_id
-    fill_in "Visitor score", with: @game.visitor_score
-    click_on "Create Game"
+    fill_in 'Championship', with: @game.championship_id
+    fill_in 'Date time', with: @game.date_time
+    fill_in 'Home', with: @game.home_id
+    fill_in 'Home score', with: @game.home_score
+    fill_in 'Visitor', with: @game.visitor_id
+    fill_in 'Visitor score', with: @game.visitor_score
+    click_on 'Create Game'
 
-    assert_text "Game was successfully created"
-    click_on "Back"
+    assert_text 'Game was successfully created'
+    click_on 'Back'
   end
 
-  test "updating a Game" do
+  test 'updating a Game' do
     visit games_url
-    click_on "Edit", match: :first
+    click_on 'Edit', match: :first
 
-    fill_in "Championship", with: @game.championship_id
-    fill_in "Date time", with: @game.date_time
-    fill_in "Home", with: @game.home_id
-    fill_in "Home score", with: @game.home_score
-    fill_in "Visitor", with: @game.visitor_id
-    fill_in "Visitor score", with: @game.visitor_score
-    click_on "Update Game"
+    fill_in 'Championship', with: @game.championship_id
+    fill_in 'Date time', with: @game.date_time
+    fill_in 'Home', with: @game.home_id
+    fill_in 'Home score', with: @game.home_score
+    fill_in 'Visitor', with: @game.visitor_id
+    fill_in 'Visitor score', with: @game.visitor_score
+    click_on 'Update Game'
 
-    assert_text "Game was successfully updated"
-    click_on "Back"
+    assert_text 'Game was successfully updated'
+    click_on 'Back'
   end
 
-  test "destroying a Game" do
+  test 'destroying a Game' do
     visit games_url
     page.accept_confirm do
-      click_on "Destroy", match: :first
+      click_on 'Destroy', match: :first
     end
 
-    assert_text "Game was successfully destroyed"
+    assert_text 'Game was successfully destroyed'
   end
 end

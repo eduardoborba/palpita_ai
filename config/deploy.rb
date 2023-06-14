@@ -1,5 +1,7 @@
-set :application, "palpita_ai"
-set :repo_url, "git@github.com:eduardoborba/palpita_ai.git"
+# frozen_string_literal: true
+
+set :application, 'palpita_ai'
+set :repo_url, 'git@github.com:eduardoborba/palpita_ai.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ChangeBetLeagueStatusColumn < ActiveRecord::Migration[6.0]
   def up
     rename_column :bet_leagues, :status_id, :status

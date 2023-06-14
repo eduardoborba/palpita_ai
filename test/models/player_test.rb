@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class PlayerTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
-  test "sets user type on creation" do
+  test 'sets user type on creation' do
     player = Player.new(
-      name: "Homer Simpson",
-      email: "homer.simpson@gmail.com",
-      password: "N0Pa$word"
+      name: 'Homer Simpson',
+      email: 'homer.simpson@gmail.com',
+      password: 'N0Pa$word'
     )
     assert_nil player.user_type
 
@@ -16,6 +18,6 @@ class PlayerTest < ActiveSupport::TestCase
     player.save!
     player.reload
 
-    assert_equal "standard", player.user_type
+    assert_equal 'standard', player.user_type
   end
 end

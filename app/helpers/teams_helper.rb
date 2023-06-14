@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module TeamsHelper
   def team_options_for_select(selected)
     options = Team.active.order(name: :asc).map do |team|

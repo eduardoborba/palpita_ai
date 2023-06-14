@@ -1,43 +1,45 @@
-require "application_system_test_case"
+# frozen_string_literal: true
+
+require 'application_system_test_case'
 
 class BetLeaguesTest < ApplicationSystemTestCase
   setup do
     @bet_league = bet_leagues(:camp_do_obina)
   end
 
-  test "visiting the index" do
+  test 'visiting the index' do
     visit bet_leagues_url
-    assert_selector "h1", text: "Bet Leagues"
+    assert_selector 'h1', text: 'Bet Leagues'
   end
 
-  test "creating a Bet league" do
+  test 'creating a Bet league' do
     visit bet_leagues_url
-    click_on "New Bet League"
+    click_on 'New Bet League'
 
-    fill_in "Name", with: @bet_league.name
-    click_on "Create Bet league"
+    fill_in 'Name', with: @bet_league.name
+    click_on 'Create Bet league'
 
-    assert_text "Bet league was successfully created"
-    click_on "Back"
+    assert_text 'Bet league was successfully created'
+    click_on 'Back'
   end
 
-  test "updating a Bet league" do
+  test 'updating a Bet league' do
     visit bet_leagues_url
-    click_on "Edit", match: :first
+    click_on 'Edit', match: :first
 
-    fill_in "Name", with: @bet_league.name
-    click_on "Update Bet league"
+    fill_in 'Name', with: @bet_league.name
+    click_on 'Update Bet league'
 
-    assert_text "Bet league was successfully updated"
-    click_on "Back"
+    assert_text 'Bet league was successfully updated'
+    click_on 'Back'
   end
 
-  test "destroying a Bet league" do
+  test 'destroying a Bet league' do
     visit bet_leagues_url
     page.accept_confirm do
-      click_on "Destroy", match: :first
+      click_on 'Destroy', match: :first
     end
 
-    assert_text "Bet league was successfully destroyed"
+    assert_text 'Bet league was successfully destroyed'
   end
 end
