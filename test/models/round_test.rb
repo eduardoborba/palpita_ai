@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class RoundTest < ActiveSupport::TestCase
@@ -17,11 +19,11 @@ class RoundTest < ActiveSupport::TestCase
       'games_attributes' => {
         '0' => {
           'home_id' => teams(:flamengo).id,
-          'visitor_id' => teams(:vasco).id,
+          'visitor_id' => teams(:vasco).id
         },
         '1' => {
           'home_id' => teams(:corinthians).id,
-          'visitor_id' => teams(:sao_paulo).id,
+          'visitor_id' => teams(:sao_paulo).id
         }
       },
       'accept_bets_after' => Time.zone.now,

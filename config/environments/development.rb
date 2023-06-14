@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.configure do
   config.require_master_key = true
   # Settings specified here will take precedence over those in config/application.rb.
@@ -49,7 +51,7 @@ Rails.application.configure do
     enable_starttls_auto: true
   }
 
-  config.action_mailer.default_url_options = { host: "dev.palpitaai.com.br", port: 3000 }
+  config.action_mailer.default_url_options = { host: 'dev.palpitaai.com.br', port: 3000 }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -75,5 +77,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.hosts << "dev.palpitaai.com.br"
+  config.hosts << 'dev.palpitaai.com.br'
 end

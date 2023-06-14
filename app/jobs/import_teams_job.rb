@@ -1,13 +1,15 @@
+# frozen_string_literal: true
+
 class ImportTeamsJob < ApplicationJob
   FILEPATH = Rails.root.join('vendor', 'teams_data.xml')
 
   def perform
-    teams_data_xml.xpath("//C").each do |team|
-      next if Team.exists?(name: team["n"])
+    teams_data_xml.xpath('//C').each do |team|
+      next if Team.exists?(name: team['n'])
 
       Team.create!(
-        name: team["n"],
-        logo_url: team["i"]
+        name: team['n'],
+        logo_url: team['i']
       )
     end
   end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class FinishRoundsController < ApplicationController
   before_action :authenticate_player!
   before_action :set_bet_league
@@ -12,7 +14,7 @@ class FinishRoundsController < ApplicationController
     if @round.save
       FinishRoundWorker.perform_async(@round.id)
       redirect_to @bet_league,
-        notice: 'Rodada foi finalizada com sucesso. As pontuações podem levar alguns minutos para serem atualizadas
+                  notice: 'Rodada foi finalizada com sucesso. As pontuações podem levar alguns minutos para serem atualizadas
                  corretamente.'
     else
       render :edit

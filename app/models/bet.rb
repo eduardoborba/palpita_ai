@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Bet < ApplicationRecord
   belongs_to :player_round_assignment
   belongs_to :game

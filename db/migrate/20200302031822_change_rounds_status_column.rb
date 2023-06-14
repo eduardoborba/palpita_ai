@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ChangeRoundsStatusColumn < ActiveRecord::Migration[6.0]
   def up
     rename_column :rounds, :status_id, :status

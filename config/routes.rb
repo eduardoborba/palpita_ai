@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   resources :player_round_assignments, only: %i[new edit create update show]
   resources :rounds, only: %i[show new edit create update destroy]

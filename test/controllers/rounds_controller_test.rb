@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class RoundsControllerTest < ActionDispatch::IntegrationTest
@@ -32,11 +34,11 @@ class RoundsControllerTest < ActionDispatch::IntegrationTest
             games_attributes: {
               0 => {
                 home_id: @flamengo.id,
-                visitor_id: @vasco.id,
+                visitor_id: @vasco.id
               },
               1 => {
                 home_id: @corinthians.id,
-                visitor_id: @sao_paulo.id,
+                visitor_id: @sao_paulo.id
               }
             }
           }

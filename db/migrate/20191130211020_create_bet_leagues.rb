@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateBetLeagues < ActiveRecord::Migration[6.0]
   def change
     create_table :bet_leagues do |t|

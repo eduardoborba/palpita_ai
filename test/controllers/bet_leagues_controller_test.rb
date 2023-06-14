@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
@@ -27,7 +29,8 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
     assert_equal 'Liga foi criada com sucesso, agora convide pessoas para participar da sua liga.', flash[:notice]
 
     assert_equal 'Nova liga daora', @bet_league.name
-    assert_equal "Essa nova liga possui um prize pool de 150 reais, e vamos ter no total 20 rodadas, duas por semana.\nBoa sorte!", @bet_league.description
+    assert_equal "Essa nova liga possui um prize pool de 150 reais, e vamos ter no total 20 rodadas, duas por semana.\nBoa sorte!",
+                 @bet_league.description
   end
 
   test 'should show bet_league' do
@@ -54,7 +57,8 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
 
     @bet_league.reload
     assert_equal 'Nova liga daora', @bet_league.name
-    assert_equal "Essa nova liga possui um prize pool de 150 reais, e vamos ter no total 20 rodadas, duas por semana.\nBoa sorte!", @bet_league.description
+    assert_equal "Essa nova liga possui um prize pool de 150 reais, e vamos ter no total 20 rodadas, duas por semana.\nBoa sorte!",
+                 @bet_league.description
   end
 
   test 'should destroy bet_league' do
@@ -65,7 +69,6 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to bet_leagues_url
   end
 
-
   test 'should block when not owner' do
     other_league = bet_leagues(:camp_do_eduardo)
     assert_not_equal other_league.owner, @player
@@ -75,7 +78,6 @@ class BetLeaguesControllerTest < ActionDispatch::IntegrationTest
     assert_response :redirect
     assert_redirected_to bet_league_url(other_league)
   end
-
 
   test 'should block when not admin' do
     @player.standard!

@@ -1,53 +1,55 @@
-require "application_system_test_case"
+# frozen_string_literal: true
+
+require 'application_system_test_case'
 
 class BetsTest < ApplicationSystemTestCase
   setup do
     @bet = bets(:one)
   end
 
-  test "visiting the index" do
+  test 'visiting the index' do
     visit bets_url
-    assert_selector "h1", text: "Bets"
+    assert_selector 'h1', text: 'Bets'
   end
 
-  test "creating a Bet" do
+  test 'creating a Bet' do
     visit bets_url
-    click_on "New Bet"
+    click_on 'New Bet'
 
-    fill_in "Bet league", with: @bet.bet_league_id
-    fill_in "Game", with: @bet.game_id
-    fill_in "Home bet", with: @bet.home_bet
-    fill_in "Player", with: @bet.player_id
-    fill_in "Player score", with: @bet.player_score
-    fill_in "Visitor bet", with: @bet.visitor_bet
-    click_on "Create Bet"
+    fill_in 'Bet league', with: @bet.bet_league_id
+    fill_in 'Game', with: @bet.game_id
+    fill_in 'Home bet', with: @bet.home_bet
+    fill_in 'Player', with: @bet.player_id
+    fill_in 'Player score', with: @bet.player_score
+    fill_in 'Visitor bet', with: @bet.visitor_bet
+    click_on 'Create Bet'
 
-    assert_text "Bet was successfully created"
-    click_on "Back"
+    assert_text 'Bet was successfully created'
+    click_on 'Back'
   end
 
-  test "updating a Bet" do
+  test 'updating a Bet' do
     visit bets_url
-    click_on "Edit", match: :first
+    click_on 'Edit', match: :first
 
-    fill_in "Bet league", with: @bet.bet_league_id
-    fill_in "Game", with: @bet.game_id
-    fill_in "Home bet", with: @bet.home_bet
-    fill_in "Player", with: @bet.player_id
-    fill_in "Player score", with: @bet.player_score
-    fill_in "Visitor bet", with: @bet.visitor_bet
-    click_on "Update Bet"
+    fill_in 'Bet league', with: @bet.bet_league_id
+    fill_in 'Game', with: @bet.game_id
+    fill_in 'Home bet', with: @bet.home_bet
+    fill_in 'Player', with: @bet.player_id
+    fill_in 'Player score', with: @bet.player_score
+    fill_in 'Visitor bet', with: @bet.visitor_bet
+    click_on 'Update Bet'
 
-    assert_text "Bet was successfully updated"
-    click_on "Back"
+    assert_text 'Bet was successfully updated'
+    click_on 'Back'
   end
 
-  test "destroying a Bet" do
+  test 'destroying a Bet' do
     visit bets_url
     page.accept_confirm do
-      click_on "Destroy", match: :first
+      click_on 'Destroy', match: :first
     end
 
-    assert_text "Bet was successfully destroyed"
+    assert_text 'Bet was successfully destroyed'
   end
 end

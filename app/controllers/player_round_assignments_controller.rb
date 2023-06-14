@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PlayerRoundAssignmentsController < ApplicationController
   before_action :set_player_round_assignment, only: %i[show edit update]
   before_action :set_round, only: %i[new create]
@@ -9,12 +11,12 @@ class PlayerRoundAssignmentsController < ApplicationController
   def new
     @player_round_assignment = PlayerRoundAssignment.new(
       round: @round,
-      player_bet_league: current_player.player_bet_leagues.find_by(bet_league: @bet_league),
+      player_bet_league: current_player.player_bet_leagues.find_by(bet_league: @bet_league)
     )
 
     @player_round_assignment.bets = @round.games.map do |game|
       Bet.new(
-        game: game,
+        game:
       )
     end
   end
@@ -65,8 +67,8 @@ class PlayerRoundAssignmentsController < ApplicationController
   def player_round_assignment_params
     params.require(:player_round_assignment).permit(
       :player_bet_league_id, :round_id,
-      bets_attributes: [
-        :id, :game_id, :player_round_assignment_id, :home_bet, :visitor_bet
+      bets_attributes: %i[
+        id game_id player_round_assignment_id home_bet visitor_bet
       ]
     )
   end

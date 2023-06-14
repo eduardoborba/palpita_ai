@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class LandingPageController < ApplicationController
   before_action :check_signed_in
 

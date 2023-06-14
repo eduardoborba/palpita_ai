@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Game < ApplicationRecord
   belongs_to :round, optional: true
   belongs_to :home, class_name: 'Team'

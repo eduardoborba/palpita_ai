@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Round < ApplicationRecord
   include TranslateEnum
 
@@ -17,6 +19,6 @@ class Round < ApplicationRecord
   validates_associated :games
 
   def fill_round_number
-    self.round_number = (self.bet_league.rounds.maximum(:round_number) || 0) + 1
+    self.round_number = (bet_league.rounds.maximum(:round_number) || 0) + 1
   end
 end

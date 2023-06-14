@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Player < ApplicationRecord
   # Include default devise modules. Others available are:
   # , :trackable and :omniauthable
@@ -9,13 +11,13 @@ class Player < ApplicationRecord
   has_many :bet_leagues, through: :player_bet_leagues
   has_many :player_round_assignments
 
-  enum user_type: [:standard, :admin]
+  enum user_type: { standard: 0, admin: 1 }
 
   before_create :set_user_type
 
   private
 
   def set_user_type
-    self.user_type = Player.user_types[:standard] if self.user_type.blank?
+    self.user_type = Player.user_types[:standard] if user_type.blank?
   end
 end

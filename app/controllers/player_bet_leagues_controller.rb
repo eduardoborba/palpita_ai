@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PlayerBetLeaguesController < ApplicationController
   before_action :authenticate_player!
   before_action :set_bet_league
