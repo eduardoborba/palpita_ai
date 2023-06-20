@@ -21,6 +21,7 @@ set :repo_url, 'git@github.com:eduardoborba/palpita_ai.git'
 
 # Default value for :linked_files is []
 set :linked_files, %w[config/master.key]
+set :linked_dirs, "log", "tmp/cache", "tmp/webpacker"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "tmp/webpacker", "public/system", "vendor", "storage"
