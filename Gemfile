@@ -57,6 +57,7 @@ group :development do
   gem 'capistrano-passenger', require: false
   gem 'capistrano-rails', '~> 1.6', require: false
   gem 'capistrano-rvm', require: false
+  gem 'capistrano-postgresql', require: false
 end
 
 group :test do
