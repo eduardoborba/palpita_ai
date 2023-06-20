@@ -55,6 +55,7 @@ group :development do
   gem 'capistrano', '~> 3.10', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-passenger', require: false
+  gem 'capistrano-postgresql', require: false
   gem 'capistrano-rails', '~> 1.6', require: false
   gem 'capistrano-rvm', require: false
 end

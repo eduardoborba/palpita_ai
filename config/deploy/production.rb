@@ -5,9 +5,8 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server 'palpitaai.com.br', user: 'ubuntu', roles: %w[app db web], my_property: :my_value
+server 'palpitaai.com.br', user: 'ubuntu', roles: %w[app db web]
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
-# server "db.example.com", user: "deploy", roles: %w{db}
 
 # role-based syntax
 # ==================
@@ -56,3 +55,7 @@ server 'palpitaai.com.br', user: 'ubuntu', roles: %w[app db web], my_property: :
 #     # password: "please use keys"
 #   }
 set :rvm_ruby_version, '3.1.2'
+set :pg_host, ENV['RDS_HOST']
+set :pg_database, ENV['RDS_DATABASE']
+set :pg_username, ENV['RDS_USERNAME']
+set :pg_password, ENV['RDS_PASSWORD']
