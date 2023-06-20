@@ -41,7 +41,7 @@ set :rvm_ruby_version, '3.1.2'
 
 task :restart_sidekiq do
   on roles(:worker) do
-    execute :service, 'sidekiq restart'
+    execute :sudo, :service, 'sidekiq restart'
   end
 end
 after 'deploy:published', 'restart_sidekiq'
