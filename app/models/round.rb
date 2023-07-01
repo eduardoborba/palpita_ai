@@ -13,10 +13,12 @@ class Round < ApplicationRecord
   enum status: { unstarted: 0, open: 1, closed: 2, finished: 3 }
   translate_enum :status
 
-  before_create :fill_round_number
+  enum phase: { round_robin: 0, round_of_16: 1, quarter_finals: 2, semi_finals: 3, finals: 4 }
 
   validates :games, :accept_bets_after, :accept_bets_until, presence: true
   validates_associated :games
+
+  before_create :fill_round_number
 
   def fill_round_number
     self.round_number = (bet_league.rounds.maximum(:round_number) || 0) + 1

@@ -5,9 +5,11 @@ camp_do_obina:
   name: Camp do Obina
   owner_id: 1
   status: 'started'
+  league_type: 'league'
 
 camp_do_eduardo:
   id: 2
   name: Camp do Eduardo
   owner_id: 2
   status: 'started'
+  league_type: 'league'
