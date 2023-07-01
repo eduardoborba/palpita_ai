@@ -9,4 +9,5 @@ class BetLeague < ApplicationRecord
   validates :name, uniqueness: true, presence: true
 
   enum status: { unstarted: 0, started: 1, finished: 2 }
+  enum league_type: { league: 0, cup: 1, playoffs: 2 }
 end
