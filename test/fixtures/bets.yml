@@ -3,7 +3,6 @@
 obina_bet_to_round_1_game_1:
   id: 1
   game_id: 1
-  player_score: 1
   home_bet: 1
   visitor_bet: 1
   player_round_assignment_id: 1
@@ -11,7 +10,6 @@ obina_bet_to_round_1_game_1:
 obina_bet_to_round_1_game_2:
   id: 2
   game_id: 2
-  player_score: 1
   home_bet: 1
   visitor_bet: 1
   player_round_assignment_id: 1
