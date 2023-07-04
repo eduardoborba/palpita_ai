@@ -64,9 +64,14 @@ jobs:
             bundle exec rake db:create
             bundle exec rails db:schema:load --trace
       - run:
+          name: Unit tests
           command: |
             mkdir test/reports
             bundle exec rake test
+      - run:
+          name: Integration tests
+          command: |
+            bundle exec rails test:system
       - run:
           command: |
             bundle exec rubocop
