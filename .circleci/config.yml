@@ -29,6 +29,8 @@ jobs:
       - *postgres
       - image: redis
     steps:
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
       - checkout
       - run:
           name: Which bundler?
