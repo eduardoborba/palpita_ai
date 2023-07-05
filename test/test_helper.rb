@@ -4,6 +4,7 @@ ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rails/test_help'
 require 'sidekiq/testing'
+require 'capybara/rails'
 
 module ActiveSupport
   class TestCase
@@ -16,6 +17,8 @@ module ActiveSupport
     fixtures :all
 
     Sidekiq::Testing.fake!
+
+    # Capybara.default_driver = :selenium_chrome_headless
 
     # Add more helper methods to be used by all tests here...
   end

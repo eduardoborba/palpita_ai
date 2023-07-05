@@ -17,11 +17,3 @@ round_2:
   round_number: 2
   status: 1
   phase: 0
-
-cup_round_1:
-  id: 3
-  accept_bets_after: <%= Time.zone.now %>
-  accept_bets_until: <%= 2.days.from_now %>
-  round_number: 1
-  status: 1
-  phase: 0

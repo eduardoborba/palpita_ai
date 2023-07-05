@@ -3,19 +3,23 @@
 flamengo:
   id: 1
   name: Flamengo
+  active: true
   logo_url: https://cdn.soccerwiki.org/images/logos/clubs/294.png
 
 vasco:
   id: 2
   name: Vasco da Gama
+  active: true
   logo_url: https://cdn.soccerwiki.org/images/logos/clubs/307.png
 
 corinthians:
   id: 3
   name: Corinthians
+  active: true
   logo_url: https://cdn.soccerwiki.org/images/logos/clubs/290.png
 
 sao_paulo:
   id: 4
   name: SC São Paulo
+  active: true
   logo_url: https://cdn.soccerwiki.org/images/logos/clubs/3488.png
