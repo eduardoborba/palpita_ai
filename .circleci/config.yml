@@ -1,8 +1,11 @@
-version: 2
+version: 2.1
+
+orbs:
+  browser-tools: circleci/browser-tools@1.4.1
 
 references:
   default_docker_ruby_executor: &default_docker_ruby_executor
-    image: cimg/ruby:3.1.2-node
+    image: cimg/ruby:3.1.2-browsers
     environment:
       BUNDLE_JOBS: 3
       BUNDLE_RETRY: 3
@@ -26,6 +29,8 @@ jobs:
       - *postgres
       - image: redis
     steps:
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
       - checkout
       - run:
           name: Which bundler?
@@ -64,9 +69,14 @@ jobs:
             bundle exec rake db:create
             bundle exec rails db:schema:load --trace
       - run:
+          name: Unit tests
           command: |
             mkdir test/reports
             bundle exec rake test
+      - run:
+          name: Integration tests
+          command: |
+            bundle exec rails test:system
       - run:
           command: |
             bundle exec rubocop
